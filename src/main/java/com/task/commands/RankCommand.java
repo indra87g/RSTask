@@ -6,12 +6,12 @@ import com.task.form.CreateMenu;
 import com.task.commands.base.BaseCommand;
 
 /**
- * 任务排行榜主命令
+ * Task leaderboard main command
  * @author SmallasWater
  */
 public class RankCommand extends BaseCommand {
     public RankCommand(String name) {
-        super(name,"任务积分排行榜");
+        super(name,"Task points leaderboard");
         this.setPermission("RSTask.command.rank");
         this.usageMessage = "/c-rank";
     }
@@ -26,7 +26,7 @@ public class RankCommand extends BaseCommand {
         if (commandSender.isPlayer()) {
             CreateMenu.sendRankMenu((Player) commandSender);
         }else{
-            commandSender.sendMessage("请不要用控制台执行");
+            commandSender.sendMessage("Please do not execute in the console");
         }
         return true;
     }

@@ -22,9 +22,9 @@ public class API {
 
 
     /**
-     * 创建任务
-     * @param task 任务 {@link TaskFile}
-     * @return 是否创建成功
+     * Create a task
+     * @param task task {@link TaskFile}
+     * @return whether the creation was successful
      * */
     public static boolean createTask(TaskFile task) {
         if(task != null){
@@ -34,9 +34,9 @@ public class API {
     }
 
     /**
-     * 删除任务
-     * @param taskName 任务名称
-     * @return 是否删除成功
+     * Delete a task
+     * @param taskName task name
+     * @return whether the deletion was successful
      * */
     public static boolean deleteTask(String taskName) {
        TaskFile task = TaskFile.getTask(taskName);
@@ -50,10 +50,10 @@ public class API {
 
 
     /**
-     * 玩家领取任务
-     * @param player 玩家
-     * @param task 任务名称
-     * @return 是否成功领取
+     * Player receives a task
+     * @param player player
+     * @param task task name
+     * @return whether the task was successfully received
      * */
     public static boolean playerSeeTask(Player player, TaskFile task){
         PlayerFile pf = PlayerFile.getPlayerFile(player.getName());
@@ -65,12 +65,12 @@ public class API {
         return false;
     }
     /**
-     * 增加玩家任务进度
-     * @param player 玩家
-     * @param task 任务名称
-     * @param load 任务分支
-     * @param value 数量
-     * @return 是否成功领取
+     * Increase player task progress
+     * @param player player
+     * @param task task name
+     * @param load task branch
+     * @param value quantity
+     * @return whether the task was successfully received
      * */
     public static boolean addPlayerTaskValue(String player,String task,String load,int value){
         PlayerFile f = PlayerFile.getPlayerFile(player);
@@ -81,12 +81,12 @@ public class API {
     }
 
     /**
-     * 设置玩家任务进度
-     * @param player 玩家
-     * @param task 任务名称
-     * @param load 任务分支
-     * @param value 数量
-     * @return 是否成功领取
+     * Set player task progress
+     * @param player player
+     * @param task task name
+     * @param load task branch
+     * @param value quantity
+     * @return whether the task was successfully received
      * */
     public static boolean setPlayerTaskValue(String player,String task,String load,int value){
         PlayerFile f = PlayerFile.getPlayerFile(player);
@@ -97,7 +97,7 @@ public class API {
     }
 
     /**
-     * 任务增加物品进度
+     * Task adds item progress
      * */
     public static void addItem(Player player, Item item, TaskFile.TaskType type){
         if(item != null){
@@ -112,12 +112,12 @@ public class API {
     }
 
     /**
-     * 增加玩家进行中任务进度
-     * @param player 玩家
-     * @param task 任务名称
-     * @param load 任务分支
-     * @param value 数量
-     * @return 是否成功增加
+     * Increase the progress of the player's ongoing task
+     * @param player player
+     * @param task task name
+     * @param load task branch
+     * @param value quantity
+     * @return whether the increase was successful
      * */
     public static boolean addPlayerRunTask(String player,String task,String load,int value){
         PlayerFile f = PlayerFile.getPlayerFile(player);
@@ -130,12 +130,12 @@ public class API {
     }
 
     /**
-     * 设置玩家进度
-     * @param player 玩家
-     * @param task 任务名称
-     * @param load 任务分支
-     * @param value 数量
-     * @return 是否成功设置
+     * Set player progress
+     * @param player player
+     * @param task task name
+     * @param load task branch
+     * @param value quantity
+     * @return whether the setting was successful
      * */
     public static boolean setPlayerRunTask(String player,String task,String load,int value){
         PlayerFile f = PlayerFile.getPlayerFile(player);
@@ -150,12 +150,12 @@ public class API {
 
 
     /**
-     * 获取玩家全部进行中的任务
-     * @param player 玩家
-     * @return 进行中的任务
+     * Get all ongoing tasks of the player
+     * @param player player
+     * @return ongoing tasks
      * */
     public static LinkedList<PlayerTask> getAllRunTasks(Player player){
-        //获取玩家全部进行的任务
+        //Get all ongoing tasks of the player
         LinkedList<PlayerTask> tasks = new LinkedList<>();
         PlayerFile file = PlayerFile.getPlayerFile(player.getName());
         if(file != null){

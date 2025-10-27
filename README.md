@@ -1,85 +1,85 @@
-# 任务系统
+# Task System
 ----
-### 插件介绍
-这是一款可以实现多种任务功能的插件
+### Plugin Introduction
+This is a plugin that can realize a variety of task functions
 ----
-#### 已实现任务
-- [x] 玩家放置方块任务
-- [x] 玩家破坏方块任务
-- [x] 玩家拾取物品任务
-- [x] 玩家使用铁桶任务
-- [x] 玩家食用物品任务
-- [x] 玩家收集物品任务
-- [x] 玩家丢弃物品任务
-- [x] 玩家合成物品任务
-- [x] 玩家手持物品点击地面任务
-- [x] DIY任务（需要开发者支持）
+#### Implemented tasks
+- [x] Player places block task
+- [x] Player destroys block task
+- [x] Player picks up item task
+- [x] Player uses iron bucket task
+- [x] Player eats item task
+- [x] Player collects item task
+- [x] Player drops item task
+- [x] Player crafts item task
+- [x] Player clicks on the ground with an item in hand task
+- [x] DIY task (requires developer support)
 ----
-#### 任务可实现
-- [x] 日常任务
-- [x] 主线任务/支线任务
-- [x] 限时任务
-#### 使用方法
-| 指令       | 介绍   |
+#### Achievable tasks
+- [x] Daily tasks
+- [x] Main/side quests
+- [x] Time-limited tasks
+#### How to use
+| Command       | Description   |
 | --------   | -----:  |
-| /c <任务名(可不填)>     | 	玩家唤醒任务指令(如果设置了任务名称则直接打开任务UI)   |
-| /sh <名称/编号(可不填)> <数量(可不填)>        |   将玩家手持物品保存在TagItems.json   |
-| /ic        |    创建任务    |
-| /del-task <任务名>        |    删除任务    |
+| /c <task name (optional)>     | Player wakes up the task command (if the task name is set, the task UI will be opened directly)   |
+| /sh <name/number (optional)> <quantity (optional)>        |   Save the item held by the player in TagItems.json   |
+| /ic        |    Create task    |
+| /del-task <task name>        |    Delete task    |
 
-##### 如何创建第一个任务
-1. 输入指令 /ic 唤醒创建任务UI
-2. 修改配置文件
+##### How to create the first task
+1. Enter the command /ic to wake up the create task UI
+2. Modify the configuration file
 ```yaml
-# 任务的难度
-任务难度: 1
-# 任务的介绍
-任务介绍: 生存法则： 想致富，先撸树
-# 任务刷新时间 玩家隔x天可再次领取任务
-刷新时间(天): 0
-# 任务类型
-# 破坏: 玩家破坏方块任务
-# 放置: 玩家放置方块任务
-# 收集: 玩家收集物品任务
-# 合成: 玩家合成物品任务
-# 获得: 玩家获得物品任务
-# 吃:   玩家食用物品任务
-# 打水: 玩家使用铁桶任务
-# 点击: 玩家手持物品点击地面任务
-# 自定义: 其他插件的自定义任务
-任务类型: 收集
+# Task difficulty
+Task difficulty: 1
+# Task introduction
+Task introduction: Law of survival: To get rich, you must first chop trees
+# Task refresh time Player can receive the task again after x days
+Refresh time (days): 0
+# Task type
+# Destroy: Player destroys block task
+# Place: Player places block task
+# Collect: Player collects item task
+# Craft: Player crafts item task
+# Obtain: Player obtains item task
+# Eat:   Player eats item task
+# Fetch water: Player uses iron bucket task
+# Click: Player clicks on the ground with an item in hand task
+# Custom: Custom tasks from other plugins
+Task type: Collect
 
-# 如果不为 null 则判断玩家在领取此任务前是否已完成前置任务
-完成此任务前需完成: null
+# If not null, it will be judged whether the player has completed the prerequisite tasks before receiving this task
+Must be completed before this task: null
 
-任务内容:
-  # 任务分支 @tag为后缀 读取TagItem.json文件内的物品(Nbt物品)
+Task content:
+  # Task branch @tag is the suffix Read the items (Nbt items) in the TagItem.json file
   6089@tag: 10
-  # 普通物品 只判断ID:特殊值的物品
+  # Ordinary items only judge the items of ID:special value
   17:1@item: 10
 
-# 玩家第一次完成任务的奖励
-首次完成奖励:
+# Reward for the first time a player completes a task
+First completion reward:
   Items:
-  # 格式必须为 id:特殊值:数量@item 或者 编号@tag一定要记得加引号啊
+  # The format must be id:special value:quantity@item or number@tag. Remember to add quotation marks
   - "264:0:1@item"
-  # 格式必须为 指令:别名 @p代表玩家一定要记得加引号啊
+  # The format must be command:alias @p represents the player. Remember to add quotation marks
   Cmd: []
-  # 金钱
+  # Money
   Money: 100
-  # 任务积分
+  # Task points
   Count: 10
-奖励:
+Reward:
   Items:
   - "264:0:1@item"
   Cmd: []
   Money: 100
-  # 如果积分为0 则这个任务是一次性任务 玩家只能完成一次
+  # If the points are 0, this task is a one-time task and the player can only complete it once
   Count: 10
-# 0全服公告 1: 只给玩家发送
-完成公告类型(0/1): 0
-公告内容: "§l§c[§b任务系统§c]§e恭喜 §a%p §e完成了§d[ %s ]§e任务"
-自定义按键图片:
-  位置: "本地"
-  路径: "textures/items/book_enchanted"
+# 0 server-wide announcement 1: only send to players
+Completion announcement type (0/1): 0
+Announcement content: "§l§c[§bTask System§c]§eCongratulations §a%p §ecompleted the §d[ %s ]§etask"
+Custom button image:
+  Location: "local"
+  Path: "textures/items/book_enchanted"
  ````

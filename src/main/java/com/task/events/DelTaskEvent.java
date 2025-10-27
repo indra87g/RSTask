@@ -4,7 +4,7 @@ package com.task.events;
 import com.task.events.base.TaskEvent;
 import com.task.utils.tasks.TaskFile;
 
-/** 删除任务事件
+/** Delete task event
  * @author SmallasWater*/
 public class DelTaskEvent extends TaskEvent {
 
