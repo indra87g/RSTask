@@ -80,7 +80,7 @@ public class PlayerFile {
     }
 
 
-    //* 初始化
+    //* initialize
 
 
     private void init(){
@@ -102,10 +102,10 @@ public class PlayerFile {
 
     }
 
-    /** 玩家是否有这个任务
-     * @param taskName 任务名称
+    /** Does the player have this task
+     * @param taskName task name
      *
-     * @return 是否拥有
+     * @return whether you have it
      * */
     public boolean issetTask(String taskName){
         for(PlayerTask t:playerTasks){
@@ -116,19 +116,19 @@ public class PlayerFile {
         return false;
     }
 
-    /** 玩家是否有这个任务
-     * @param task 玩家任务类
+    /** Does the player have this task
+     * @param task player task class
      *
-     * @return 是否拥有
+     * @return whether you have it
      * */
     public boolean issetTask(PlayerTask task){
         return issetTask(task.getTaskName());
     }
 
-    /** 玩家是否有这个任务
-     * @param task 任务文件
+    /** Does the player have this task
+     * @param task task file
      *
-     * @return 是否拥有
+     * @return whether you have it
      * */
     public boolean issetTask(TaskFile task){
         return issetTask(task.getTaskName());
@@ -137,16 +137,16 @@ public class PlayerFile {
 
 
     /**
-     * 给玩家增加一个任务
-     * @param taskName 任务名称
+     * Add a task to the player
+     * @param taskName task name
      * */
     public void addTask(String taskName){
         this.addTask(new PlayerTask(taskName));
     }
 
     /**
-     * 给玩家增加一个任务
-     * @param taskName 任务文件
+     * Add a task to the player
+     * @param taskName task file
      * */
     public void addTask(TaskFile taskName){
         this.addTask(new PlayerTask(taskName));
@@ -155,8 +155,8 @@ public class PlayerFile {
 
 
     /**
-     * 给玩家增加一个任务
-     * @param task 玩家任务
+     * Add a task to the player
+     * @param task player task
      * */
     public void addTask(PlayerTask task){
         if(!issetTask(task)){
@@ -176,10 +176,10 @@ public class PlayerFile {
 
 
     /**
-     * 给玩家移除一个任务
-     * @param taskName 任务名称
+     * Remove a task from a player
+     * @param taskName task name
      *
-     * @return 是否移除成功
+     * @return whether the removal was successful
      * */
     public boolean delTask(String taskName){
         if(issetTask(getTaskByName(taskName))){
@@ -196,21 +196,21 @@ public class PlayerFile {
     }
 
 
-    /** 获取玩家任务分支
-     * @param taskName 任务名
-     * @return 获取任务进度*/
+    /** Get the player task branch
+     * @param taskName task name
+     * @return get task progress*/
     public TaskItem[] getTaskItems(String taskName){
         PlayerTaskClass playerTaskClass = getTaskByName(taskName).getTaskClass();
         return playerTaskClass.getValue();
     }
 
 
-    /** 给玩家任务的分支加点
-     * @param taskName 任务名
-     * @param valueName 进度名称
-     * @param value 进度大小
+    /** Add points to the player's task branch
+     * @param taskName task name
+     * @param valueName progress name
+     * @param value progress size
      *
-     * @return 是否加点成功*/
+     * @return whether the addition was successful*/
     public boolean addTaskValue(String taskName,String valueName,int value){
         PlayerTask task = getTaskByName(taskName);
         if(task != null){
@@ -246,9 +246,9 @@ public class PlayerFile {
         return true;
     }
 
-    /** 关闭一个任务
-     * @param taskName 任务名称
-     * @return 是否关闭成功
+    /** Close a task
+     * @param taskName task name
+     * @return whether the closing was successful
      * */
     public boolean closeTask(String taskName){
         if(getTaskByName(taskName) != null) {
@@ -275,12 +275,12 @@ public class PlayerFile {
         return false;
     }
 
-    /** 给玩家任务的分支设置任务点
-     * @param taskName 任务名称
-     * @param valueName 进度名称
-     * @param value 进度大小
+    /** Set task points for the player's task branch
+     * @param taskName task name
+     * @param valueName progress name
+     * @param value progress size
      *
-     * @return 是否设置成功*/
+     * @return whether the setting was successful*/
     public boolean setTaskValue(String taskName,String valueName,int value){
         PlayerTask task = getTaskByName(taskName);
         if(task != null){
@@ -299,12 +299,12 @@ public class PlayerFile {
         return false;
     }
 
-    /** 判断任务分支是否存在于此任务
+    /** Check if the task branch exists in this task
      *
-     * @param task 玩家任务
-     * @param item 任务进度类
+     * @param task player task
+     * @param item task progress class
      *
-     * @return 是否存在*/
+     * @return whether it exists*/
     public boolean canInArrayTaskItem(PlayerTask task, TaskItem item){
         TaskItem[] items = task.getTaskClass().getValue();
         for(TaskItem item1:items){
@@ -316,8 +316,8 @@ public class PlayerFile {
     }
 
 
-    /**  设置玩家任务状态
-     * @param task 玩家任务类
+    /**  Set the player's task status
+     * @param task player task class
      * */
     public void setPlayerTask(PlayerTask task){
         PlayerTask tasks = getTaskByName(task.getTaskName());
@@ -326,14 +326,14 @@ public class PlayerFile {
         }else{
             addTask(task);
             if(!issetTask(task)){
-                Server.getInstance().getLogger().warning("读取玩家任务出现异常");
+                Server.getInstance().getLogger().warning("An exception occurred when reading the player's task");
             }
         }
     }
 
 
 
-    /** 根据任务名获取分支任务 */
+    /** Get the branch task by task name */
     public PlayerTask getTaskByName(String taskName){
         for(PlayerTask task:playerTasks){
             if(task.getTaskName().equals(taskName)){
@@ -375,7 +375,7 @@ public class PlayerFile {
         return false;
     }
 
-    /** 是否能领取 */
+    /** Whether it can be received */
     public boolean canInvite(String taskName){
         TaskFile file = TaskFile.getTask(taskName);
         if(file != null) {
@@ -387,9 +387,9 @@ public class PlayerFile {
             if(isHaveNotInviteTask(taskName)){
                 return false;
             }
-            // 任务上一级
+            // The previous level of the task
             String last = file.getLastTask();
-            //判断玩家是否做过这个
+            //Check if the player has done this
             if (issetTask(taskName)) {
 
                 if (isRunning(taskName)) {
@@ -409,7 +409,7 @@ public class PlayerFile {
                     return true;
                 }
 
-                //计算冷却时间
+                //Calculate cooldown time
             } else {
                 if (last != null && !"null".equals(last)) {
                     return isSuccessed(last);
@@ -423,7 +423,7 @@ public class PlayerFile {
 
 
 
-    /** 是否完成过 */
+    /** Whether it has been completed */
     public boolean isSuccessed(String taskName){
         if(issetTask(taskName)){
             PlayerTask playerTask = getTaskByName(taskName);
@@ -432,7 +432,7 @@ public class PlayerFile {
         return false;
     }
 
-    /** 获取完成次数 */
+    /** Get the number of completions */
     public int getSuccessedCount(String taskName){
         int count = 0;
         if(issetTask(taskName)){
@@ -444,7 +444,7 @@ public class PlayerFile {
 
 
 
-    /** 任务是否冷却结束 */
+    /** Is the task cooldown over */
     public boolean inDay(String taskName){
         PlayerTask task = getTaskByName(taskName);
         TaskFile file = TaskFile.getTask(taskName);
@@ -460,14 +460,14 @@ public class PlayerFile {
     }
 
 
-    /** 任务是否进行中 */
+    /** Is the task in progress */
     public boolean isRunning(String taskName) {
         PlayerTask task = this.getTaskByName(taskName);
         return !isSuccess(taskName) && task != null && task.getTaskClass().getOpen();
     }
 
 
-    /** 获取任务状态 */
+    /** Get the task status */
     public PlayerTaskType getTaskType(TaskFile taskFile){
         if(issetTask(taskFile.getTaskName())){
             if(canInvite(taskFile.getTaskName()) && !isSuccessed(taskFile.getTaskName())){
@@ -506,17 +506,17 @@ public class PlayerFile {
         }
     }
 
-    /** 获取完成过可领取任务 */
+    /** Get the completed and receivable tasks */
     public LinkedList<PlayerTask> getisSuccessedAndCanInvite(){
         return getTasksByType(PlayerTaskType.isSuccess_canInvite);
     }
 
-    /** 获取完成过不可领取任务 */
+    /** Get the completed and non-receivable tasks */
     public LinkedList<PlayerTask> getisSuccessedAndNotInvite(){
         return getTasksByType(PlayerTaskType.isSuccess_noInvite);
     }
 
-    /** 获取可以领取任务 */
+    /** Get the receivable tasks */
     public LinkedList<PlayerTask> getCanInviteTasks(int star){
         LinkedList<PlayerTask> tasks = new LinkedList<>();
         LinkedList<TaskFile> taskFiles = TaskFile.getDifficultyTasks(star);
@@ -529,7 +529,7 @@ public class PlayerFile {
     }
 
 
-    /** 获取不能领取任务 */
+    /** Get the non-receivable tasks */
     public LinkedList<PlayerTask> getNoInviteTasks(int star){
         LinkedList<PlayerTask> tasks = new LinkedList<>();
         LinkedList<TaskFile> taskFiles = TaskFile.getDifficultyTasks(star);
@@ -545,7 +545,7 @@ public class PlayerFile {
     }
 
 
-    /** 获取进行任务（不包括完成与不可领取的） */
+    /** Get the ongoing tasks (excluding completed and non-receivable tasks) */
     public LinkedList<PlayerTask> getInviteTasks(){
         return getTasksByType(PlayerTaskType.Running);
     }
@@ -554,7 +554,7 @@ public class PlayerFile {
         return getTasksByType(PlayerTaskType.Running,level);
     }
 
-    /** 获取已完成(达到要求)任务 */
+    /** Get the completed (meeting the requirements) tasks */
     public LinkedList<PlayerTask> getSuccessTasks(){
         return getTasksByType(PlayerTaskType.Success);
     }
@@ -588,17 +588,17 @@ public class PlayerFile {
     }
 
     public enum PlayerTaskType{
-        /** 是否可以被领取*/
+        /** Can be received*/
         can_Invite,
-        /** 完成*/
+        /** Completed*/
         Success,
-        /** 不能被领取*/
+        /** Cannot be received*/
         No_Invite,
-        /** 进行中*/
+        /** In progress*/
         Running,
-        /** 完成后可以领取*/
+        /** Can be received after completion*/
         isSuccess_canInvite,
-        /** 完成后不能领取*/
+        /** Cannot be received after completion*/
         isSuccess_noInvite,
     }
 
@@ -612,14 +612,14 @@ public class PlayerFile {
         return tasks;
     }
 
-    /** 判断此难度是否解锁(需开启积分验证)
-     1级难度默认解锁 */
+    /** Check if this difficulty is unlocked (requires score verification)
+     Difficulty level 1 is unlocked by default */
     public boolean canLock(int star) {
         return RsTask.countChecking && (getCount() >= DataTool.starNeed(star));
     }
 
 
-    /** 是否第一次领取*/
+    /** Is it the first time to receive*/
     public boolean isFirst(TaskFile file){
         if(!issetTask(file)){
             return true;
@@ -629,7 +629,7 @@ public class PlayerFile {
     }
 
 
-    /** 任务是否完成 */
+    /** Is the task completed */
     public boolean isSuccess(String taskName){
         if(issetTask(taskName)){
             TaskFile file = TaskFile.getTask(taskName);
@@ -639,7 +639,7 @@ public class PlayerFile {
     }
 
 
-    /** 任务是否完成 */
+    /** Is the task completed */
     public boolean isSuccess(TaskFile taskName){
         if(issetTask(taskName.getTaskName())){
             PlayerTaskClass use = getTaskByName(taskName.getTaskName()).getTaskClass();
@@ -658,7 +658,7 @@ public class PlayerFile {
         return false;
     }
 
-    /** 输入玩家 */
+    /** Enter player */
     private boolean TaskItemSuccess(TaskItem item,TaskFile file){
         for(TaskItem item1:file.getTaskItem()){
             if(item.equals(item1)){
@@ -672,14 +672,14 @@ public class PlayerFile {
 
 
 
-    /** 获取玩家所有任务 */
+    /** Get all tasks of the player */
     public LinkedList<PlayerTask> getPlayerTasks() {
         return playerTasks;
     }
 
 
 
-    /** 减少任务分支 */
+    /** Reduce the task branch */
     public boolean delTaskItemByTask(String taskName,TaskItem item){
         PlayerTask task = getTaskByName(taskName);
         if(canInArrayTaskItem(task,item)){
@@ -702,7 +702,7 @@ public class PlayerFile {
         return false;
     }
 
-    /** 添加任务分支 */
+    /** Add task branch */
     public void addTaskItemByTask(String taskName,TaskItem item){
         PlayerTask task = getTaskByName(taskName);
         if(task != null){
@@ -717,7 +717,7 @@ public class PlayerFile {
     }
 
 
-    /** 设置玩家任务分支 */
+    /** Set player task branch */
     public void setTaskValue(String taskName,TaskItem item){
         PlayerTask task =  getTaskByName(taskName);
         PlayerTaskClass playerTaskClass = task.getTaskClass();
@@ -727,18 +727,18 @@ public class PlayerFile {
 //
     }
 
-    /** 获取玩家积分 */
+    /** Get player points */
     public int getCount(){
         return count;
     }
 
-    /** 设置玩家积分 */
+    /** Set player points */
     public void setCount(int value){
         this.count = value;
 //        toSaveConfig(defaultConfig(playerTasks,value));
     }
 
-    /** 玩家完成任务 */
+    /** Player completes the task */
     public static void givePlayerSuccessItems(Player player, String taskName,boolean pass){
         if(!pass){
             PlayerFile file = PlayerFile.getPlayerFile(player.getName());
@@ -753,7 +753,7 @@ public class PlayerFile {
         }
     }
 
-    /** 玩家完成任务 */
+    /** Player completes the task */
     public static void givePlayerSuccessItems(Player player, String taskName){
         givePlayerSuccessItems(player, taskName,false);
     }
@@ -773,7 +773,7 @@ public class PlayerFile {
                             if(((ItemLib) itemClass).hasReduceItem(player)){
                                 ((ItemLib) itemClass).reduceItem(player);
                             }else{
-                                player.sendMessage(RsTask.getTask().getLag("error-task","§d§l[任务系统]§c出现异常!!!"));
+                                player.sendMessage(RsTask.getTask().getLag("error-task","§d§l[Task System]§cAn exception occurred!!!"));
                                 return;
                             }
 
@@ -782,7 +782,7 @@ public class PlayerFile {
                             if (DataTool.getCount(player, itemClass) >= itemClass.getItem().getCount()) {
                                 player.getInventory().removeItem(itemClass.getItem());
                             } else {
-                                player.sendMessage(RsTask.getTask().getLag("error-task", "§d§l[任务系统]§c出现异常!!!"));
+                                player.sendMessage(RsTask.getTask().getLag("error-task", "§d§l[Task System]§cAn exception occurred!!!"));
                                 return;
                             }
                         }

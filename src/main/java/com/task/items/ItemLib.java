@@ -57,7 +57,7 @@ public class ItemLib extends ItemClass implements Cloneable{
     }
 
     /**
-     * 获取名称
+     * get name
      * */
     @Override
     public String toSaveConfig(boolean defaultType){
@@ -65,7 +65,7 @@ public class ItemLib extends ItemClass implements Cloneable{
     }
 
     /**
-     * 判断是否可以减少物品
+     * Check if the item can be reduced
      * */
     public boolean hasReduceItem(Player player){
         return getPlayerAllItemCount(player) >= getCount();

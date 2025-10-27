@@ -42,8 +42,8 @@ public class CreateMenu {
 
 
     /**
-     * 给玩家发送任务主界面GUI
-     * @param player 玩家
+     * Send the main task interface GUI to the player
+     * @param player player
      * */
     public static void sendMenu(Player player){
         LinkedHashMap<Integer,Integer> c = new LinkedHashMap<>();
@@ -55,7 +55,7 @@ public class CreateMenu {
                                 : "");
         int i = 0;
         int b = 0;
-        Map map = ((Map)task.getConfig().get("自定义图片路径"));
+        Map map = ((Map)task.getConfig().get("Custom image path"));
         for (Object o:map.keySet()){
 
             Map map1 = (Map) map.get(o);
@@ -78,12 +78,12 @@ public class CreateMenu {
                 }
             }
             boolean isShow = true;
-            if(map1.containsKey("是否显示")){
-                isShow = Boolean.valueOf(map1.get("是否显示").toString());
+            if(map1.containsKey("show or hide")){
+                isShow = Boolean.valueOf(map1.get("show or hide").toString());
             }
             if(isShow){
-                ElementButton button = new ElementButton(map1.get("名称")+s);
-                ElementButtonImageData imageData = new ElementButtonImageData("网络".equals(map1.get("图片类型").toString())?"url":"path",(String) map1.get("图片路径"));
+                ElementButton button = new ElementButton(map1.get("name")+s);
+                ElementButtonImageData imageData = new ElementButtonImageData("internet".equals(map1.get("image type").toString())?"url":"path",(String) map1.get("image path"));
                 button.addImage(imageData);
                 simple.addButton(button);
                 c.put(b,i);
@@ -99,7 +99,7 @@ public class CreateMenu {
     }
 
     /**
-     * 发送正在进行任务GUI
+     * Send the task GUI in progress
      * */
     public static void sendMenuRunningTaskList(Player player){
         PlayerFile file = PlayerFile.getPlayerFile(player.getName());
@@ -132,7 +132,7 @@ public class CreateMenu {
                                 break;
                             }
                         }
-                        s = RsTask.getTask().getLag("not-invite","§c[不可领取]");
+                        s = RsTask.getTask().getLag("not-invite","§c[Not available]");
                         break;
                     case Success:
                         s = (RsTask.getTask().getLag("success"));
@@ -161,9 +161,9 @@ public class CreateMenu {
     }
 
     /**
-     * 给玩家发送任务列表GUI
-     * @param player 玩家
-     * @param group 分组
+     * Send the task list GUI to the player
+     * @param player player
+     * @param group group
      * */
     public static void sendTaskList(Player player, int group){
         LinkedList<TaskFile> taskFiles = TaskFile.getDifficultyTasks(group);
@@ -177,22 +177,22 @@ public class CreateMenu {
             TaskFile file = RsTask.getTask().getClickTask.get(player);
             if(file != null){
                 FormWindowModal simple = new FormWindowModal(task.getLag("title"),
-                        RsTask.getTask().getLag("giveUpChose","§d§l您确定要放弃了 %s 任务吗?{换行}§c放弃后会丢失当前进度")
-                                .replace("%s",file.getName()).replace("{换行}","\n"),"确定","取消");
+                        RsTask.getTask().getLag("giveUpChose","§d§lAre you sure you want to give up the %s task?{line break}§cYou will lose the current progress after giving up")
+                                .replace("%s",file.getName()).replace("{line break}","\n"),"OK","Cancel");
 
                 send(player,simple, AGAIN);
             }
         }else{
-            player.sendMessage("§c请再尝试一次");
+            player.sendMessage("§cPlease try again");
         }
     }
 
     /**
-     * 将任务进度转换为显示在GUI的内容
-     * @param player 玩家
-     * @param items 任务进度
+     * Convert the task progress into the content displayed on the GUI
+     * @param player player
+     * @param items task progress
      *
-     * @return 显示内容
+     * @return display content
      * */
     public static LinkedList<String> toTaskItemString(TaskItem[] items, Player player){
         LinkedList<String> builder = new LinkedList<>();
@@ -221,11 +221,11 @@ public class CreateMenu {
     }
 
     /**
-     * 将任务进度转换为显示在GUI的内容
-     * @param player 玩家
-     * @param file 任务文件 {@link TaskFile}
+     * Convert the task progress into the content displayed on the GUI
+     * @param player player
+     * @param file task file {@link TaskFile}
      *
-     * @return 显示内容
+     * @return display content
      * */
     public static StringBuilder getTitles(Player player,TaskFile file){
         StringBuilder builder = new StringBuilder();
@@ -236,16 +236,16 @@ public class CreateMenu {
         int timeOut = file1.getTimeOutDay(file.getTaskName());
         int time = file.getLoadDay();
         DayTime dayTime1 = DataTool.getTimeByDay(timeOut);
-        builder.append(RsTask.getTask().getLag("time-out","§e§l到期时间:")).append("§r ").append(time <= 0?"§2无限制":dayTime1.getTime() > 0? "§a"+dayTime1.getTime()+DayTime.STRINGS[dayTime1.getType()]+" §c后失效":"§c已失效").append("\n\n");
+        builder.append(RsTask.getTask().getLag("time-out","§e§lExpiration time:")).append("§r ").append(time <= 0?"§2Unlimited":dayTime1.getTime() > 0? "§a"+dayTime1.getTime()+DayTime.STRINGS[dayTime1.getType()]+" §cInvalid later":"§cExpired").append("\n\n");
         return builder;
     }
 
     /**
-     * 给玩家发送排行榜GUI
-     * @param player 玩家
+     * Send the leaderboard GUI to the player
+     * @param player player
      * */
     public static void sendRankMenu(Player player){
-        FormWindowSimple simple = new FormWindowSimple("任务系统--排行榜","");
+        FormWindowSimple simple = new FormWindowSimple("Task System--Leaderboard","");
         StringBuilder builder = new StringBuilder();
         LinkedHashMap<String,Integer> map = new LinkedHashMap<>();
         PlayerFile file;
@@ -265,7 +265,7 @@ public class CreateMenu {
             }
             i++;
         }
-        simple.setContent("任务积分排行榜: \n§b当前您的排名: §7No.§a"+in+"\n\n-------------------\n"+builder.toString());
+        simple.setContent("Task points leaderboard: \n§bYour current ranking: §7No.§a"+in+"\n\n-------------------\n"+builder.toString());
         int lead = 0xcc1006;
         player.showFormWindow(simple, lead);
 
@@ -274,9 +274,9 @@ public class CreateMenu {
 
 
     /**
-     * 给玩家发送任务界面GUI
-     * @param player 玩家
-     * @param file 任务文件
+     * Send the task interface GUI to the player
+     * @param player player
+     * @param file task file
      * */
     public static void sendTaskMenu(Player player, TaskFile file){
 
@@ -328,11 +328,11 @@ public class CreateMenu {
             simple.addButton(getCancelButton());
         }
 
-        ElementButton giveUp = new ElementButton(RsTask.getTask().getLag("giveUpTask","§c放弃任务"));
+        ElementButton giveUp = new ElementButton(RsTask.getTask().getLag("giveUpTask","§cGive up the task"));
         giveUp.addImage(new ElementButtonImageData("path","textures/ui/book_trash_default"));
         simple.addButton(giveUp);
         if(RsTask.canBack()){
-            ElementButton button2 = new ElementButton(RsTask.getTask().getLag("back","返回"));
+            ElementButton button2 = new ElementButton(RsTask.getTask().getLag("back","Back"));
             ElementButtonImageData imageData2 = new ElementButtonImageData("path","textures/ui/refresh_light");
             button2.addImage(imageData2);
             simple.addButton(button2);
@@ -342,30 +342,30 @@ public class CreateMenu {
     }
 
     /**
-     * 给玩家发送创建任务GUI
-     * @param player 玩家
+     * Send the create task GUI to the player
+     * @param player player
      * */
     public static void sendCreateTaskMenu(Player player){
-        FormWindowCustom custom = new FormWindowCustom("创建任务");
-        custom.addElement(new ElementLabel("任务创建UI 请根据提示填写(此UI仅提供简易的任务创建，若进一步更改请修改配置)"));
-        custom.addElement(new ElementInput("请输入任务名称","例如: 任务①--破坏收集橡木","任务①--破坏收集橡木"));
+        FormWindowCustom custom = new FormWindowCustom("Create task");
+        custom.addElement(new ElementLabel("Task creation UI Please fill in according to the prompts (this UI only provides a simple task creation, if you want to make further changes, please modify the configuration)"));
+        custom.addElement(new ElementInput("Please enter the task name","e.g. Task ①--Destroy and collect oak wood","Task ①--Destroy and collect oak wood"));
         LinkedList<String> list = new LinkedList<>();
         for(TaskFile.TaskType type: TaskFile.TaskType.values()){
             list.add(type.getTaskType());
         }
-        custom.addElement(new ElementDropdown("请选择任务类型",list,3));
+        custom.addElement(new ElementDropdown("Please select the task type",list,3));
         LinkedList<String> list1 = new LinkedList<>();
-        Map map = ((Map)task.getConfig().get("自定义图片路径"));
+        Map map = ((Map)task.getConfig().get("Custom image path"));
         Map map1;
         for(int i = 0;i<map.size();i++){
              map1 = (Map) map.get(i+"");
-             list1.add(map1.get("名称").toString());
+             list1.add(map1.get("name").toString());
         }
-        custom.addElement(new ElementDropdown("请选择任务分组",list1));
-        custom.addElement(new ElementInput("请输入任务难度(整数)","例如: 1","1"));
-        custom.addElement(new ElementInput("请输入任务介绍","例如: 收集10个橡木","收集10个橡木"));
-        custom.addElement(new ElementInput("请输入任务完成条件(&区分多个元素) @item为物品(17:0:10@item) @lib 为物品词典(木块:10@lib) @tag为nbt物品(id:10@tag) (自定义任务请输 内容:数量)","例如: 17:0:10@item 或 id:10@tag(收集任务)","17:0:10@item"));
-        custom.addElement(new ElementInput("请输入任务奖励(&区分多个元素)@item 为奖励物品 @tag奖励TagItem.json里的物品 @lib 为奖励物品词典内物品(仅第一个)@money奖励金钱 @Cmd奖励指令(%p代表玩家)","例如: 366:0:1@item 或 id:1@tag","366:0:1@item&100@money"));
+        custom.addElement(new ElementDropdown("Please select a task group",list1));
+        custom.addElement(new ElementInput("Please enter the task difficulty (integer)","e.g. 1","1"));
+        custom.addElement(new ElementInput("Please enter the task introduction","e.g. Collect 10 oak wood","Collect 10 oak wood"));
+        custom.addElement(new ElementInput("Please enter the task completion conditions (& distinguish multiple elements) @item is the item (17:0:10@item) @lib is the item dictionary (wood:10@lib) @tag is the nbt item (id:10@tag) (for custom tasks, please enter content:quantity)","e.g. 17:0:10@item or id:10@tag (collection task)","17:0:10@item"));
+        custom.addElement(new ElementInput("Please enter the task rewards (& distinguish multiple elements) @item is the reward item @tag rewards the item in TagItem.json @lib rewards the item in the item dictionary (only the first one) @money rewards money @Cmd rewards the command (%p represents the player)","e.g. 366:0:1@item or id:1@tag","366:0:1@item&100@money"));
         send(player,custom, CREATE);
     }
 

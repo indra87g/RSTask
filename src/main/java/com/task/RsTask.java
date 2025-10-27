@@ -95,7 +95,7 @@ public class RsTask extends PluginBase{
     @Override
     public void onEnable() {
         task = this;
-        this.getLogger().info("[RSTask] 启动任务系统插件");
+        this.getLogger().info("[RSTask] Starting task system plugin");
 
         if(Server.getInstance().getPluginManager().getPlugin("AutoUpData") != null){
             if(AutoData.defaultUpData(this,getFile(),"SmallasWater","RSTask")){
@@ -118,7 +118,7 @@ public class RsTask extends PluginBase{
             executor.execute(new AutoSaveFileTask(this));
         }
         Server.getInstance().getScheduler().scheduleDelayedTask(this, () -> {
-            RsTask.getTask().getLogger().info("本插件为免费开源插件");
+            RsTask.getTask().getLogger().info("This plugin is a free and open source plugin");
             RsTask.getTask().getLogger().info("GitHub: https://github.com/SmallasWater/RSTask");
         },20);
 
@@ -128,21 +128,21 @@ public class RsTask extends PluginBase{
 
     private void init(){
 
-        count = getConfig().getInt("排行榜显示玩家数量",10);
+        count = getConfig().getInt("Number of players displayed on the leaderboard",10);
 
-        countChecking = getConfig().getBoolean("是否开启积分验证");
+        countChecking = getConfig().getBoolean("Enable score verification");
 
-        showCount = getConfig().getBoolean("主页面是否显示数量",true);
+        showCount = getConfig().getBoolean("Display quantity on the main page",true);
 
-        showLoading = getConfig().getBoolean("是否在底部显示任务进度");
+        showLoading = getConfig().getBoolean("Display task progress at the bottom");
 
-        showBack = getConfig().getBoolean("是否增加任务界面返回按钮");
+        showBack = getConfig().getBoolean("Add a return button to the task interface");
 
-        runC = getConfig().getBoolean("是否允许玩家执行c指令",true);
+        runC = getConfig().getBoolean("Allow players to execute c commands",true);
 
-        canGiveBook = getConfig().getBoolean("领取任务是否给予任务书",true);
+        canGiveBook = getConfig().getBoolean("Give a task book when receiving a task",true);
 
-        canSuccess = getConfig().getBoolean("完成任务是否直接领取奖励",true);
+        canSuccess = getConfig().getBoolean("Receive rewards directly after completing a task",true);
 
         playerFiles = new LinkedHashMap<>();
 //        for(String playerName:getPlayerNames()){
@@ -179,10 +179,10 @@ public class RsTask extends PluginBase{
     }
 
     private boolean canRunCList(){
-        return getConfig().getBoolean("是否允许玩家执行c-list指令",true);
+        return getConfig().getBoolean("Allow players to execute the c-list command",true);
     }
 
-    /** 判断编号是否存在*/
+    /**Check if the number exists*/
     public boolean canExistsNumber(String number){
         Config config = getTagItem();
         return (config.get(number) != null);
@@ -195,7 +195,7 @@ public class RsTask extends PluginBase{
         return tagItem;
     }
 
-    /** 根据编号获取ItemClass */
+    /** Get ItemClass by number*/
     public ItemClass getTagItemsConfig(String number){
         if(canExistsNumber(number)){
             Config config = getTagItem();
@@ -208,7 +208,7 @@ public class RsTask extends PluginBase{
 
 
 
-    /** 判断是否存在*/
+    /**Check if it exists*/
     public boolean canExisteItemClass(ItemClass itemClass){
         Config config = getTagItem();
         LinkedHashMap<String,Object> map = (LinkedHashMap<String, Object>) config.getAll();
@@ -254,7 +254,7 @@ public class RsTask extends PluginBase{
         return count;
     }
 
-    /** 获取全部玩家*/
+    /**Get all players*/
     public LinkedList<String> getPlayerNames(){
         LinkedList<String> linkedList = new LinkedList<>();
         LinkedList<String> playerNames = new LinkedList<>();
@@ -294,7 +294,7 @@ public class RsTask extends PluginBase{
     }
 
 
-    /** 获取保存NbtItem的编号 */
+    /**Get the number to save the NbtItem*/
     public void saveTagItemsConfig(ItemClass itemClass, String tag){
         Config config = getTagItem();
         config.set(tag,itemClass.toString());
@@ -312,58 +312,58 @@ public class RsTask extends PluginBase{
         return lag.getString(value,defaultString);
     }
 
-    /** 获取金币名称*/
+    /**Get coin name*/
     public String getCoinName(){
-        return getConfig().getString("金币名称","§e金币§r");
+        return getConfig().getString("Coin name","§eGold coin§r");
     }
 
-    /** 获取积分名称*/
+    /**Get score name*/
     public String getFName(){
-        return getConfig().getString("积分名称","§b积分§r");
+        return getConfig().getString("Score name","§bPoints§r");
     }
 
-    /** 获取积分名称*/
+    /**Get score name*/
     public boolean canShowLodding(){
         return showCount;
     }
 
 
 
-    /** 判断是否开启世界独立任务
-     * @deprecated 无
+    /**Check if the world independent task is enabled
+     * @deprecated None
      * */
 
     public boolean isWorldAloneTask(){
-        return getConfig().getBoolean("是否开启世界独立任务",false);
+        return getConfig().getBoolean("Enable world independent tasks",false);
     }
 
-    /** 如果开启，则初始化文件夹
+    /**If it is enabled, initialize the folder
      * @deprecated */
     public void initWorlds(){
         for(Level level:Server.getInstance().getLevels().values()){
             if(!new File(this.getDataFolder()+"/Worlds").exists()){
                 if(new File(this.getDataFolder()+"/Worlds").mkdir()){
-                    this.getLogger().info("Worlds文件夹创建成功");
+                    this.getLogger().info("Worlds folder created successfully");
                 }else{
-                    this.getLogger().info("Worlds文件夹创建失败");
+                    this.getLogger().info("Failed to create Worlds folder");
                 }
             }
             if(!new File(this.getDataFolder()+"/Worlds/"+level.getFolderName()).exists()){
                 if(new File(this.getDataFolder()+"/Worlds/"+level.getFolderName()).mkdir()){
-                    this.getLogger().info("Worlds/"+level.getFolderName()+"文件夹创建成功");
+                    this.getLogger().info("Worlds/"+level.getFolderName()+" folder created successfully");
                 }else{
-                    this.getLogger().info("Worlds/"+level.getFolderName()+"文件夹创建失败");
+                    this.getLogger().info("Worlds/"+level.getFolderName()+" folder creation failed");
                 }
             }
             for(String i: defaultFirstName){
                 File file = new File(this.getDataFolder()+"/Worlds/"+level.getFolderName()+"/Players/"+i);
                 if(!file.exists()){
                     if(!file.mkdirs()) {
-                        Log.error("玩家文件初始化失败");
+                        Log.error("Player file initialization failed");
                     }
                 }
             }
-            this.getLogger().info("Worlds/"+level.getFolderName()+"/Players/文件夹创建成功");
+            this.getLogger().info("Worlds/"+level.getFolderName()+"/Players/ folder created successfully");
         }
     }
 
@@ -408,7 +408,7 @@ public class RsTask extends PluginBase{
 
 
     /**
-     * 获取任务小数进度 百分比
+     *Get task progress percentage
      */
     public double getTaskLoading(String taskName,String player){
         PlayerFile playerFiles = PlayerFile.getPlayerFile(player);
@@ -438,7 +438,7 @@ public class RsTask extends PluginBase{
 
         return 0.0D;
     }
-    /** 是否开启积分限制 */
+    /**Enable score limit*/
     public static boolean canOpen(){
         return countChecking;
     }
@@ -448,7 +448,7 @@ public class RsTask extends PluginBase{
     }
 
 
-    /** 是否显示返回按钮 */
+    /**Show back button*/
     public static boolean canBack(){
         return showBack;
     }
@@ -467,7 +467,7 @@ public class RsTask extends PluginBase{
         File taskFiles = new File(this.getDataFolder() + "/Tasks");
         if (!taskFiles.exists()) {
             if (!taskFiles.mkdirs()) {
-                Log.error("创建Tasks文件夹失败");
+                Log.error("Failed to create Tasks folder");
             }
         }
         File fileE = new File(RsTask.getTask().getDataFolder() + "/Tasks");
@@ -486,7 +486,7 @@ public class RsTask extends PluginBase{
             File file = new File(this.getDataFolder() + "/Players/" + i);
             if (!file.exists()) {
                 if (!file.mkdirs()) {
-                    Log.error("玩家文件初始化失败");
+                    Log.error("Player file initialization failed");
                 }
             }
         }
@@ -504,10 +504,10 @@ public class RsTask extends PluginBase{
         lag = new Config(this.getDataFolder()+"/language.properties",Config.PROPERTIES);
         chunkLanguageVersion();
         if(canUseEconomyAPI()){
-            getLogger().info("正在检查经济系统....");
+            getLogger().info("Checking the economic system....");
             loadEconomy();
             if(loadMoney.getMoney() == -1){
-                getLogger().info("未检测到经济核心");
+                getLogger().info("No economic core detected");
             }else{
                 loadEconomy = true;
             }
@@ -519,14 +519,14 @@ public class RsTask extends PluginBase{
         String v1 = lag.get("version","1.0.0");
         int ver = DataTool.compareVersion(CONFIG_VERSION,v1);
         if(ver == 1 || ver == -1) {
-            this.getLogger().info("检测到新版本 语言文件 正在进行更新...");
+            this.getLogger().info("A new version of the language file is detected and is being updated...");
             File file = new File(this.getDataFolder() + "/language.properties");
             if (file.delete()) {
                 this.saveResource("language.properties",false);
                 lag = new Config(this.getDataFolder()+"/language.properties",Config.PROPERTIES);
-                this.getLogger().info("配置文件更新完毕 当前语言文件版本: " + CONFIG_VERSION);
+                this.getLogger().info("The configuration file has been updated. Current language file version: " + CONFIG_VERSION);
             } else {
-                this.getLogger().warning("配置文件删除失败 请手动删除");
+                this.getLogger().warning("Failed to delete the configuration file. Please delete it manually");
             }
         }
 
@@ -540,14 +540,14 @@ public class RsTask extends PluginBase{
             String v1 = getConfig().get("version","1.0.0");
             int ver = DataTool.compareVersion(CONFIG_VERSION,v1);
             if(ver == 1 || ver == -1){
-                this.getLogger().info("检测到新版本 配置文件 正在进行更新...");
+                this.getLogger().info("A new version of the configuration file is detected and is being updated...");
                 File file = new File(this.getDataFolder()+"/config.yml");
                 if(file.delete()){
                     this.saveDefaultConfig();
                     this.reloadConfig();
-                    this.getLogger().info("配置文件更新完毕 当前配置版本: "+CONFIG_VERSION);
+                    this.getLogger().info("The configuration file has been updated. Current configuration version: "+CONFIG_VERSION);
                 }else{
-                    this.getLogger().warning("配置文件删除失败 请手动删除");
+                    this.getLogger().warning("Failed to delete the configuration file. Please delete it manually");
                 }
             }
 
@@ -556,7 +556,7 @@ public class RsTask extends PluginBase{
     }
 
     public int getGroupSize(){
-        Map map = (Map) RsTask.getTask().getConfig().get("自定义图片路径");
+        Map map = (Map) RsTask.getTask().getConfig().get("Custom image path");
         return map.size();
     }
 
@@ -570,21 +570,21 @@ public class RsTask extends PluginBase{
 
     private void loadEconomy(){
         loadMoney = new LoadMoney();
-        String economy = getConfig().getString("使用经济核心","default");
+        String economy = getConfig().getString("Use economic core","default");
         if(loadMoney.getMoney() != -1) {
             if ("default".equalsIgnoreCase(economy)) {
-                getLogger().info("任务系统 经济核心已启用:" + TextFormat.GREEN + " 自动");
+                getLogger().info("Task system economic core has been enabled:" + TextFormat.GREEN + " Auto");
             }
             if ("money".equalsIgnoreCase(economy)) {
                 loadMoney.setMoney(LoadMoney.MONEY);
-                getLogger().info("任务系统 经济核心已启用:" + TextFormat.GREEN + " Money");
+                getLogger().info("Task system economic core has been enabled:" + TextFormat.GREEN + " Money");
             }
             if ("playerpoint".equalsIgnoreCase(economy)) {
                 loadMoney.setMoney(LoadMoney.PLAYER_POINT);
-                getLogger().info("任务系统 经济核心已启用:" + TextFormat.GREEN + " PlayerPoints");
+                getLogger().info("Task system economic core has been enabled:" + TextFormat.GREEN + " PlayerPoints");
             } else {
                 loadMoney.setMoney(LoadMoney.ECONOMY_API);
-                getLogger().info("任务系统 经济核心已启用:" + TextFormat.GREEN + " EconomyAPI");
+                getLogger().info("Task system economic core has been enabled:" + TextFormat.GREEN + " EconomyAPI");
             }
         }
 

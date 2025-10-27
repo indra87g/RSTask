@@ -10,7 +10,7 @@ public class CommandClass {
     private String sendMessage;
 
     public CommandClass(String cmd){
-        this(cmd,"奖励指令");
+        this(cmd,"Reward command");
     }
 
     public CommandClass(String cmd, String sendMessage){
@@ -19,24 +19,24 @@ public class CommandClass {
     }
 
     /**
-     * 获取指令
-     * @return 指令*/
+     * Get command
+     * @return command*/
     public String getCmd() {
         return cmd;
     }
 
     /**
-     * 获取显示信息
-     * @return 指令*/
+     * Get display information
+     * @return command*/
     public String getSendMessage() {
         return sendMessage;
     }
 
     /**
-     * 将命令字符串转换为 命令奖励类
+     * Convert the command string to the command reward class
      *
-    * @param defaultCmd GUI传入的字符串
-     * @return command奖励{@link CommandClass}
+    * @param defaultCmd The string passed in by the GUI
+     * @return command reward{@link CommandClass}
     * */
     public static CommandClass toCommandClass(String defaultCmd){
         if(defaultCmd == null) {

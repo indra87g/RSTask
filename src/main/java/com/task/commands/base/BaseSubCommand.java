@@ -5,7 +5,7 @@ import cn.nukkit.command.data.CommandParameter;
 
 
 /**
- * 指令工具类
+ * Command utility class
  * @author SmallasWater
  *
  */
@@ -28,20 +28,20 @@ abstract public class BaseSubCommand {
 
 
     /**
-     * 获取名称
+     * Get name
      * @return string
      */
     public String getName(){
         return name;
     }
     /**
-     * 获取别名
+     * Get alias
      * @return string[]
      */
     public abstract String[] getAliases();
 
     /**
-     * 命令响应
+     * Command response
      * @param sender the sender      - CommandSender
      * @param args   The arrugements      - String[]
      * @param label  label..
@@ -52,8 +52,8 @@ abstract public class BaseSubCommand {
 
 
     /**
-     * 指令参数.
-     * @return  提示参数
+     * Command parameters.
+     * @return  Prompt parameters
      * */
     abstract public CommandParameter[] getParameters();
 

@@ -9,12 +9,12 @@ import com.task.form.CreateMenu;
 import com.task.utils.tasks.TaskFile;
 
 /**
- * 玩家打开任务主指令
+ * Player opens the main task command
  * @author SmallasWater
  */
 public class OpenTaskCommand extends BaseCommand {
     public OpenTaskCommand(String name) {
-        super(name, "唤醒任务界面");
+        super(name, "Wake up the task interface");
     }
 
     @Override

@@ -14,1941 +14,1941 @@ import java.util.Map;
  */
 public enum ItemIDSunName {
     /**
-     * 石头
+     * Stone
      */
-    STONE("石头", 1, 0, "textures/blocks/stone.png"),
+    STONE("Stone", 1, 0, "textures/blocks/stone.png"),
     /**
-     * 花岗岩
+     * Granite
      */
-    STONE_GRANITE("花岗岩", 1, 1, "textures/blocks/stone_granite.png"),
+    STONE_GRANITE("Granite", 1, 1, "textures/blocks/stone_granite.png"),
     /**
-     * 磨制花岗岩
+     * Polished Granite
      */
-    STONE_GRANITE_SMOOTH("磨制花岗岩", 1, 2, "textures/blocks/stone_granite_smooth.png"),
+    STONE_GRANITE_SMOOTH("Polished Granite", 1, 2, "textures/blocks/stone_granite_smooth.png"),
     /**
-     * 闪长岩
+     * Diorite
      */
-    STONE_DIORITE("闪长岩", 1, 3, "textures/blocks/stone_diorite.png"),
+    STONE_DIORITE("Diorite", 1, 3, "textures/blocks/stone_diorite.png"),
     /**
-     * 磨制闪长岩
+     * Polished Diorite
      */
-    STONE_DIORITE_SMOOTH("磨制闪长岩", 1, 4, "textures/blocks/stone_diorite_smooth.png"),
+    STONE_DIORITE_SMOOTH("Polished Diorite", 1, 4, "textures/blocks/stone_diorite_smooth.png"),
     /**
-     * 安山岩
+     * Andesite
      */
-    STONE_ANDESITE("安山岩", 1, 5, "textures/blocks/stone_andesite.png"),
+    STONE_ANDESITE("Andesite", 1, 5, "textures/blocks/stone_andesite.png"),
     /**
-     * 磨制安山岩
+     * Polished Andesite
      */
-    STONE_ANDESITE_SMOOTH("磨制安山岩", 1, 6, "textures/blocks/stone_andesite_smooth.png"),
+    STONE_ANDESITE_SMOOTH("Polished Andesite", 1, 6, "textures/blocks/stone_andesite_smooth.png"),
     /**
-     * 草方块
+     * Grass Block
      */
-    GRASS("草方块", 2, 0, "textures/blocks/grass_side_carried.png"),
+    GRASS("Grass Block", 2, 0, "textures/blocks/grass_side_carried.png"),
     /**
-     * 泥土
+     * Dirt
      */
-    DIRT("泥土", 3, 0, "textures/blocks/dirt.png"),
+    DIRT("Dirt", 3, 0, "textures/blocks/dirt.png"),
     /**
-     * 圆石
+     * Cobblestone
      */
-    COBBLESTONE("圆石", 4, 0, "textures/blocks/cobblestone.png"),
+    COBBLESTONE("Cobblestone", 4, 0, "textures/blocks/cobblestone.png"),
     /**
-     * 橡树木板
+     * Oak Wood Planks
      */
-    PLANKS("橡树木板", 5, 0, "textures/blocks/planks_oak.png"),
+    PLANKS("Oak Wood Planks", 5, 0, "textures/blocks/planks_oak.png"),
     /**
-     * 云杉木板
+     * Spruce Wood Planks
      */
-    PLANKS_SPRUCE("云杉木板", 5, 1, "textures/blocks/planks_spruce.png"),
+    PLANKS_SPRUCE("Spruce Wood Planks", 5, 1, "textures/blocks/planks_spruce.png"),
     /**
-     * 桦木板
+     * Birch Wood Planks
      */
-    PLANKS_BIRCH("桦木板", 5, 2, "textures/blocks/planks_birch.png"),
+    PLANKS_BIRCH("Birch Wood Planks", 5, 2, "textures/blocks/planks_birch.png"),
     /**
-     * 丛林树木板
+     * Jungle Wood Planks
      */
-    PLANKS_JUNGLE("丛林树木板", 5, 3, "textures/blocks/planks_jungle.png"),
+    PLANKS_JUNGLE("Jungle Wood Planks", 5, 3, "textures/blocks/planks_jungle.png"),
     /**
-     * 金合欢木板
+     * Acacia Wood Planks
      */
-    PLANKS_ACACIA("金合欢木板", 5, 4, "textures/blocks/planks_acacia.png"),
+    PLANKS_ACACIA("Acacia Wood Planks", 5, 4, "textures/blocks/planks_acacia.png"),
     /**
-     * 深色橡木木板
+     * Dark Oak Wood Planks
      */
-    PLANKS_BIG_OAK("深色橡木木板", 5, 5, "textures/blocks/planks_big_oak.png"),
+    PLANKS_BIG_OAK("Dark Oak Wood Planks", 5, 5, "textures/blocks/planks_big_oak.png"),
     /**
-     * 橡树苗
+     * Oak Sapling
      */
-    SAPLING("橡树苗", 6, 0, "textures/blocks/sapling_oak.png"),
+    SAPLING("Oak Sapling", 6, 0, "textures/blocks/sapling_oak.png"),
     /**
-     * 云杉树苗
+     * Spruce Sapling
      */
-    SAPLING_SPRUCE("云杉树苗", 6, 1, "textures/blocks/sapling_spruce.png"),
+    SAPLING_SPRUCE("Spruce Sapling", 6, 1, "textures/blocks/sapling_spruce.png"),
     /**
-     * 桦树苗
+     * Birch Sapling
      */
-    SAPLING_BIRCH("桦树苗", 6, 2, "textures/blocks/sapling_birch.png"),
+    SAPLING_BIRCH("Birch Sapling", 6, 2, "textures/blocks/sapling_birch.png"),
     /**
-     * 丛林树苗
+     * Jungle Sapling
      */
-    SAPLING_JUNGLE("丛林树苗", 6, 3, "textures/blocks/sapling_jungle.png"),
+    SAPLING_JUNGLE("Jungle Sapling", 6, 3, "textures/blocks/sapling_jungle.png"),
     /**
-     * 金合欢树苗
+     * Acacia Sapling
      */
-    SAPLING_ACACIA("金合欢树苗", 6, 4, "textures/blocks/sapling_acacia.png"),
+    SAPLING_ACACIA("Acacia Sapling", 6, 4, "textures/blocks/sapling_acacia.png"),
     /**
-     * 深色橡树苗
+     * Dark Oak Sapling
      */
-    SAPLING_ROOFED_OAK("深色橡树苗", 6, 5, "textures/blocks/sapling_roofed_oak.png"),
+    SAPLING_ROOFED_OAK("Dark Oak Sapling", 6, 5, "textures/blocks/sapling_roofed_oak.png"),
     /**
-     * 基岩
+     * Bedrock
      */
-    BEDROCK("基岩", 7, 0, "textures/blocks/bedrock.png"),
+    BEDROCK("Bedrock", 7, 0, "textures/blocks/bedrock.png"),
     /**
-     * 流动的水
+     * Flowing Water
      */
-    FLOWING_WATER("流动的水", 8, 0, "textures/blocks/water_placeholder.png"),
+    FLOWING_WATER("Flowing Water", 8, 0, "textures/blocks/water_placeholder.png"),
     /**
-     * 水
+     * Water
      */
-    WATER("水", 9, 0, "textures/blocks/water_placeholder.png"),
+    WATER("Water", 9, 0, "textures/blocks/water_placeholder.png"),
     /**
-     * 流动的岩浆
+     * Flowing Lava
      */
-    FLOWING_LAVA("流动的岩浆", 10, 0, "textures/blocks/lava_placeholder.png"),
+    FLOWING_LAVA("Flowing Lava", 10, 0, "textures/blocks/lava_placeholder.png"),
     /**
-     * 岩浆
+     * Lava
      */
-    LAVA("岩浆", 11, 0, "textures/blocks/lava_placeholder.png"),
+    LAVA("Lava", 11, 0, "textures/blocks/lava_placeholder.png"),
     /**
-     * 沙子
+     * Sand
      */
-    SAND("沙子", 12, 0, "textures/blocks/sand.png"),
+    SAND("Sand", 12, 0, "textures/blocks/sand.png"),
     /**
-     * 红沙
+     * Red Sand
      */
-    RED_SAND("红沙", 12, 1, "textures/blocks/red_sand.png"),
+    RED_SAND("Red Sand", 12, 1, "textures/blocks/red_sand.png"),
     /**
-     * 砾石
+     * Gravel
      */
-    GRAVEL("砾石", 13, 0, "textures/blocks/gravel.png"),
+    GRAVEL("Gravel", 13, 0, "textures/blocks/gravel.png"),
     /**
-     * 金矿石
+     * Gold Ore
      */
-    GOLD_ORE("金矿石", 14, 0, "textures/blocks/gold_ore.png"),
+    GOLD_ORE("Gold Ore", 14, 0, "textures/blocks/gold_ore.png"),
     /**
-     * 铁矿石
+     * Iron Ore
      */
-    IRON_ORE("铁矿石", 15, 0, "textures/blocks/iron_ore.png"),
+    IRON_ORE("Iron Ore", 15, 0, "textures/blocks/iron_ore.png"),
     /**
-     * 煤矿石
+     * Coal Ore
      */
-    COAL_ORE("煤矿石", 16, 0, "textures/blocks/coal_ore.png"),
+    COAL_ORE("Coal Ore", 16, 0, "textures/blocks/coal_ore.png"),
     /**
-     * 橡木
+     * Oak Wood
      */
-    LOG("橡木", 17, 0, "textures/blocks/log_oak.png"),
+    LOG("Oak Wood", 17, 0, "textures/blocks/log_oak.png"),
     /**
-     * 云杉木
+     * Spruce Wood
      */
-    LOG_SPRUCE("云杉木", 17, 1, "textures/blocks/log_spruce.png"),
+    LOG_SPRUCE("Spruce Wood", 17, 1, "textures/blocks/log_spruce.png"),
     /**
-     * 桦木
+     * Birch Wood
      */
-    LOG_BIRCH("桦木", 17, 2, "textures/blocks/log_birch.png"),
+    LOG_BIRCH("Birch Wood", 17, 2, "textures/blocks/log_birch.png"),
     /**
-     * 丛林木
+     * Jungle Wood
      */
-    LOG_JUNGLE("丛林木", 17, 3, "textures/blocks/log_jungle.png"),
+    LOG_JUNGLE("Jungle Wood", 17, 3, "textures/blocks/log_jungle.png"),
     /**
-     * 橡树叶
+     * Oak Leaves
      */
-    LEAVES("橡树叶", 18, 0, "textures/blocks/leaves_oak_carried.tga"),
+    LEAVES("Oak Leaves", 18, 0, "textures/blocks/leaves_oak_carried.tga"),
     /**
-     * 云杉叶
+     * Spruce Leaves
      */
-    LEAVES_SPRUCE_CARRIED("云杉叶", 18, 1, "textures/blocks/leaves_spruce_carried.tga"),
+    LEAVES_SPRUCE_CARRIED("Spruce Leaves", 18, 1, "textures/blocks/leaves_spruce_carried.tga"),
     /**
-     * 桦树叶
+     * Birch Leaves
      */
-    LEAVES_BIRCH_CARRIED("桦树叶", 18, 2, "textures/blocks/leaves_birch_carried.tga"),
+    LEAVES_BIRCH_CARRIED("Birch Leaves", 18, 2, "textures/blocks/leaves_birch_carried.tga"),
     /**
-     * 丛林树叶
+     * Jungle Leaves
      */
-    LEAVES_JUNGLE_CARRIED("丛林树叶", 18, 3, "textures/blocks/leaves_jungle_carried.tga"),
+    LEAVES_JUNGLE_CARRIED("Jungle Leaves", 18, 3, "textures/blocks/leaves_jungle_carried.tga"),
     /**
-     * 干海绵
+     * Dry Sponge
      */
-    SPONGE("干海绵", 19, 0, "textures/blocks/sponge.png"),
+    SPONGE("Dry Sponge", 19, 0, "textures/blocks/sponge.png"),
     /**
-     * 湿海绵
+     * Wet Sponge
      */
-    SPONGE_WET("湿海绵", 19, 1, "textures/blocks/sponge_wet.png"),
+    SPONGE_WET("Wet Sponge", 19, 1, "textures/blocks/sponge_wet.png"),
     /**
-     * 玻璃
+     * Glass
      */
-    GLASS("玻璃", 20, 0, "textures/blocks/glass.png"),
+    GLASS("Glass", 20, 0, "textures/blocks/glass.png"),
     /**
-     * 青金石矿
+     * Lapis Lazuli Ore
      */
-    LAPIS_ORE("青金石矿", 21, 0, "textures/blocks/lapis_ore.png"),
+    LAPIS_ORE("Lapis Lazuli Ore", 21, 0, "textures/blocks/lapis_ore.png"),
     /**
-     * 青金石块
+     * Lapis Lazuli Block
      */
-    LAPIS_BLOCK("青金石块", 22, 0, "textures/blocks/lapis_block.png"),
+    LAPIS_BLOCK("Lapis Lazuli Block", 22, 0, "textures/blocks/lapis_block.png"),
     /**
-     * 发射器
+     * Dispenser
      */
-    DISPENSER("发射器", 23, 0, "textures/blocks/dispenser_front_horizontal.png"),
+    DISPENSER("Dispenser", 23, 0, "textures/blocks/dispenser_front_horizontal.png"),
     /**
-     * 沙石
+     * Sandstone
      */
-    SANDSTONE("沙石", 24, 0, "textures/blocks/sandstone_normal.png"),
+    SANDSTONE("Sandstone", 24, 0, "textures/blocks/sandstone_normal.png"),
     /**
-     * 錾制沙石
+     * Chiseled Sandstone
      */
-    SANDSTONE_CARVED("錾制沙石", 24, 1, "textures/blocks/sandstone_carved.png"),
+    SANDSTONE_CARVED("Chiseled Sandstone", 24, 1, "textures/blocks/sandstone_carved.png"),
     /**
-     * 光滑沙石
+     * Smooth Sandstone
      */
-    SANDSTONE_SMOOTH("光滑沙石", 24, 2, "textures/blocks/sandstone_smooth.png"),
+    SANDSTONE_SMOOTH("Smooth Sandstone", 24, 2, "textures/blocks/sandstone_smooth.png"),
     /**
-     * 音符盒
+     * Note Block
      */
-    NOTEBLOCK("音符盒", 25, 0, "textures/blocks/noteblock.png"),
+    NOTEBLOCK("Note Block", 25, 0, "textures/blocks/noteblock.png"),
     /**
-     * 方块床
+     * Bed Block
      */
-    BED_BLOCK("方块床", 26, 0, "textures/blocks/bed_head_top.png"),
+    BED_BLOCK("Bed Block", 26, 0, "textures/blocks/bed_head_top.png"),
     /**
-     * 动力铁轨
+     * Powered Rail
      */
-    GOLDEN_RAIL("动力铁轨", 27, 0, "textures/blocks/rail_golden.png"),
+    GOLDEN_RAIL("Powered Rail", 27, 0, "textures/blocks/rail_golden.png"),
     /**
-     * 探测铁轨
+     * Detector Rail
      */
-    DETECTOR_RAIL("探测铁轨", 28, 0, "textures/blocks/rail_detector.png"),
+    DETECTOR_RAIL("Detector Rail", 28, 0, "textures/blocks/rail_detector.png"),
     /**
-     * 粘性活塞
+     * Sticky Piston
      */
-    STICKY_PISTON("粘性活塞", 29, 0, "textures/blocks/piston_top_sticky.png"),
+    STICKY_PISTON("Sticky Piston", 29, 0, "textures/blocks/piston_top_sticky.png"),
     /**
-     * 蜘蛛网
+     * Cobweb
      */
-    WEB("蜘蛛网", 30, 0, "textures/blocks/web.png"),
+    WEB("Cobweb", 30, 0, "textures/blocks/web.png"),
     /**
-     * 高草
+     * Tall Grass
      */
-    TALLGRASS("高草", 31, 0, "textures/blocks/deadbush.png"),
+    TALLGRASS("Tall Grass", 31, 0, "textures/blocks/deadbush.png"),
     /**
-     * 草
+     * Grass
      */
-    TALLGRASS_CARRIED("草", 31, 1, "textures/blocks/tallgrass_carried.tga"),
+    TALLGRASS_CARRIED("Grass", 31, 1, "textures/blocks/tallgrass_carried.tga"),
     /**
-     * 蕨
+     * Fern
      */
-    FERN_CARRIED("蕨", 31, 2, "textures/blocks/fern_carried.tga"),
+    FERN_CARRIED("Fern", 31, 2, "textures/blocks/fern_carried.tga"),
     /**
-     * 枯死的灌木
+     * Dead Bush
      */
-    DEADBUSH("枯死的灌木", 32, 0, "textures/blocks/deadbush.png"),
+    DEADBUSH("Dead Bush", 32, 0, "textures/blocks/deadbush.png"),
     /**
-     * 活塞
+     * Piston
      */
-    PISTON("活塞", 33, 0, "textures/blocks/piston_top_normal.png"),
+    PISTON("Piston", 33, 0, "textures/blocks/piston_top_normal.png"),
     /**
-     * 活塞臂
+     * Piston Head
      */
-    PISTON_HEAD("活塞臂", 34, 0, "textures/blocks/piston_top_normal.png"),
+    PISTON_HEAD("Piston Head", 34, 0, "textures/blocks/piston_top_normal.png"),
     /**
-     * 白色羊毛
+     * White Wool
      */
-    WOOL("白色羊毛", 35, 0, "textures/blocks/wool_colored_white.png"),
+    WOOL("White Wool", 35, 0, "textures/blocks/wool_colored_white.png"),
     /**
-     * 橙色羊毛
+     * Orange Wool
      */
-    WOOL_COLORED_ORANGE("橙色羊毛", 35, 1, "textures/blocks/wool_colored_orange.png"),
+    WOOL_COLORED_ORANGE("Orange Wool", 35, 1, "textures/blocks/wool_colored_orange.png"),
     /**
-     * 品红色羊毛
+     * Magenta Wool
      */
-    WOOL_COLORED_MAGENTA("品红色羊毛", 35, 2, "textures/blocks/wool_colored_magenta.png"),
+    WOOL_COLORED_MAGENTA("Magenta Wool", 35, 2, "textures/blocks/wool_colored_magenta.png"),
     /**
-     * 淡蓝色羊毛
+     * Light Blue Wool
      */
-    WOOL_COLORED_LIGHT_BLUE("淡蓝色羊毛", 35, 3, "textures/blocks/wool_colored_light_blue.png"),
+    WOOL_COLORED_LIGHT_BLUE("Light Blue Wool", 35, 3, "textures/blocks/wool_colored_light_blue.png"),
     /**
-     * 黄色羊毛
+     * Yellow Wool
      */
-    WOOL_COLORED_YELLOW("黄色羊毛", 35, 4, "textures/blocks/wool_colored_yellow.png"),
+    WOOL_COLORED_YELLOW("Yellow Wool", 35, 4, "textures/blocks/wool_colored_yellow.png"),
     /**
-     * 黄绿色羊毛
+     * Lime Wool
      */
-    WOOL_COLORED_LIME("黄绿色羊毛", 35, 5, "textures/blocks/wool_colored_lime.png"),
+    WOOL_COLORED_LIME("Lime Wool", 35, 5, "textures/blocks/wool_colored_lime.png"),
     /**
-     * 粉红色羊毛
+     * Pink Wool
      */
-    WOOL_COLORED_PINK("粉红色羊毛", 35, 6, "textures/blocks/wool_colored_pink.png"),
+    WOOL_COLORED_PINK("Pink Wool", 35, 6, "textures/blocks/wool_colored_pink.png"),
     /**
-     * 灰色羊毛
+     * Gray Wool
      */
-    WOOL_COLORED_GRAY("灰色羊毛", 35, 7, "textures/blocks/wool_colored_gray.png"),
+    WOOL_COLORED_GRAY("Gray Wool", 35, 7, "textures/blocks/wool_colored_gray.png"),
     /**
-     * 淡灰色羊毛
+     * Light Gray Wool
      */
-    WOOL_COLORED_SILVER("淡灰色羊毛", 35, 8, "textures/blocks/wool_colored_silver.png"),
+    WOOL_COLORED_SILVER("Light Gray Wool", 35, 8, "textures/blocks/wool_colored_silver.png"),
     /**
-     * 青色羊毛
+     * Cyan Wool
      */
-    WOOL_COLORED_CYAN("青色羊毛", 35, 9, "textures/blocks/wool_colored_cyan.png"),
+    WOOL_COLORED_CYAN("Cyan Wool", 35, 9, "textures/blocks/wool_colored_cyan.png"),
     /**
-     * 紫色羊毛
+     * Purple Wool
      */
-    WOOL_COLORED_PURPLE("紫色羊毛", 35, 10, "textures/blocks/wool_colored_purple.png"),
+    WOOL_COLORED_PURPLE("Purple Wool", 35, 10, "textures/blocks/wool_colored_purple.png"),
     /**
-     * 蓝色羊毛
+     * Blue Wool
      */
-    WOOL_COLORED_BLUE("蓝色羊毛", 35, 11, "textures/blocks/wool_colored_blue.png"),
+    WOOL_COLORED_BLUE("Blue Wool", 35, 11, "textures/blocks/wool_colored_blue.png"),
     /**
-     * 棕色羊毛
+     * Brown Wool
      */
-    WOOL_COLORED_BROWN("棕色羊毛", 35, 12, "textures/blocks/wool_colored_brown.png"),
+    WOOL_COLORED_BROWN("Brown Wool", 35, 12, "textures/blocks/wool_colored_brown.png"),
     /**
-     * 绿色羊毛
+     * Green Wool
      */
-    WOOL_COLORED_GREEN("绿色羊毛", 35, 13, "textures/blocks/wool_colored_green.png"),
+    WOOL_COLORED_GREEN("Green Wool", 35, 13, "textures/blocks/wool_colored_green.png"),
     /**
-     * 红色羊毛
+     * Red Wool
      */
-    WOOL_COLORED_RED("红色羊毛", 35, 14, "textures/blocks/wool_colored_red.png"),
+    WOOL_COLORED_RED("Red Wool", 35, 14, "textures/blocks/wool_colored_red.png"),
     /**
-     * 黑色羊毛
+     * Black Wool
      */
-    WOOL_COLORED_BLACK("黑色羊毛", 35, 15, "textures/blocks/wool_colored_black.png"),
+    WOOL_COLORED_BLACK("Black Wool", 35, 15, "textures/blocks/wool_colored_black.png"),
     /**
-     * 黄花
+     * Dandelion
      */
-    YELLOW_FLOWER("黄花", 37, 0, "textures/blocks/glazed_terracotta_yellow.png"),
+    YELLOW_FLOWER("Dandelion", 37, 0, "textures/blocks/glazed_terracotta_yellow.png"),
     /**
-     * 罂粟
+     * Poppy
      */
-    RED_FLOWER("罂粟", 38, 0, "textures/blocks/flower_rose.png"),
+    RED_FLOWER("Poppy", 38, 0, "textures/blocks/flower_rose.png"),
     /**
-     * 蓝色的兰花
+     * Blue Orchid
      */
-    FLOWER_BLUE_ORCHID("蓝色的兰花", 38, 1, "textures/blocks/flower_blue_orchid.png"),
+    FLOWER_BLUE_ORCHID("Blue Orchid", 38, 1, "textures/blocks/flower_blue_orchid.png"),
     /**
-     * 绒球葱
+     * Allium
      */
-    FLOWER_ALLIUM("绒球葱", 38, 2, "textures/blocks/flower_allium.png"),
+    FLOWER_ALLIUM("Allium", 38, 2, "textures/blocks/flower_allium.png"),
     /**
-     * 茜草花
+     * Azure Bluet
      */
-    FLOWER_HOUSTONIA("茜草花", 38, 3, "textures/blocks/flower_houstonia.png"),
+    FLOWER_HOUSTONIA("Azure Bluet", 38, 3, "textures/blocks/flower_houstonia.png"),
     /**
-     * 红色郁金香
+     * Red Tulip
      */
-    FLOWER_TULIP_RED("红色郁金香", 38, 4, "textures/blocks/flower_tulip_red.png"),
+    FLOWER_TULIP_RED("Red Tulip", 38, 4, "textures/blocks/flower_tulip_red.png"),
     /**
-     * 橙色郁金香
+     * Orange Tulip
      */
-    FLOWER_TULIP_ORANGE("橙色郁金香", 38, 5, "textures/blocks/flower_tulip_orange.png"),
+    FLOWER_TULIP_ORANGE("Orange Tulip", 38, 5, "textures/blocks/flower_tulip_orange.png"),
     /**
-     * 白色郁金香
+     * White Tulip
      */
-    FLOWER_TULIP_WHITE("白色郁金香", 38, 6, "textures/blocks/flower_tulip_white.png"),
+    FLOWER_TULIP_WHITE("White Tulip", 38, 6, "textures/blocks/flower_tulip_white.png"),
     /**
-     * 粉色郁金香
+     * Pink Tulip
      */
-    FLOWER_TULIP_PINK("粉色郁金香", 38, 7, "textures/blocks/flower_tulip_pink.png"),
+    FLOWER_TULIP_PINK("Pink Tulip", 38, 7, "textures/blocks/flower_tulip_pink.png"),
     /**
-     * 滨菊
+     * Oxeye Daisy
      */
-    FLOWER_OXEYE_DAISY("滨菊", 38, 8, "textures/blocks/flower_oxeye_daisy.png"),
+    FLOWER_OXEYE_DAISY("Oxeye Daisy", 38, 8, "textures/blocks/flower_oxeye_daisy.png"),
     /**
-     * 棕色蘑菇
+     * Brown Mushroom
      */
-    BROWN_MUSHROOM("棕色蘑菇", 39, 0, "textures/blocks/mushroom_brown.png"),
+    BROWN_MUSHROOM("Brown Mushroom", 39, 0, "textures/blocks/mushroom_brown.png"),
     /**
-     * 红色蘑菇
+     * Red Mushroom
      */
-    RED_MUSHROOM("红色蘑菇", 40, 0, "textures/blocks/mushroom_red.png"),
+    RED_MUSHROOM("Red Mushroom", 40, 0, "textures/blocks/mushroom_red.png"),
     /**
-     * 黄金块
+     * Gold Block
      */
-    GOLD_BLOCK("黄金块", 41, 0, "textures/blocks/gold_block.png"),
+    GOLD_BLOCK("Gold Block", 41, 0, "textures/blocks/gold_block.png"),
     /**
-     * 铁块
+     * Iron Block
      */
-    IRON_BLOCK("铁块", 42, 0, "textures/blocks/iron_block.png"),
+    IRON_BLOCK("Iron Block", 42, 0, "textures/blocks/iron_block.png"),
     /**
-     * 双石台阶
+     * Double Stone Slab
      */
-    DOUBLE_STONE_SLAB("双石台阶", 43, 0, "textures/blocks/stone_slab_side.png"),
+    DOUBLE_STONE_SLAB("Double Stone Slab", 43, 0, "textures/blocks/stone_slab_side.png"),
     /**
-     * 双沙石台阶
+     * Double Sandstone Slab
      */
-    SANDSTONE_BOTTOM("双沙石台阶", 43, 1, "textures/blocks/sandstone_bottom.png"),
+    SANDSTONE_BOTTOM("Double Sandstone Slab", 43, 1, "textures/blocks/sandstone_bottom.png"),
     /**
-     * 双橡木台阶
+     * Double Oak Wood Slab
      */
-    PLANKS_OAK("双橡木台阶", 43, 2, "textures/blocks/planks_oak.png"),
+    PLANKS_OAK("Double Oak Wood Slab", 43, 2, "textures/blocks/planks_oak.png"),
     /**
-     * 双圆石台阶
+     * Double Cobblestone Slab
      */
-    DOUBLE_PEBBLE_STEPS("双圆石台阶", 43, 3, "textures/blocks/cobblestone.png"),
+    DOUBLE_PEBBLE_STEPS("Double Cobblestone Slab", 43, 3, "textures/blocks/cobblestone.png"),
     /**
-     * 双砖台阶
+     * Double Brick Slab
      */
-    DOUBLE_BRICK_STEPS("双砖台阶", 43, 4, "textures/blocks/brick.png"),
+    DOUBLE_BRICK_STEPS("Double Brick Slab", 43, 4, "textures/blocks/brick.png"),
     /**
-     * 双石砖台阶
+     * Double Stone Brick Slab
      */
-    DOUBLE_STONE_BRICK_STEPS("双石砖台阶", 43, 5, "textures/blocks/stonebrick.png"),
+    DOUBLE_STONE_BRICK_STEPS("Double Stone Brick Slab", 43, 5, "textures/blocks/stonebrick.png"),
     /**
-     * 双石英台阶
+     * Double Quartz Slab
      */
-    DOUBLE_QUARTZ_STEPS("双石英台阶", 43, 6, "textures/blocks/nether_brick.png"),
+    DOUBLE_QUARTZ_STEPS("Double Quartz Slab", 43, 6, "textures/blocks/nether_brick.png"),
     /**
-     * 双地狱砖台阶
+     * Double Nether Brick Slab
      */
-    DOUBLE_HELL_BRICK_STEPS("双地狱砖台阶", 43, 7, "textures/blocks/quartz_block_top.png"),
+    DOUBLE_HELL_BRICK_STEPS("Double Nether Brick Slab", 43, 7, "textures/blocks/quartz_block_top.png"),
     /**
-     * 石台阶
+     * Stone Slab
      */
-    STONE_SLAB("石台阶", 44, 0, "textures/blocks/stone_slab_top.png"),
+    STONE_SLAB("Stone Slab", 44, 0, "textures/blocks/stone_slab_top.png"),
     /**
-     * 沙石台阶
+     * Sandstone Slab
      */
-    SANDSTONE_TOP("沙石台阶", 44, 1, "textures/blocks/sandstone_top.png"),
+    SANDSTONE_TOP("Sandstone Slab", 44, 1, "textures/blocks/sandstone_top.png"),
     /**
-     * 圆石台阶
+     * Cobblestone Slab
      */
-    COBBLESTONE_STEPS("圆石台阶", 44, 3, "textures/blocks/cobblestone.png"),
+    COBBLESTONE_STEPS("Cobblestone Slab", 44, 3, "textures/blocks/cobblestone.png"),
     /**
-     * 砖台阶
+     * Brick Slab
      */
-    BRICK_STEPS("砖台阶", 44, 4, "textures/blocks/brick.png"),
+    BRICK_STEPS("Brick Slab", 44, 4, "textures/blocks/brick.png"),
     /**
-     * 石砖台阶
+     * Stone Brick Slab
      */
-    STONEBRICK_STEPS("石砖台阶", 44, 5, "textures/blocks/stonebrick.png"),
+    STONEBRICK_STEPS("Stone Brick Slab", 44, 5, "textures/blocks/stonebrick.png"),
     /**
-     * 石英台阶
+     * Quartz Slab
      */
-    NETHER_BRICK_STEPS("石英台阶", 44, 6, "textures/blocks/nether_brick.png"),
+    NETHER_BRICK_STEPS("Quartz Slab", 44, 6, "textures/blocks/nether_brick.png"),
     /**
-     * 地狱砖台阶
+     * Nether Brick Slab
      */
-    QUARTZ_BLOCK_TOP_STEPS("地狱砖台阶", 44, 7, "textures/blocks/quartz_block_top.png"),
+    QUARTZ_BLOCK_TOP_STEPS("Nether Brick Slab", 44, 7, "textures/blocks/quartz_block_top.png"),
     /**
-     * 砖
+     * Brick
      */
-    BRICK("砖", 336, 0, "textures/blocks/brick.png"),
+    BRICK("Brick", 336, 0, "textures/blocks/brick.png"),
     /**
      * TNT
      */
     TNT("TNT", 46, 0, "textures/blocks/tnt_side.png"),
     /**
-     * 书架
+     * Bookshelf
      */
-    BOOKSHELF("书架", 47, 0, "textures/blocks/bookshelf.png"),
+    BOOKSHELF("Bookshelf", 47, 0, "textures/blocks/bookshelf.png"),
     /**
-     * 苔石
+     * Mossy Cobblestone
      */
-    MOSSY_COBBLESTONE("苔石", 48, 0, "textures/blocks/cobblestone_mossy.png"),
+    MOSSY_COBBLESTONE("Mossy Cobblestone", 48, 0, "textures/blocks/cobblestone_mossy.png"),
     /**
-     * 黑曜石
+     * Obsidian
      */
-    OBSIDIAN("黑曜石", 49, 0, "textures/blocks/obsidian.png"),
+    OBSIDIAN("Obsidian", 49, 0, "textures/blocks/obsidian.png"),
     /**
-     * 火把
+     * Torch
      */
-    TORCH("火把", 50, 0, "textures/blocks/torch_on.png"),
+    TORCH("Torch", 50, 0, "textures/blocks/torch_on.png"),
     /**
-     * 火
+     * Fire
      */
-    FIRE("火", 51, 0, "textures/blocks/fire_0_placeholder.png"),
+    FIRE("Fire", 51, 0, "textures/blocks/fire_0_placeholder.png"),
     /**
-     * 刷怪笼
+     * Monster Spawner
      */
-    MOB_SPAWNER("刷怪笼", 52, 0, "textures/blocks/mob_spawner.png"),
+    MOB_SPAWNER("Monster Spawner", 52, 0, "textures/blocks/mob_spawner.png"),
     /**
-     * 橡木阶梯
+     * Oak Stairs
      */
-    OAK_STAIRS("橡木阶梯", 53, 0, "textures/blocks/planks_oak.png"),
+    OAK_STAIRS("Oak Stairs", 53, 0, "textures/blocks/planks_oak.png"),
     /**
-     * 箱子
+     * Chest
      */
-    CHEST("箱子", 54, 0, "textures/blocks/chest_front.png"),
+    CHEST("Chest", 54, 0, "textures/blocks/chest_front.png"),
     /**
-     * 红石粉
+     * Redstone Wire
      */
-    REDSTONE_WIRE("红石粉", 55, 0, "textures/blocks/redstone_dust_line.png"),
+    REDSTONE_WIRE("Redstone Wire", 55, 0, "textures/blocks/redstone_dust_line.png"),
     /**
-     * 钻石矿
+     * Diamond Ore
      */
-    DIAMOND_ORE("钻石矿", 56, 0, "textures/blocks/diamond_ore.png"),
+    DIAMOND_ORE("Diamond Ore", 56, 0, "textures/blocks/diamond_ore.png"),
     /**
-     * 钻石块
+     * Diamond Block
      */
-    DIAMOND_BLOCK("钻石块", 57, 0, "textures/blocks/diamond_block.png"),
+    DIAMOND_BLOCK("Diamond Block", 57, 0, "textures/blocks/diamond_block.png"),
     /**
-     * 工作台
+     * Crafting Table
      */
-    CRAFTING_TABLE("工作台", 58, 0, "textures/blocks/crafting_table_top.png"),
+    CRAFTING_TABLE("Crafting Table", 58, 0, "textures/blocks/crafting_table_top.png"),
     /**
-     * 农田
+     * Farmland
      */
-    FARMLAND("农田", 60, 0, "textures/blocks/farmland_dry.png"),
+    FARMLAND("Farmland", 60, 0, "textures/blocks/farmland_dry.png"),
     /**
-     * 熔炉
+     * Furnace
      */
-    FURNACE("熔炉", 61, 0, "textures/blocks/furnace_front_off.png"),
+    FURNACE("Furnace", 61, 0, "textures/blocks/furnace_front_off.png"),
     /**
-     * 梯子
+     * Ladder
      */
-    LADDER("梯子", 65, 0, "textures/blocks/ladder.png"),
+    LADDER("Ladder", 65, 0, "textures/blocks/ladder.png"),
     /**
-     * 铁轨
+     * Rail
      */
-    RAIL("铁轨", 66, 0, "textures/blocks/rail_normal.png"),
+    RAIL("Rail", 66, 0, "textures/blocks/rail_normal.png"),
     /**
-     * 圆石阶梯
+     * Cobblestone Stairs
      */
-    STONE_STAIRS("圆石阶梯", 67, 0, "textures/blocks/cobblestone.png"),
+    STONE_STAIRS("Cobblestone Stairs", 67, 0, "textures/blocks/cobblestone.png"),
     /**
-     * 拉杆
+     * Lever
      */
-    LEVER("拉杆", 69, 0, "textures/blocks/lever.png"),
+    LEVER("Lever", 69, 0, "textures/blocks/lever.png"),
     /**
-     * 石质压力板
+     * Stone Pressure Plate
      */
-    STONE_PRESSURE_PLATE("石质压力板", 70, 0, "textures/blocks/stone.png"),
+    STONE_PRESSURE_PLATE("Stone Pressure Plate", 70, 0, "textures/blocks/stone.png"),
     /**
-     * 木质压力板
+     * Wooden Pressure Plate
      */
-    WOODEN_PRESSURE_PLATE("木质压力板", 72, 0, "textures/blocks/planks_oak.png"),
+    WOODEN_PRESSURE_PLATE("Wooden Pressure Plate", 72, 0, "textures/blocks/planks_oak.png"),
     /**
-     * 红石矿
+     * Redstone Ore
      */
-    REDSTONE_ORE("红石矿", 73, 0, "textures/blocks/redstone_ore.png"),
+    REDSTONE_ORE("Redstone Ore", 73, 0, "textures/blocks/redstone_ore.png"),
     /**
-     * 发光的红石矿
+     * Lit Redstone Ore
      */
-    LIT_REDSTONE_ORE("发光的红石矿", 74, 0, "textures/blocks/redstone_ore.png"),
+    LIT_REDSTONE_ORE("Lit Redstone Ore", 74, 0, "textures/blocks/redstone_ore.png"),
     /**
-     * 红石火把
+     * Redstone Torch
      */
-    UNLIT_REDSTONE_TORCH("红石火把", 75, 0, "textures/blocks/redstone_torch_off.png"),
+    UNLIT_REDSTONE_TORCH("Redstone Torch", 75, 0, "textures/blocks/redstone_torch_off.png"),
     /**
-     * 石质按钮
+     * Stone Button
      */
-    STONE_BUTTON("石质按钮", 77, 0, "textures/blocks/stone.png"),
+    STONE_BUTTON("Stone Button", 77, 0, "textures/blocks/stone.png"),
     /**
-     * 顶层雪
+     * Snow Layer
      */
-    SNOW_LAYER("顶层雪", 78, 0, "textures/blocks/snow.png"),
+    SNOW_LAYER("Snow Layer", 78, 0, "textures/blocks/snow.png"),
     /**
-     * 冰
+     * Ice
      */
-    ICE("冰", 79, 0, "textures/blocks/ice.png"),
+    ICE("Ice", 79, 0, "textures/blocks/ice.png"),
     /**
-     * 雪
+     * Snow
      */
-    SNOW("雪", 80, 0, "textures/blocks/snow.png"),
+    SNOW("Snow", 80, 0, "textures/blocks/snow.png"),
     /**
-     * 仙人掌
+     * Cactus
      */
-    CACTUS("仙人掌", 81, 0, "textures/blocks/cactus_side.tga"),
+    CACTUS("Cactus", 81, 0, "textures/blocks/cactus_side.tga"),
     /**
-     * 粘土
+     * Clay
      */
-    CLAY("粘土", 82, 0, "textures/blocks/clay.png"),
+    CLAY("Clay", 82, 0, "textures/blocks/clay.png"),
     /**
-     * 音乐盒
+     * Jukebox
      */
-    JUKEBOX("音乐盒", 84, 0, "textures/blocks/jukebox_top.png"),
+    JUKEBOX("Jukebox", 84, 0, "textures/blocks/jukebox_top.png"),
     /**
-     * 橡木围墙
+     * Oak Fence
      */
-    FENCE("橡木围墙", 85, 0, "textures/blocks/planks_oak.png"),
+    FENCE("Oak Fence", 85, 0, "textures/blocks/planks_oak.png"),
     /**
-     * 南瓜
+     * Pumpkin
      */
-    PUMPKIN("南瓜", 86, 0, "textures/blocks/pumpkin_face_off.png"),
+    PUMPKIN("Pumpkin", 86, 0, "textures/blocks/pumpkin_face_off.png"),
     /**
-     * 地狱岩
+     * Netherrack
      */
-    NETHERRACK("地狱岩", 87, 0, "textures/blocks/netherrack.png"),
+    NETHERRACK("Netherrack", 87, 0, "textures/blocks/netherrack.png"),
     /**
-     * 灵魂沙
+     * Soul Sand
      */
-    SOUL_SAND("灵魂沙", 88, 0, "textures/blocks/soul_sand.png"),
+    SOUL_SAND("Soul Sand", 88, 0, "textures/blocks/soul_sand.png"),
     /**
-     * 萤石
+     * Glowstone
      */
-    GLOWSTONE("萤石", 89, 0, "textures/blocks/glowstone.png"),
+    GLOWSTONE("Glowstone", 89, 0, "textures/blocks/glowstone.png"),
     /**
-     * 传送门
+     * Portal
      */
-    PORTAL("传送门", 90, 0, "textures/blocks/portal_placeholder.png"),
+    PORTAL("Portal", 90, 0, "textures/blocks/portal_placeholder.png"),
     /**
-     * 南瓜灯
+     * Jack o'Lantern
      */
-    LIT_PUMPKIN("南瓜灯", 91, 0, "textures/blocks/pumpkin_face_on.png"),
+    LIT_PUMPKIN("Jack o'Lantern", 91, 0, "textures/blocks/pumpkin_face_on.png"),
     /**
-     * 隐形基岩
+     * Invisible Bedrock
      */
-    STAINED_GLASS("隐形基岩", 95, 0, "textures/blocks/glass_white.png"),
+    STAINED_GLASS("Invisible Bedrock", 95, 0, "textures/blocks/glass_white.png"),
     /**
-     * 木质陷阱门
+     * Wooden Trapdoor
      */
-    TRAPDOOR("木质陷阱门", 96, 0, "textures/blocks/trapdoor.png"),
+    TRAPDOOR("Wooden Trapdoor", 96, 0, "textures/blocks/trapdoor.png"),
     /**
-     * 石头刷怪蛋
+     * Stone Monster Egg
      */
-    MONSTER_EGG("石头刷怪蛋", 97, 0, "textures/blocks/stone.png"),
+    MONSTER_EGG("Stone Monster Egg", 97, 0, "textures/blocks/stone.png"),
     /**
-     * 圆石刷怪蛋
+     * Cobblestone Monster Egg
      */
-    COBBLESTONE_EGG("圆石刷怪蛋", 97, 1, "textures/blocks/Cobblestone.png"),
+    COBBLESTONE_EGG("Cobblestone Monster Egg", 97, 1, "textures/blocks/Cobblestone.png"),
     /**
-     * 石砖刷怪蛋
+     * Stone Brick Monster Egg
      */
-    STONEBRICK("石砖刷怪蛋", 97, 2, "textures/blocks/stonebrick.png"),
+    STONEBRICK("Stone Brick Monster Egg", 97, 2, "textures/blocks/stonebrick.png"),
     /**
-     * 苔石砖
+     * Mossy Stone Bricks
      */
-    STONEBRICK_MOSSY("苔石砖", 98, 1, "textures/blocks/stonebrick_mossy.png"),
+    STONEBRICK_MOSSY("Mossy Stone Bricks", 98, 1, "textures/blocks/stonebrick_mossy.png"),
     /**
-     * 裂石砖
+     * Cracked Stone Bricks
      */
-    STONEBRICK_CRACKED("裂石砖", 98, 2, "textures/blocks/stonebrick_cracked.png"),
+    STONEBRICK_CRACKED("Cracked Stone Bricks", 98, 2, "textures/blocks/stonebrick_cracked.png"),
     /**
-     * 錾制石砖
+     * Chiseled Stone Bricks
      */
-    STONEBRICK_CARVED("錾制石砖", 98, 3, "textures/blocks/stonebrick_carved.png"),
+    STONEBRICK_CARVED("Chiseled Stone Bricks", 98, 3, "textures/blocks/stonebrick_carved.png"),
     /**
-     * 棕色蘑菇块
+     * Brown Mushroom Block
      */
-    BROWN_MUSHROOM_BLOCK("棕色蘑菇块", 99, 0, "textures/blocks/mushroom_block_skin_brown.png"),
+    BROWN_MUSHROOM_BLOCK("Brown Mushroom Block", 99, 0, "textures/blocks/mushroom_block_skin_brown.png"),
     /**
-     * 红色蘑菇块
+     * Red Mushroom Block
      */
-    RED_MUSHROOM_BLOCK("红色蘑菇块", 100, 0, "textures/blocks/mushroom_block_skin_red.png"),
+    RED_MUSHROOM_BLOCK("Red Mushroom Block", 100, 0, "textures/blocks/mushroom_block_skin_red.png"),
     /**
-     * 铁栏杆
+     * Iron Bars
      */
-    IRON_BARS("铁栏杆", 101, 0, "textures/blocks/iron_bars.png"),
+    IRON_BARS("Iron Bars", 101, 0, "textures/blocks/iron_bars.png"),
     /**
-     * 玻璃板
+     * Glass Pane
      */
-    GLASS_PANE("玻璃板", 102, 0, "textures/blocks/glass_pane_top.png"),
+    GLASS_PANE("Glass Pane", 102, 0, "textures/blocks/glass_pane_top.png"),
     /**
-     * 南瓜梗
+     * Pumpkin Stem
      */
-    PUMPKIN_STEM("南瓜梗", 104, 0, "textures/blocks/pumpkin_stem_disconnected.png"),
+    PUMPKIN_STEM("Pumpkin Stem", 104, 0, "textures/blocks/pumpkin_stem_disconnected.png"),
     /**
-     * 藤蔓
+     * Vines
      */
-    VINE("藤蔓", 106, 0, "textures/blocks/vine_carried.png"),
+    VINE("Vines", 106, 0, "textures/blocks/vine_carried.png"),
     /**
-     * 橡木围墙大门
+     * Oak Fence Gate
      */
-    FENCE_GATE("橡木围墙大门", 107, 0, "textures/blocks/planks_oak.png"),
+    FENCE_GATE("Oak Fence Gate", 107, 0, "textures/blocks/planks_oak.png"),
     /**
-     * 砖块阶梯
+     * Brick Stairs
      */
-    BRICK_STAIRS("砖块阶梯", 108, 0, "textures/blocks/brick.png"),
+    BRICK_STAIRS("Brick Stairs", 108, 0, "textures/blocks/brick.png"),
     /**
-     * 石砖阶梯
+     * Stone Brick Stairs
      */
-    STONE_BRICK_STAIRS("石砖阶梯", 109, 0, "textures/blocks/stonebrick.png"),
+    STONE_BRICK_STAIRS("Stone Brick Stairs", 109, 0, "textures/blocks/stonebrick.png"),
     /**
-     * 菌丝
+     * Mycelium
      */
-    MYCELIUM("菌丝", 110, 0, "textures/blocks/mycelium_side.png"),
+    MYCELIUM("Mycelium", 110, 0, "textures/blocks/mycelium_side.png"),
     /**
-     * 睡莲
+     * Lily Pad
      */
-    WATERLILY("睡莲", 111, 0, "textures/blocks/carried_waterlily.png"),
+    WATERLILY("Lily Pad", 111, 0, "textures/blocks/carried_waterlily.png"),
     /**
-     * 地狱砖
+     * Nether Brick
      */
-    NETHERBRICK("地狱砖", 405, 0, "textures/blocks/nether_brick.png"),
+    NETHERBRICK("Nether Brick", 405, 0, "textures/blocks/nether_brick.png"),
     /**
-     * 地狱砖围墙
+     * Nether Brick Fence
      */
-    NETHER_BRICK_FENCE("地狱砖围墙", 113, 0, "textures/blocks/nether_brick.png"),
+    NETHER_BRICK_FENCE("Nether Brick Fence", 113, 0, "textures/blocks/nether_brick.png"),
     /**
-     * 地狱砖阶梯
+     * Nether Brick Stairs
      */
-    NETHER_BRICK_STAIRS("地狱砖阶梯", 114, 0, "textures/blocks/nether_brick.png"),
+    NETHER_BRICK_STAIRS("Nether Brick Stairs", 114, 0, "textures/blocks/nether_brick.png"),
     /**
-     * 附魔台
+     * Enchanting Table
      */
-    ENCHANTING_TABLE("附魔台", 116, 0, "textures/blocks/enchanting_table_side.png"),
+    ENCHANTING_TABLE("Enchanting Table", 116, 0, "textures/blocks/enchanting_table_side.png"),
     /**
-     * 酿造台
+     * Brewing Stand
      */
-    BREWING_STAND("酿造台", 379, 0, "textures/blocks/brewing_stand.png"),
+    BREWING_STAND("Brewing Stand", 379, 0, "textures/blocks/brewing_stand.png"),
     /**
-     * 炼药锅
+     * Cauldron
      */
-    CAULDRON("炼药锅", 380, 0, "textures/blocks/cauldron_side.png"),
+    CAULDRON("Cauldron", 380, 0, "textures/blocks/cauldron_side.png"),
     /**
-     * 末地门
+     * End Portal
      */
-    END_PORTAL("末地门", 119, 0, "textures/blocks/end_portal.png"),
+    END_PORTAL("End Portal", 119, 0, "textures/blocks/end_portal.png"),
     /**
-     * 末地传送门
+     * End Portal Frame
      */
-    END_PORTAL_FRAME("末地传送门", 120, 0, "textures/blocks/end_portal.png"),
+    END_PORTAL_FRAME("End Portal Frame", 120, 0, "textures/blocks/end_portal.png"),
     /**
-     * 末地石
+     * End Stone
      */
-    END_STONE("末地石", 121, 0, "textures/blocks/end_stone.png"),
+    END_STONE("End Stone", 121, 0, "textures/blocks/end_stone.png"),
     /**
-     * 龙蛋
+     * Dragon Egg
      */
-    DRAGON_EGG("龙蛋", 122, 0, "textures/blocks/dragon_egg.png"),
+    DRAGON_EGG("Dragon Egg", 122, 0, "textures/blocks/dragon_egg.png"),
     /**
-     * 红石灯
+     * Redstone Lamp
      */
-    REDSTONE_LAMP("红石灯", 123, 0, "textures/blocks/redstone_lamp_off.png"),
+    REDSTONE_LAMP("Redstone Lamp", 123, 0, "textures/blocks/redstone_lamp_off.png"),
     /**
-     * 沙石阶梯
+     * Sandstone Stairs
      */
-    SANDSTONE_STAIRS("沙石阶梯", 128, 0, "textures/blocks/sandstone_bottom.png"),
+    SANDSTONE_STAIRS("Sandstone Stairs", 128, 0, "textures/blocks/sandstone_bottom.png"),
     /**
-     * 绿宝石矿石
+     * Emerald Ore
      */
-    EMERALD_ORE("绿宝石矿石", 129, 0, "textures/blocks/emerald_ore.png"),
+    EMERALD_ORE("Emerald Ore", 129, 0, "textures/blocks/emerald_ore.png"),
     /**
-     * 末影箱
+     * Ender Chest
      */
-    ENDER_CHEST("末影箱", 130, 0, "textures/blocks/ender_chest_front.png"),
+    ENDER_CHEST("Ender Chest", 130, 0, "textures/blocks/ender_chest_front.png"),
     /**
-     * 拌线钩
+     * Tripwire Hook
      */
-    TRIPWIRE_HOOK("拌线钩", 131, 0, "textures/blocks/trip_wire_source.png"),
+    TRIPWIRE_HOOK("Tripwire Hook", 131, 0, "textures/blocks/trip_wire_source.png"),
     /**
-     * 拌线
+     * Tripwire
      */
-    TRIPWIRE("拌线", 132, 0, "textures/blocks/trip_wire.png"),
+    TRIPWIRE("Tripwire", 132, 0, "textures/blocks/trip_wire.png"),
     /**
-     * 绿宝石块
+     * Emerald Block
      */
-    EMERALD_BLOCK("绿宝石块", 133, 0, "textures/blocks/emerald_block.png"),
+    EMERALD_BLOCK("Emerald Block", 133, 0, "textures/blocks/emerald_block.png"),
     /**
-     * 云杉木阶梯
+     * Spruce Wood Stairs
      */
-    SPRUCE_STAIRS("云杉木阶梯", 134, 0, "textures/blocks/planks_spruce.png"),
+    SPRUCE_STAIRS("Spruce Wood Stairs", 134, 0, "textures/blocks/planks_spruce.png"),
     /**
-     * 桦木阶梯
+     * Birch Wood Stairs
      */
-    BIRCH_STAIRS("桦木阶梯", 135, 0, "textures/blocks/planks_birch.png"),
+    BIRCH_STAIRS("Birch Wood Stairs", 135, 0, "textures/blocks/planks_birch.png"),
     /**
-     * 丛林木阶梯
+     * Jungle Wood Stairs
      */
-    JUNGLE_STAIRS("丛林木阶梯", 136, 0, "textures/blocks/planks_jungle.png"),
+    JUNGLE_STAIRS("Jungle Wood Stairs", 136, 0, "textures/blocks/planks_jungle.png"),
     /**
-     * 命令方块
+     * Command Block
      */
-    COMMAND_BLOCK("命令方块", 137, 0, "textures/blocks/command_block.png"),
+    COMMAND_BLOCK("Command Block", 137, 0, "textures/blocks/command_block.png"),
     /**
-     * 信标
+     * Beacon
      */
-    BEACON("信标", 138, 0, "textures/blocks/beacon.png"),
+    BEACON("Beacon", 138, 0, "textures/blocks/beacon.png"),
     /**
-     * 圆石墙
+     * Cobblestone Wall
      */
-    COBBLESTONE_WALL("圆石墙", 139, 0, "textures/blocks/cobblestone.png"),
+    COBBLESTONE_WALL("Cobblestone Wall", 139, 0, "textures/blocks/cobblestone.png"),
     /**
-     * 苔石墙
+     * Mossy Cobblestone Wall
      */
-    MOSS_COBBLESTONE_WALL("苔石墙", 139, 1, "textures/blocks/cobblestone_mossy.png"),
+    MOSS_COBBLESTONE_WALL("Mossy Cobblestone Wall", 139, 1, "textures/blocks/cobblestone_mossy.png"),
     /**
-     * 土豆
+     * Potatoes
      */
-    POTATOES("土豆", 142, 0, "textures/blocks/potatoes_stage_3.png"),
+    POTATOES("Potatoes", 142, 0, "textures/blocks/potatoes_stage_3.png"),
     /**
-     * 木质按钮
+     * Wooden Button
      */
-    WOODEN_BUTTON("木质按钮", 143, 0, "textures/blocks/planks_oak.png"),
+    WOODEN_BUTTON("Wooden Button", 143, 0, "textures/blocks/planks_oak.png"),
     /**
-     * 铁砧
+     * Anvil
      */
-    ANVIL("铁砧", 145, 0, "textures/blocks/anvil_top_damaged_0.png"),
+    ANVIL("Anvil", 145, 0, "textures/blocks/anvil_top_damaged_0.png"),
     /**
-     * 陷阱箱
+     * Trapped Chest
      */
-    TRAPPED_CHEST("陷阱箱", 146, 0, "textures/blocks/trapped_chest_front.png"),
+    TRAPPED_CHEST("Trapped Chest", 146, 0, "textures/blocks/trapped_chest_front.png"),
     /**
-     * 重力压力板(轻型)
+     * Light Weighted Pressure Plate
      */
-    LIGHT_WEIGHTED_PRESSURE_PLATE("重力压力板(轻型)", 147, 0, "textures/blocks/gold_block.png"),
+    LIGHT_WEIGHTED_PRESSURE_PLATE("Light Weighted Pressure Plate", 147, 0, "textures/blocks/gold_block.png"),
     /**
-     * 重力压力板(重型)
+     * Heavy Weighted Pressure Plate
      */
-    HEAVY_WEIGHTED_PRESSURE_PLATE("重力压力板(重型)", 148, 0, "textures/blocks/iron_block.png"),
+    HEAVY_WEIGHTED_PRESSURE_PLATE("Heavy Weighted Pressure Plate", 148, 0, "textures/blocks/iron_block.png"),
     /**
-     * 阳光传感器
+     * Daylight Detector
      */
-    DAYLIGHT_DETECTOR_INVERTED("阳光传感器", 178, 0, "textures/blocks/daylight_detector_inverted_top.png"),
+    DAYLIGHT_DETECTOR_INVERTED("Daylight Detector", 178, 0, "textures/blocks/daylight_detector_inverted_top.png"),
     /**
-     * 红石块
+     * Redstone Block
      */
-    REDSTONE_BLOCK("红石块", 152, 0, "textures/blocks/redstone_block.png"),
+    REDSTONE_BLOCK("Redstone Block", 152, 0, "textures/blocks/redstone_block.png"),
     /**
-     * 地狱石英矿石
+     * Nether Quartz Ore
      */
-    QUARTZ_ORE("地狱石英矿石", 153, 0, "textures/blocks/quartz_ore.png"),
+    QUARTZ_ORE("Nether Quartz Ore", 153, 0, "textures/blocks/quartz_ore.png"),
     /**
-     * 漏斗
+     * Hopper
      */
-    HOPPER("漏斗", 154, 0, "textures/blocks/hopper_top.png"),
+    HOPPER("Hopper", 154, 0, "textures/blocks/hopper_top.png"),
     /**
-     * 石英块
+     * Quartz Block
      */
-    QUARTZ_BLOCK("石英块", 155, 0, "textures/blocks/quartz_block_top.png"),
+    QUARTZ_BLOCK("Quartz Block", 155, 0, "textures/blocks/quartz_block_top.png"),
     /**
-     * 竖纹石英块
+     * Pillar Quartz Block
      */
-    VERTICAL_GRAIN_QUARTZ_BLOCK("竖纹石英块", 155, 1, "textures/blocks/quartz_block_lines.png"),
+    VERTICAL_GRAIN_QUARTZ_BLOCK("Pillar Quartz Block", 155, 1, "textures/blocks/quartz_block_lines.png"),
     /**
-     * 錾制石英块
+     * Chiseled Quartz Block
      */
-    QUARTZ_BLOCK_CHISELED("錾制石英块", 155, 2, "textures/blocks/quartz_block_chiseled_top.png"),
+    QUARTZ_BLOCK_CHISELED("Chiseled Quartz Block", 155, 2, "textures/blocks/quartz_block_chiseled_top.png"),
     /**
-     * 石英阶梯
+     * Quartz Stairs
      */
-    QUARTZ_STAIRS("石英阶梯", 156, 0, "textures/blocks/quartz_block_top.png"),
+    QUARTZ_STAIRS("Quartz Stairs", 156, 0, "textures/blocks/quartz_block_top.png"),
     /**
-     * 橡木台阶
+     * Oak Wood Slab
      */
-    OAK_WOOD_STAIRS("橡木台阶", 158, 0, "textures/blocks/planks_oak.png"),
+    OAK_WOOD_STAIRS("Oak Wood Slab", 158, 0, "textures/blocks/planks_oak.png"),
     /**
-     * 白色粘土
+     * White Terracotta
      */
-    WHITE_STAINED_HARDENED_CLAY("白色粘土", 159, 0, "textures/blocks/hardened_clay_stained_white.png"),
+    WHITE_STAINED_HARDENED_CLAY("White Terracotta", 159, 0, "textures/blocks/hardened_clay_stained_white.png"),
     /**
-     * 橙色粘土
+     * Orange Terracotta
      */
-    ORANGE_STAINED_HARDENED_CLAY("橙色粘土", 159, 1, "textures/blocks/hardened_clay_stained_orange.png"),
+    ORANGE_STAINED_HARDENED_CLAY("Orange Terracotta", 159, 1, "textures/blocks/hardened_clay_stained_orange.png"),
     /**
-     * 品红色粘土
+     * Magenta Terracotta
      */
-    SOLFERINO_STAINED_HARDENED_CLAY("品红色粘土", 159, 2, "textures/blocks/hardened_clay_stained_magenta.png"),
+    SOLFERINO_STAINED_HARDENED_CLAY("Magenta Terracotta", 159, 2, "textures/blocks/hardened_clay_stained_magenta.png"),
     /**
-     * 淡蓝色粘土
+     * Light Blue Terracotta
      */
-    LIGHT_BLUE_STAINED_HARDENED_CLAY("淡蓝色粘土", 159, 3, "textures/blocks/hardened_clay_stained_light_blue.png"),
+    LIGHT_BLUE_STAINED_HARDENED_CLAY("Light Blue Terracotta", 159, 3, "textures/blocks/hardened_clay_stained_light_blue.png"),
     /**
-     * 黄色粘土
+     * Yellow Terracotta
      */
-    YELLOW_STAINED_HARDENED_CLAY("黄色粘土", 159, 4, "textures/blocks/hardened_clay_stained_yellow.png"),
+    YELLOW_STAINED_HARDENED_CLAY("Yellow Terracotta", 159, 4, "textures/blocks/hardened_clay_stained_yellow.png"),
     /**
-     * 黄绿色粘土
+     * Lime Terracotta
      */
-    OLIVINE_STAINED_HARDENED_CLAY("黄绿色粘土", 159, 5, "textures/blocks/hardened_clay_stained_lime.png"),
+    OLIVINE_STAINED_HARDENED_CLAY("Lime Terracotta", 159, 5, "textures/blocks/hardened_clay_stained_lime.png"),
     /**
-     * 粉红色粘土
+     * Pink Terracotta
      */
-    PINK_STAINED_HARDENED_CLAY("粉红色粘土", 159, 6, "textures/blocks/hardened_clay_stained_pink.png"),
+    PINK_STAINED_HARDENED_CLAY("Pink Terracotta", 159, 6, "textures/blocks/hardened_clay_stained_pink.png"),
     /**
-     * 灰色粘土
+     * Gray Terracotta
      */
-    GRAY_STAINED_HARDENED_CLAY("灰色粘土", 159, 7, "textures/blocks/hardened_clay_stained_gray.png"),
+    GRAY_STAINED_HARDENED_CLAY("Gray Terracotta", 159, 7, "textures/blocks/hardened_clay_stained_gray.png"),
     /**
-     * 淡灰色粘土
+     * Light Gray Terracotta
      */
-    LIGHT_GRAY_STAINED_HARDENED_CLAY("淡灰色粘土", 159, 8, "textures/blocks/concrete_gray.png"),
+    LIGHT_GRAY_STAINED_HARDENED_CLAY("Light Gray Terracotta", 159, 8, "textures/blocks/concrete_gray.png"),
     /**
-     * 青色粘土
+     * Cyan Terracotta
      */
-    CYAN_STAINED_HARDENED_CLAY("青色粘土", 159, 9, "textures/blocks/hardened_clay_stained_lime.png"),
+    CYAN_STAINED_HARDENED_CLAY("Cyan Terracotta", 159, 9, "textures/blocks/hardened_clay_stained_lime.png"),
     /**
-     * 紫色粘土
+     * Purple Terracotta
      */
-    VIOLET_STAINED_HARDENED_CLAY("紫色粘土", 159, 10, "textures/blocks/hardened_clay_stained_purple.png"),
+    VIOLET_STAINED_HARDENED_CLAY("Purple Terracotta", 159, 10, "textures/blocks/hardened_clay_stained_purple.png"),
     /**
-     * 蓝色粘土
+     * Blue Terracotta
      */
-    BLUE_STAINED_HARDENED_CLAY("蓝色粘土", 159, 11, "textures/blocks/hardened_clay_stained_blue.png"),
+    BLUE_STAINED_HARDENED_CLAY("Blue Terracotta", 159, 11, "textures/blocks/hardened_clay_stained_blue.png"),
     /**
-     * 棕色粘土
+     * Brown Terracotta
      */
-    BROWN_STAINED_HARDENED_CLAY("棕色粘土", 159, 12, "textures/blocks/hardened_clay_stained_brown.png"),
+    BROWN_STAINED_HARDENED_CLAY("Brown Terracotta", 159, 12, "textures/blocks/hardened_clay_stained_brown.png"),
     /**
-     * 绿色粘土
+     * Green Terracotta
      */
-    GREEN_STAINED_HARDENED_CLAY("绿色粘土", 159, 13, "textures/blocks/hardened_clay_stained_green.png"),
+    GREEN_STAINED_HARDENED_CLAY("Green Terracotta", 159, 13, "textures/blocks/hardened_clay_stained_green.png"),
     /**
-     * 红色粘土
+     * Red Terracotta
      */
-    RED_STAINED_HARDENED_CLAY("红色粘土", 159, 14, "textures/blocks/hardened_clay_stained_red.png"),
+    RED_STAINED_HARDENED_CLAY("Red Terracotta", 159, 14, "textures/blocks/hardened_clay_stained_red.png"),
     /**
-     * 黑色粘土
+     * Black Terracotta
      */
-    BLACK_STAINED_HARDENED_CLAY("黑色粘土", 159, 15, "textures/blocks/hardened_clay_stained_black.png"),
+    BLACK_STAINED_HARDENED_CLAY("Black Terracotta", 159, 15, "textures/blocks/hardened_clay_stained_black.png"),
     /**
-     * 白色玻璃板
+     * White Stained Glass Pane
      */
-    WHITE_STAINED_GLASS_PANE("白色玻璃板", 160, 0, "textures/blocks/glass_pane_top_white.png"),
+    WHITE_STAINED_GLASS_PANE("White Stained Glass Pane", 160, 0, "textures/blocks/glass_pane_top_white.png"),
     /**
-     * 橙色玻璃板
+     * Orange Stained Glass Pane
      */
-    ORANGE_STAINED_GLASS_PANE("橙色玻璃板", 160, 1, "textures/blocks/glass_pane_top_orange.png"),
+    ORANGE_STAINED_GLASS_PANE("Orange Stained Glass Pane", 160, 1, "textures/blocks/glass_pane_top_orange.png"),
     /**
-     * 品红色玻璃板
+     * Magenta Stained Glass Pane
      */
-    SOLFERINO_STAINED_GLASS_PANE("品红色玻璃板", 160, 2, "textures/blocks/glass_pane_top_magenta.png"),
+    SOLFERINO_STAINED_GLASS_PANE("Magenta Stained Glass Pane", 160, 2, "textures/blocks/glass_pane_top_magenta.png"),
     /**
-     * 淡蓝色玻璃板
+     * Light Blue Stained Glass Pane
      */
-    LIGHT_BLUE_STAINED_GLASS_PANE("淡蓝色玻璃板", 160, 3, "textures/blocks/glass_light_blue.png"),
+    LIGHT_BLUE_STAINED_GLASS_PANE("Light Blue Stained Glass Pane", 160, 3, "textures/blocks/glass_light_blue.png"),
     /**
-     * 黄色玻璃板
+     * Yellow Stained Glass Pane
      */
-    YELLOW_STAINED_GLASS_PANE("黄色玻璃板", 160, 4, "textures/blocks/glass_yellow.png"),
+    YELLOW_STAINED_GLASS_PANE("Yellow Stained Glass Pane", 160, 4, "textures/blocks/glass_yellow.png"),
     /**
-     * 黄绿色玻璃板
+     * Lime Stained Glass Pane
      */
-    OLIVINE_STAINED_GLASS_PANE("黄绿色玻璃板", 160, 5, "textures/blocks/glass_pane_top_lime.png"),
+    OLIVINE_STAINED_GLASS_PANE("Lime Stained Glass Pane", 160, 5, "textures/blocks/glass_pane_top_lime.png"),
     /**
-     * 粉红色玻璃板
+     * Pink Stained Glass Pane
      */
-    PINK_STAINED_GLASS_PANE("粉红色玻璃板", 160, 6, "textures/blocks/glass_pane_top_pink.png"),
+    PINK_STAINED_GLASS_PANE("Pink Stained Glass Pane", 160, 6, "textures/blocks/glass_pane_top_pink.png"),
     /**
-     * 灰色玻璃板
+     * Gray Stained Glass Pane
      */
-    GRAY_STAINED_GLASS_PANE("灰色玻璃板", 160, 7, "textures/blocks/glass_gray.png"),
+    GRAY_STAINED_GLASS_PANE("Gray Stained Glass Pane", 160, 7, "textures/blocks/glass_gray.png"),
     /**
-     * 淡灰色玻璃板
+     * Light Gray Stained Glass Pane
      */
-    LIGHT_GRAY_STAINED_GLASS_PANE("淡灰色玻璃板", 160, 8, "textures/blocks/glass_brown.png"),
+    LIGHT_GRAY_STAINED_GLASS_PANE("Light Gray Stained Glass Pane", 160, 8, "textures/blocks/glass_brown.png"),
     /**
-     * 青色玻璃板
+     * Cyan Stained Glass Pane
      */
-    CYAN_STAINED_GLASS_PANE("青色玻璃板", 160, 9, "textures/blocks/glass_pane_top_cyan.png"),
+    CYAN_STAINED_GLASS_PANE("Cyan Stained Glass Pane", 160, 9, "textures/blocks/glass_pane_top_cyan.png"),
     /**
-     * 紫色玻璃板
+     * Purple Stained Glass Pane
      */
-    VIOLET_STAINED_GLASS_PANE("紫色玻璃板", 160, 10, "textures/blocks/glass_pane_top_purple.png"),
+    VIOLET_STAINED_GLASS_PANE("Purple Stained Glass Pane", 160, 10, "textures/blocks/glass_pane_top_purple.png"),
     /**
-     * 蓝色玻璃板
+     * Blue Stained Glass Pane
      */
-    BLUE_STAINED_GLASS_PANE("蓝色玻璃板", 160, 11, "textures/blocks/glass_blue.png"),
+    BLUE_STAINED_GLASS_PANE("Blue Stained Glass Pane", 160, 11, "textures/blocks/glass_blue.png"),
     /**
-     * 棕色玻璃板
+     * Brown Stained Glass Pane
      */
-    BROWN_STAINED_GLASS_PANE("棕色玻璃板", 160, 12, "textures/blocks/glass_brown.png"),
+    BROWN_STAINED_GLASS_PANE("Brown Stained Glass Pane", 160, 12, "textures/blocks/glass_brown.png"),
     /**
-     * 绿色玻璃板
+     * Green Stained Glass Pane
      */
-    GREEN_STAINED_GLASS_PANE("绿色玻璃板", 160, 13, "textures/blocks/glass_pane_top_green.png"),
+    GREEN_STAINED_GLASS_PANE("Green Stained Glass Pane", 160, 13, "textures/blocks/glass_pane_top_green.png"),
     /**
-     * 红色玻璃板
+     * Red Stained Glass Pane
      */
-    RED_STAINED_GLASS_PANE("红色玻璃板", 160, 14, "textures/blocks/glass_red.png"),
+    RED_STAINED_GLASS_PANE("Red Stained Glass Pane", 160, 14, "textures/blocks/glass_red.png"),
     /**
-     * 黑色玻璃板
+     * Black Stained Glass Pane
      */
-    BLACK_STAINED_GLASS_PANE("黑色玻璃板", 160, 15, "textures/blocks/glass_black.png"),
+    BLACK_STAINED_GLASS_PANE("Black Stained Glass Pane", 160, 15, "textures/blocks/glass_black.png"),
     /**
-     * 金合欢叶
+     * Acacia Leaves
      */
-    ACACIA_LEAVES("金合欢叶", 161, 0, "textures/blocks/leaves_acacia_opaque.png"),
+    ACACIA_LEAVES("Acacia Leaves", 161, 0, "textures/blocks/leaves_acacia_opaque.png"),
     /**
-     * 深色橡树叶
+     * Dark Oak Leaves
      */
-    DARK_OAK_LEAF("深色橡树叶", 161, 1, "textures/blocks/leaves_big_oak_opaque.png"),
+    DARK_OAK_LEAF("Dark Oak Leaves", 161, 1, "textures/blocks/leaves_big_oak_opaque.png"),
     /**
-     * 金合欢木
+     * Acacia Wood
      */
-    ACACIA_WOOD("金合欢木", 162, 0, "textures/blocks/log_acacia.png"),
+    ACACIA_WOOD("Acacia Wood", 162, 0, "textures/blocks/log_acacia.png"),
     /**
-     * 深色橡木
+     * Dark Oak Wood
      */
-    DARK_OAK("深色橡木", 162, 1, "textures/blocks/log_acacia.png"),
+    DARK_OAK("Dark Oak Wood", 162, 1, "textures/blocks/log_acacia.png"),
     /**
-     * 金合欢木阶梯
+     * Acacia Wood Stairs
      */
-    ACACIA_STAIRS("金合欢木阶梯", 163, 0, "textures/blocks/planks_acacia.png"),
+    ACACIA_STAIRS("Acacia Wood Stairs", 163, 0, "textures/blocks/planks_acacia.png"),
     /**
-     * 深色橡木阶梯
+     * Dark Oak Wood Stairs
      */
-    DARK_OAK_STAIRS("深色橡木阶梯", 164, 0, "textures/blocks/planks_big_oak.png"),
+    DARK_OAK_STAIRS("Dark Oak Wood Stairs", 164, 0, "textures/blocks/planks_big_oak.png"),
     /**
-     * 粘液块
+     * Slime Block
      */
-    SLIME("粘液块", 165, 0, "textures/blocks/slime.png"),
+    SLIME("Slime Block", 165, 0, "textures/blocks/slime.png"),
     /**
-     * 铁门
+     * Iron Door
      */
-    IRON_DOOR("铁门", 330, 0, "textures/blocks/door_iron_upper.png"),
+    IRON_DOOR("Iron Door", 330, 0, "textures/blocks/door_iron_upper.png"),
     /**
-     * 海晶石
+     * Prismarine
      */
-    PRISMARINE("海晶石", 168, 0, "textures/blocks/prismarine_dark.png"),
+    PRISMARINE("Prismarine", 168, 0, "textures/blocks/prismarine_dark.png"),
     /**
-     * 暗海晶石
+     * Dark Prismarine
      */
-    DARK_PRISMARINE("暗海晶石", 168, 1, "textures/blocks/prismarine_dark.png"),
+    DARK_PRISMARINE("Dark Prismarine", 168, 1, "textures/blocks/prismarine_dark.png"),
     /**
-     * 海晶石砖
+     * Prismarine Bricks
      */
-    PRISMARINE_STONE_BRICK("海晶石砖", 168, 2, "textures/blocks/prismarine_bricks.png"),
+    PRISMARINE_STONE_BRICK("Prismarine Bricks", 168, 2, "textures/blocks/prismarine_bricks.png"),
     /**
-     * 海晶灯
+     * Sea Lantern
      */
-    SEA_LANTERN("海晶灯", 169, 0, "textures/blocks/sea_lantern.png"),
+    SEA_LANTERN("Sea Lantern", 169, 0, "textures/blocks/sea_lantern.png"),
     /**
-     * 干草捆
+     * Hay Bale
      */
-    HAY_BLOCK("干草捆", 170, 0, "textures/blocks/hay_block_side.png"),
+    HAY_BLOCK("Hay Bale", 170, 0, "textures/blocks/hay_block_side.png"),
     /**
-     * 白色地毯
+     * White Carpet
      */
-    WHITE_CARPET("白色地毯", 171, 0, "textures/blocks/wool_colored_white.png"),
+    WHITE_CARPET("White Carpet", 171, 0, "textures/blocks/wool_colored_white.png"),
     /**
-     * 橙色地毯
+     * Orange Carpet
      */
-    ORANGE_CARPET("橙色地毯", 171, 1, "textures/blocks/wool_colored_orange.png"),
+    ORANGE_CARPET("Orange Carpet", 171, 1, "textures/blocks/wool_colored_orange.png"),
     /**
-     * 品红色地毯
+     * Magenta Carpet
      */
-    SOLFERINO_CARPET("品红色地毯", 171, 2, "textures/blocks/wool_colored_magenta.png"),
+    SOLFERINO_CARPET("Magenta Carpet", 171, 2, "textures/blocks/wool_colored_magenta.png"),
     /**
-     * 淡蓝色地毯
+     * Light Blue Carpet
      */
-    LIGHT_BLUE_CARPET("淡蓝色地毯", 171, 3, "textures/blocks/wool_colored_light_blue.png"),
+    LIGHT_BLUE_CARPET("Light Blue Carpet", 171, 3, "textures/blocks/wool_colored_light_blue.png"),
     /**
-     * 黄色地毯
+     * Yellow Carpet
      */
-    YELLOW_CARPET("黄色地毯", 171, 4, "textures/blocks/wool_colored_yellow.png"),
+    YELLOW_CARPET("Yellow Carpet", 171, 4, "textures/blocks/wool_colored_yellow.png"),
     /**
-     * 黄绿色地毯
+     * Lime Carpet
      */
-    OLIVINE_CARPET("黄绿色地毯", 171, 5, "textures/blocks/wool_colored_lime.png"),
+    OLIVINE_CARPET("Lime Carpet", 171, 5, "textures/blocks/wool_colored_lime.png"),
     /**
-     * 粉红色地毯
+     * Pink Carpet
      */
-    PINK_CARPET("粉红色地毯", 171, 6, "textures/blocks/wool_colored_pink.png"),
+    PINK_CARPET("Pink Carpet", 171, 6, "textures/blocks/wool_colored_pink.png"),
     /**
-     * 灰色地毯
+     * Gray Carpet
      */
-    GRAY_CARPET("灰色地毯", 171, 7, "textures/blocks/wool_colored_gray.png"),
+    GRAY_CARPET("Gray Carpet", 171, 7, "textures/blocks/wool_colored_gray.png"),
     /**
-     * 淡灰色地毯
+     * Light Gray Carpet
      */
-    LIGHT_GRAY_CARPET("淡灰色地毯", 171, 8, "textures/blocks/wool_colored_silver.png"),
+    LIGHT_GRAY_CARPET("Light Gray Carpet", 171, 8, "textures/blocks/wool_colored_silver.png"),
     /**
-     * 青色地毯
+     * Cyan Carpet
      */
-    CYAN_CARPET("青色地毯", 171, 9, "textures/blocks/wool_colored_cyan.png"),
+    CYAN_CARPET("Cyan Carpet", 171, 9, "textures/blocks/wool_colored_cyan.png"),
     /**
-     * 紫色地毯
+     * Purple Carpet
      */
-    VIOLET_CARPET("紫色地毯", 171, 10, "textures/blocks/wool_colored_purple.png"),
+    VIOLET_CARPET("Purple Carpet", 171, 10, "textures/blocks/wool_colored_purple.png"),
     /**
-     * 蓝色地毯
+     * Blue Carpet
      */
-    BLUE_CARPET("蓝色地毯", 171, 11, "textures/blocks/wool_colored_blue.png"),
+    BLUE_CARPET("Blue Carpet", 171, 11, "textures/blocks/wool_colored_blue.png"),
     /**
-     * 棕色地毯
+     * Brown Carpet
      */
-    BROWN_CARPET("棕色地毯", 171, 12, "textures/blocks/wool_colored_brown.png"),
+    BROWN_CARPET("Brown Carpet", 171, 12, "textures/blocks/wool_colored_brown.png"),
     /**
-     * 绿色地毯
+     * Green Carpet
      */
-    GREEN_CARPET("绿色地毯", 171, 13, "textures/blocks/wool_colored_green.png"),
+    GREEN_CARPET("Green Carpet", 171, 13, "textures/blocks/wool_colored_green.png"),
     /**
-     * 红色地毯
+     * Red Carpet
      */
-    RED_CARPET("红色地毯", 171, 14, "textures/blocks/wool_colored_red.png"),
+    RED_CARPET("Red Carpet", 171, 14, "textures/blocks/wool_colored_red.png"),
     /**
-     * 黑色地毯
+     * Black Carpet
      */
-    BLACK_CARPET("黑色地毯", 171, 15, "textures/blocks/wool_colored_black.png"),
+    BLACK_CARPET("Black Carpet", 171, 15, "textures/blocks/wool_colored_black.png"),
     /**
-     * 硬化粘土
+     * Terracotta
      */
-    HARDENED_CLAY("硬化粘土", 172, 0, "textures/blocks/hardened_clay.png"),
+    HARDENED_CLAY("Terracotta", 172, 0, "textures/blocks/hardened_clay.png"),
     /**
-     * 煤炭块
+     * Coal Block
      */
-    COAL_BLOCK("煤炭块", 173, 0, "textures/blocks/coal_block.png"),
+    COAL_BLOCK("Coal Block", 173, 0, "textures/blocks/coal_block.png"),
     /**
-     * 浮冰
+     * Packed Ice
      */
-    PACKED_ICE("浮冰", 174, 0, "textures/blocks/ice_packed.png"),
+    PACKED_ICE("Packed Ice", 174, 0, "textures/blocks/ice_packed.png"),
     /**
-     * 向日葵
+     * Sunflower
      */
-    SUNFLOWER("向日葵", 175, 0, "textures/blocks/double_plant_sunflower_front.png"),
+    SUNFLOWER("Sunflower", 175, 0, "textures/blocks/double_plant_sunflower_front.png"),
     /**
-     * 丁香
+     * Lilac
      */
-    LILAC("丁香", 175, 1, "textures/blocks/flower_cornflower.png"),
+    LILAC("Lilac", 175, 1, "textures/blocks/flower_cornflower.png"),
     /**
-     * 高草丛
+     * Double Tallgrass
      */
-    TALL_GRASS("高草丛", 175, 2, "textures/blocks/double_plant_grass_carried.png"),
+    TALL_GRASS("Double Tallgrass", 175, 2, "textures/blocks/double_plant_grass_carried.png"),
     /**
-     * 大型蕨
+     * Large Fern
      */
-    LARGE_FERN("大型蕨", 175, 3, "textures/blocks/tallgrass.png"),
+    LARGE_FERN("Large Fern", 175, 3, "textures/blocks/tallgrass.png"),
     /**
-     * 玫瑰丛
+     * Rose Bush
      */
-    ROSE_BUSH("玫瑰丛", 175, 4, "textures/blocks/sweet_berry_bush_stage3.png"),
+    ROSE_BUSH("Rose Bush", 175, 4, "textures/blocks/sweet_berry_bush_stage3.png"),
     /**
-     * 牡丹
+     * Peony
      */
-    PEONY("牡丹", 175, 5, "textures/blocks/flower_allium.png"),
+    PEONY("Peony", 175, 5, "textures/blocks/flower_allium.png"),
     /**
-     * 旗帜
+     * Banner
      */
-    STANDING_BANNER("旗帜", 176, 0, "textures/blocks/bone_block_side.png"),
+    STANDING_BANNER("Banner", 176, 0, "textures/blocks/bone_block_side.png"),
     /**
-     * 悬挂的旗帜
+     * Wall Banner
      */
-    WALL_BANNER("悬挂的旗帜", 177, 0, "textures/blocks/bone_block_side.png"),
+    WALL_BANNER("Wall Banner", 177, 0, "textures/blocks/bone_block_side.png"),
     /**
-     * 红沙石
+     * Red Sandstone
      */
-    RED_SANDSTONE("红沙石", 179, 0, "textures/blocks/red_sandstone_bottom.png"),
+    RED_SANDSTONE("Red Sandstone", 179, 0, "textures/blocks/red_sandstone_bottom.png"),
     /**
-     * 錾制红沙石
+     * Chiseled Red Sandstone
      */
-    CHISELED_RED_SANDSTONE("錾制红沙石", 179, 1, "textures/blocks/red_sandstone_carved.png"),
+    CHISELED_RED_SANDSTONE("Chiseled Red Sandstone", 179, 1, "textures/blocks/red_sandstone_carved.png"),
     /**
-     * 平滑红沙石
+     * Smooth Red Sandstone
      */
-    SMOOTH_RED_SANDSTONE("平滑红沙石", 179, 2, "textures/blocks/red_sandstone_smooth.png"),
+    SMOOTH_RED_SANDSTONE("Smooth Red Sandstone", 179, 2, "textures/blocks/red_sandstone_smooth.png"),
     /**
-     * 红沙石阶梯
+     * Red Sandstone Stairs
      */
-    RED_SANDSTONE_STAIRS("红沙石阶梯", 180, 0, "textures/blocks/red_sandstone_carved.png"),
+    RED_SANDSTONE_STAIRS("Red Sandstone Stairs", 180, 0, "textures/blocks/red_sandstone_carved.png"),
     /**
-     * 红沙石台阶
+     * Red Sandstone Slab
      */
-    STONE_SLAB2("红沙石台阶", 182, 0, "textures/blocks/red_sandstone_smooth.png"),
+    STONE_SLAB2("Red Sandstone Slab", 182, 0, "textures/blocks/red_sandstone_smooth.png"),
     /**
-     * 云杉围墙大门
+     * Spruce Fence Gate
      */
-    SPRUCE_FENCE_GATE("云杉围墙大门", 183, 0, "textures/blocks/door_spruce_lower.png"),
+    SPRUCE_FENCE_GATE("Spruce Fence Gate", 183, 0, "textures/blocks/door_spruce_lower.png"),
     /**
-     * 桦木围墙大门
+     * Birch Fence Gate
      */
-    BIRCH_FENCE_GATE("桦木围墙大门", 184, 0, "textures/blocks/door_birch_upper.png"),
+    BIRCH_FENCE_GATE("Birch Fence Gate", 184, 0, "textures/blocks/door_birch_upper.png"),
     /**
-     * 丛林木围墙大门
+     * Jungle Fence Gate
      */
-    JUNGLE_FENCE_GATE("丛林木围墙大门", 185, 0, "textures/blocks/door_acacia_upper.png"),
+    JUNGLE_FENCE_GATE("Jungle Fence Gate", 185, 0, "textures/blocks/door_acacia_upper.png"),
     /**
-     * 深色橡木围墙大门
+     * Dark Oak Fence Gate
      */
-    DARK_OAK_FENCE_GATE("深色橡木围墙大门", 186, 0, "textures/blocks/door_dark_oak_lower.png"),
+    DARK_OAK_FENCE_GATE("Dark Oak Fence Gate", 186, 0, "textures/blocks/door_dark_oak_lower.png"),
     /**
-     * 金合欢木围墙大门
+     * Acacia Fence Gate
      */
-    ACACIA_FENCE_GATE("金合欢木围墙大门", 187, 0, "textures/blocks/door_spruce_lower.png"),
+    ACACIA_FENCE_GATE("Acacia Fence Gate", 187, 0, "textures/blocks/door_spruce_lower.png"),
     /**
-     * 重复命令块
+     * Repeating Command Block
      */
-    SPRUCE_FENCE("重复命令块", 188, 0, "textures/blocks/chain_command_block_conditional_mipmap.png"),
+    SPRUCE_FENCE("Repeating Command Block", 188, 0, "textures/blocks/chain_command_block_conditional_mipmap.png"),
     /**
-     * 链命令块
+     * Chain Command Block
      */
-    BIRCH_FENCE("链命令块", 189, 0, "textures/blocks/repeating_command_block_back_mipmap.png"),
+    BIRCH_FENCE("Chain Command Block", 189, 0, "textures/blocks/repeating_command_block_back_mipmap.png"),
     /**
-     * 桦木门
+     * Birch Door
      */
-    BIRCH_DOOR("桦木门", 194, 0, "textures/blocks/door_birch_upper.png"),
+    BIRCH_DOOR("Birch Door", 194, 0, "textures/blocks/door_birch_upper.png"),
     /**
-     * 绿茵小道
+     * Grass Path
      */
-    END_ROD("绿茵小道", 198, 0, "textures/blocks/end_rod.png"),
+    END_ROD("Grass Path", 198, 0, "textures/blocks/end_rod.png"),
     /**
-     * 合唱花
+     * Chorus Flower
      */
-    CHORUS_FLOWER("合唱花", 200, 0, "textures/blocks/chorus_flower.png"),
+    CHORUS_FLOWER("Chorus Flower", 200, 0, "textures/blocks/chorus_flower.png"),
     /**
-     * 紫珀方块
+     * Purpur Block
      */
-    PURPUR_BLOCK("紫珀方块", 201, 0, "textures/blocks/purpur_block.png"),
+    PURPUR_BLOCK("Purpur Block", 201, 0, "textures/blocks/purpur_block.png"),
     /**
-     * 紫珀阶梯
+     * Purpur Stairs
      */
-    PURPUR_STAIRS("紫珀阶梯", 203, 0, "textures/blocks/purpur_block.png"),
+    PURPUR_STAIRS("Purpur Stairs", 203, 0, "textures/blocks/purpur_block.png"),
     /**
-     * 潜匿之贝箱子
+     * Shulker Box
      */
-    PURPUR_SLAB("潜匿之贝箱子", 205, 0, "textures/items/shulker_shell.png"),
+    PURPUR_SLAB("Shulker Box", 205, 0, "textures/items/shulker_shell.png"),
     /**
-     * 末地石砖
+     * End Stone Bricks
      */
-    END_BRICKS("末地石砖", 206, 0, "textures/blocks/end_bricks.png"),
+    END_BRICKS("End Stone Bricks", 206, 0, "textures/blocks/end_bricks.png"),
     /**
-     * 末地棒
+     * End Rod
      */
-    GRASS_PATH("末地棒", 208, 0, "textures/blocks/grass_path_side.png"),
+    GRASS_PATH("End Rod", 208, 0, "textures/blocks/grass_path_side.png"),
     /**
-     * 末地门2
+     * End Gateway
      */
-    END_GATEWAY("末地门2", 209, 0, "textures/blocks/end_gateway.png"),
+    END_GATEWAY("End Gateway", 209, 0, "textures/blocks/end_gateway.png"),
     /**
-     * 铁锹
+     * Iron Shovel
      */
-    IRON_SHOVEL("铁锹", 256, 0, "textures/items/iron_shovel.png"),
+    IRON_SHOVEL("Iron Shovel", 256, 0, "textures/items/iron_shovel.png"),
     /**
-     * 铁镐
+     * Iron Pickaxe
      */
-    IRON_PICKAXE("铁镐", 257, 0, "textures/items/iron_pickaxe.png"),
+    IRON_PICKAXE("Iron Pickaxe", 257, 0, "textures/items/iron_pickaxe.png"),
     /**
-     * 铁斧
+     * Iron Axe
      */
-    IRON_AXE("铁斧", 258, 0, "textures/items/iron_axe.png"),
+    IRON_AXE("Iron Axe", 258, 0, "textures/items/iron_axe.png"),
     /**
-     * 打火石
+     * Flint and Steel
      */
-    FLINT_AND_STEEL("打火石", 259, 0, "textures/items/flint_and_steel.png"),
+    FLINT_AND_STEEL("Flint and Steel", 259, 0, "textures/items/flint_and_steel.png"),
     /**
-     * 苹果
+     * Apple
      */
-    APPLE("苹果", 260, 0, "textures/items/apple.png"),
+    APPLE("Apple", 260, 0, "textures/items/apple.png"),
     /**
-     * 弓
+     * Bow
      */
-    BOW("弓", 261, 0, "textures/items/bow_standby.png"),
+    BOW("Bow", 261, 0, "textures/items/bow_standby.png"),
     /**
-     * 箭
+     * Arrow
      */
-    ARROW("箭", 262, 0, "textures/items/arrow.png"),
+    ARROW("Arrow", 262, 0, "textures/items/arrow.png"),
     /**
-     * 煤炭
+     * Coal
      */
-    COAL("煤炭", 263, 0, "textures/items/coal.png"),
+    COAL("Coal", 263, 0, "textures/items/coal.png"),
     /**
-     * 木炭
+     * Charcoal
      */
-    CHARCOAL("木炭", 263, 1, "textures/items/charcoal.png"),
+    CHARCOAL("Charcoal", 263, 1, "textures/items/charcoal.png"),
     /**
-     * 钻石
+     * Diamond
      */
-    DIAMOND("钻石", 264, 0, "textures/items/diamond.png"),
+    DIAMOND("Diamond", 264, 0, "textures/items/diamond.png"),
     /**
-     * 铁锭
+     * Iron Ingot
      */
-    IRON_INGOT("铁锭", 265, 0, "textures/items/iron_ingot.png"),
+    IRON_INGOT("Iron Ingot", 265, 0, "textures/items/iron_ingot.png"),
     /**
-     * 金锭
+     * Gold Ingot
      */
-    GOLD_INGOT("金锭", 266, 0, "textures/items/gold_ingot.png"),
+    GOLD_INGOT("Gold Ingot", 266, 0, "textures/items/gold_ingot.png"),
     /**
-     * 铁剑
+     * Iron Sword
      */
-    IRON_SWORD("铁剑", 267, 0, "textures/items/iron_sword.png"),
+    IRON_SWORD("Iron Sword", 267, 0, "textures/items/iron_sword.png"),
     /**
-     * 木剑
+     * Wooden Sword
      */
-    WOODEN_SWORD("木剑", 268, 0, "textures/items/wood_sword.png"),
+    WOODEN_SWORD("Wooden Sword", 268, 0, "textures/items/wood_sword.png"),
     /**
-     * 木锹
+     * Wooden Shovel
      */
-    WOODEN_SHOVEL("木锹", 269, 0, "textures/items/wood_shovel.png"),
+    WOODEN_SHOVEL("Wooden Shovel", 269, 0, "textures/items/wood_shovel.png"),
     /**
-     * 木镐
+     * Wooden Pickaxe
      */
-    WOODEN_PICKAXE("木镐", 270, 0, "textures/items/wood_pickaxe.png"),
+    WOODEN_PICKAXE("Wooden Pickaxe", 270, 0, "textures/items/wood_pickaxe.png"),
     /**
-     * 木斧
+     * Wooden Axe
      */
-    WOODEN_AXE("木斧", 271, 0, "textures/items/wood_axe.png"),
+    WOODEN_AXE("Wooden Axe", 271, 0, "textures/items/wood_axe.png"),
     /**
-     * 石剑
+     * Stone Sword
      */
-    STONE_SWORD("石剑", 272, 0, "textures/items/stone_sword.png"),
+    STONE_SWORD("Stone Sword", 272, 0, "textures/items/stone_sword.png"),
     /**
-     * 石锹
+     * Stone Shovel
      */
-    STONE_SHOVEL("石锹", 273, 0, "textures/items/stone_shovel.png"),
+    STONE_SHOVEL("Stone Shovel", 273, 0, "textures/items/stone_shovel.png"),
     /**
-     * 石镐
+     * Stone Pickaxe
      */
-    STONE_PICKAXE("石镐", 274, 0, "textures/items/stone_pickaxe.png"),
+    STONE_PICKAXE("Stone Pickaxe", 274, 0, "textures/items/stone_pickaxe.png"),
     /**
-     * 石斧
+     * Stone Axe
      */
-    STONE_AXE("石斧", 275, 0, "textures/items/stone_axe.png"),
+    STONE_AXE("Stone Axe", 275, 0, "textures/items/stone_axe.png"),
     /**
-     * 钻石剑
+     * Diamond Sword
      */
-    DIAMOND_SWORD("钻石剑", 276, 0, "textures/items/diamond_sword.png"),
+    DIAMOND_SWORD("Diamond Sword", 276, 0, "textures/items/diamond_sword.png"),
     /**
-     * 钻石锹
+     * Diamond Shovel
      */
-    DIAMOND_SHOVEL("钻石锹", 277, 0, "textures/items/diamond_shovel.png"),
+    DIAMOND_SHOVEL("Diamond Shovel", 277, 0, "textures/items/diamond_shovel.png"),
     /**
-     * 钻石镐
+     * Diamond Pickaxe
      */
-    DIAMOND_PICKAXE("钻石镐", 278, 0, "textures/items/diamond_pickaxe.png"),
+    DIAMOND_PICKAXE("Diamond Pickaxe", 278, 0, "textures/items/diamond_pickaxe.png"),
     /**
-     * 钻石斧
+     * Diamond Axe
      */
-    DIAMOND_AXE("钻石斧", 279, 0, "textures/items/diamond_axe.png"),
+    DIAMOND_AXE("Diamond Axe", 279, 0, "textures/items/diamond_axe.png"),
     /**
-     * 木棍
+     * Stick
      */
-    STICK("木棍", 280, 0, "textures/items/stick.png"),
+    STICK("Stick", 280, 0, "textures/items/stick.png"),
     /**
-     * 碗
+     * Bowl
      */
-    BOWL("碗", 281, 0, "textures/items/bowl.png"),
+    BOWL("Bowl", 281, 0, "textures/items/bowl.png"),
     /**
-     * 蘑菇煲
+     * Mushroom Stew
      */
-    MUSHROOM_STEW("蘑菇煲", 282, 0, "textures/items/mushroom_stew.png"),
+    MUSHROOM_STEW("Mushroom Stew", 282, 0, "textures/items/mushroom_stew.png"),
     /**
-     * 金剑
+     * Golden Sword
      */
-    GOLDEN_SWORD("金剑", 283, 0, "textures/items/gold_sword.png"),
+    GOLDEN_SWORD("Golden Sword", 283, 0, "textures/items/gold_sword.png"),
     /**
-     * 金锹
+     * Golden Shovel
      */
-    GOLDEN_SHOVEL("金锹", 284, 0, "textures/items/gold_shovel.png"),
+    GOLDEN_SHOVEL("Golden Shovel", 284, 0, "textures/items/gold_shovel.png"),
     /**
-     * 金镐
+     * Golden Pickaxe
      */
-    GOLDEN_PICKAXE("金镐", 285, 0, "textures/items/gold_pickaxe.png"),
+    GOLDEN_PICKAXE("Golden Pickaxe", 285, 0, "textures/items/gold_pickaxe.png"),
     /**
-     * 金斧
+     * Golden Axe
      */
-    GOLDEN_AXE("金斧", 286, 0, "textures/items/gold_axe.png"),
+    GOLDEN_AXE("Golden Axe", 286, 0, "textures/items/gold_axe.png"),
     /**
-     * 蛛丝
+     * String
      */
-    STRING("蛛丝", 287, 0, "textures/items/string.png"),
+    STRING("String", 287, 0, "textures/items/string.png"),
     /**
-     * 羽毛
+     * Feather
      */
-    FEATHER("羽毛", 288, 0, "textures/items/feather.png"),
+    FEATHER("Feather", 288, 0, "textures/items/feather.png"),
     /**
-     * 火药
+     * Gunpowder
      */
-    GUNPOWDER("火药", 289, 0, "textures/items/gunpowder.png"),
+    GUNPOWDER("Gunpowder", 289, 0, "textures/items/gunpowder.png"),
     /**
-     * 木锄
+     * Wooden Hoe
      */
-    WOODEN_HOE("木锄", 290, 0, "textures/items/wood_hoe.png"),
+    WOODEN_HOE("Wooden Hoe", 290, 0, "textures/items/wood_hoe.png"),
     /**
-     * 石锄
+     * Stone Hoe
      */
-    STONE_HOE("石锄", 291, 0, "textures/items/stone_hoe.png"),
+    STONE_HOE("Stone Hoe", 291, 0, "textures/items/stone_hoe.png"),
     /**
-     * 铁锄
+     * Iron Hoe
      */
-    IRON_HOE("铁锄", 292, 0, "textures/items/iron_hoe.png"),
+    IRON_HOE("Iron Hoe", 292, 0, "textures/items/iron_hoe.png"),
     /**
-     * 钻石锄
+     * Diamond Hoe
      */
-    DIAMOND_HOE("钻石锄", 293, 0, "textures/items/diamond_hoe.png"),
+    DIAMOND_HOE("Diamond Hoe", 293, 0, "textures/items/diamond_hoe.png"),
     /**
-     * 金锄
+     * Golden Hoe
      */
-    GOLDEN_HOE("金锄", 294, 0, "textures/items/gold_hoe.png"),
+    GOLDEN_HOE("Golden Hoe", 294, 0, "textures/items/gold_hoe.png"),
     /**
-     * 种子
+     * Wheat Seeds
      */
-    WHEAT_SEEDS("种子", 295, 0, "textures/items/seeds_wheat.png"),
+    WHEAT_SEEDS("Wheat Seeds", 295, 0, "textures/items/seeds_wheat.png"),
     /**
-     * 小麦
+     * Wheat
      */
-    WHEAT("小麦", 296, 0, "textures/items/wheat.png"),
+    WHEAT("Wheat", 296, 0, "textures/items/wheat.png"),
     /**
-     * 面包
+     * Bread
      */
-    BREAD("面包", 297, 0, "textures/items/bread.png"),
+    BREAD("Bread", 297, 0, "textures/items/bread.png"),
     /**
-     * 皮革头盔
+     * Leather Helmet
      */
-    LEATHER_HELMET("皮革头盔", 298, 0, "textures/items/leather_helmet.tga"),
+    LEATHER_HELMET("Leather Helmet", 298, 0, "textures/items/leather_helmet.tga"),
     /**
-     * 皮革胸甲
+     * Leather Chestplate
      */
-    LEATHER_CHESTPLATE("皮革胸甲", 299, 0, "textures/items/leather_chestplate.png"),
+    LEATHER_CHESTPLATE("Leather Chestplate", 299, 0, "textures/items/leather_chestplate.png"),
     /**
-     * 皮革护腿
+     * Leather Leggings
      */
-    LEATHER_LEGGINGS("皮革护腿", 300, 0, "textures/items/leather_leggings.tga"),
+    LEATHER_LEGGINGS("Leather Leggings", 300, 0, "textures/items/leather_leggings.tga"),
     /**
-     * 皮革靴子
+     * Leather Boots
      */
-    LEATHER_BOOTS("皮革靴子", 301, 0, "textures/items/leather_boots.tga"),
+    LEATHER_BOOTS("Leather Boots", 301, 0, "textures/items/leather_boots.tga"),
     /**
-     * 锁链头盔
+     * Chainmail Helmet
      */
-    CHAINMAIL_HELMET("锁链头盔", 302, 0, "textures/items/chainmail_helmet.png"),
+    CHAINMAIL_HELMET("Chainmail Helmet", 302, 0, "textures/items/chainmail_helmet.png"),
     /**
-     * 锁链胸甲
+     * Chainmail Chestplate
      */
-    CHAINMAIL_CHESTPLATE("锁链胸甲", 303, 0, "textures/items/chainmail_chestplate.png"),
+    CHAINMAIL_CHESTPLATE("Chainmail Chestplate", 303, 0, "textures/items/chainmail_chestplate.png"),
     /**
-     * 锁链护腿
+     * Chainmail Leggings
      */
-    CHAINMAIL_LEGGINGS("锁链护腿", 304, 0, "textures/items/chainmail_leggings.png"),
+    CHAINMAIL_LEGGINGS("Chainmail Leggings", 304, 0, "textures/items/chainmail_leggings.png"),
     /**
-     * 锁链靴子
+     * Chainmail Boots
      */
-    CHAINMAIL_BOOTS("锁链靴子", 305, 0, "textures/items/chainmail_boots.png"),
+    CHAINMAIL_BOOTS("Chainmail Boots", 305, 0, "textures/items/chainmail_boots.png"),
     /**
-     * 铁头盔
+     * Iron Helmet
      */
-    IRON_HELMET("铁头盔", 306, 0, "textures/items/iron_helmet.png"),
+    IRON_HELMET("Iron Helmet", 306, 0, "textures/items/iron_helmet.png"),
     /**
-     * 铁胸甲
+     * Iron Chestplate
      */
-    IRON_CHESTPLATE("铁胸甲", 307, 0, "textures/items/iron_chestplate.png"),
+    IRON_CHESTPLATE("Iron Chestplate", 307, 0, "textures/items/iron_chestplate.png"),
     /**
-     * 铁护腿
+     * Iron Leggings
      */
-    IRON_LEGGINGS("铁护腿", 308, 0, "textures/items/iron_leggings.png"),
+    IRON_LEGGINGS("Iron Leggings", 308, 0, "textures/items/iron_leggings.png"),
     /**
-     * 铁靴子
+     * Iron Boots
      */
-    IRON_BOOTS("铁靴子", 309, 0, "textures/items/iron_boots.png"),
+    IRON_BOOTS("Iron Boots", 309, 0, "textures/items/iron_boots.png"),
     /**
-     * 钻石头盔
+     * Diamond Helmet
      */
-    DIAMOND_HELMET("钻石头盔", 310, 0, "textures/items/diamond_helmet.png"),
+    DIAMOND_HELMET("Diamond Helmet", 310, 0, "textures/items/diamond_helmet.png"),
     /**
-     * 钻石胸甲
+     * Diamond Chestplate
      */
-    DIAMOND_CHESTPLATE("钻石胸甲", 311, 0, "textures/items/diamond_chestplate.png"),
+    DIAMOND_CHESTPLATE("Diamond Chestplate", 311, 0, "textures/items/diamond_chestplate.png"),
     /**
-     * 钻石护腿
+     * Diamond Leggings
      */
-    DIAMOND_LEGGINGS("钻石护腿", 312, 0, "textures/items/diamond_leggings.png"),
+    DIAMOND_LEGGINGS("Diamond Leggings", 312, 0, "textures/items/diamond_leggings.png"),
     /**
-     * 钻石靴子
+     * Diamond Boots
      */
-    DIAMOND_BOOTS("钻石靴子", 313, 0, "textures/items/diamond_boots.png"),
+    DIAMOND_BOOTS("Diamond Boots", 313, 0, "textures/items/diamond_boots.png"),
     /**
-     * 金头盔
+     * Golden Helmet
      */
-    GOLDEN_HELMET("金头盔", 314, 0, "textures/items/gold_helmet.png"),
+    GOLDEN_HELMET("Golden Helmet", 314, 0, "textures/items/gold_helmet.png"),
     /**
-     * 金胸甲
+     * Golden Chestplate
      */
-    GOLDEN_CHESTPLATE("金胸甲", 315, 0, "textures/items/gold_chestplate.png"),
+    GOLDEN_CHESTPLATE("Golden Chestplate", 315, 0, "textures/items/gold_chestplate.png"),
     /**
-     * 金护腿
+     * Golden Leggings
      */
-    GOLDEN_LEGGINGS("金护腿", 316, 0, "textures/items/gold_leggings.png"),
+    GOLDEN_LEGGINGS("Golden Leggings", 316, 0, "textures/items/gold_leggings.png"),
     /**
-     * 金靴子
+     * Golden Boots
      */
-    GOLDEN_BOOTS("金靴子", 317, 0, "textures/items/gold_boots.png"),
+    GOLDEN_BOOTS("Golden Boots", 317, 0, "textures/items/gold_boots.png"),
     /**
-     * 燧石
+     * Flint
      */
-    FLINT("燧石", 318, 0, "textures/items/flint.png"),
+    FLINT("Flint", 318, 0, "textures/items/flint.png"),
     /**
-     * 生猪排
+     * Raw Porkchop
      */
-    PORKCHOP("生猪排", 319, 0, "textures/items/porkchop_raw.png"),
+    PORKCHOP("Raw Porkchop", 319, 0, "textures/items/porkchop_raw.png"),
     /**
-     * 熟猪排
+     * Cooked Porkchop
      */
-    COOKED_PORKCHOP("熟猪排", 320, 0, "textures/items/porkchop_cooked.png"),
+    COOKED_PORKCHOP("Cooked Porkchop", 320, 0, "textures/items/porkchop_cooked.png"),
     /**
-     * 画
+     * Painting
      */
-    PAINTING("画", 321, 0, "textures/items/painting.png"),
+    PAINTING("Painting", 321, 0, "textures/items/painting.png"),
     /**
-     * 金苹果
+     * Golden Apple
      */
-    GOLDEN_APPLE("金苹果", 322, 0, "textures/items/apple_golden.png"),
+    GOLDEN_APPLE("Golden Apple", 322, 0, "textures/items/apple_golden.png"),
     /**
-     * 告示牌
+     * Sign
      */
-    SIGN("告示牌", 323, 0, "textures/items/sign.png"),
+    SIGN("Sign", 323, 0, "textures/items/sign.png"),
     /**
-     * 橡木门
+     * Oak Door
      */
-    WOODEN_DOOR("橡木门", 324, 0, "textures/items/door_wood.png"),
+    WOODEN_DOOR("Oak Door", 324, 0, "textures/items/door_wood.png"),
     /**
-     * 桶
+     * Bucket
      */
-    BUCKET("桶", 325, 0, "textures/items/bucket_empty.png"),
+    BUCKET("Bucket", 325, 0, "textures/items/bucket_empty.png"),
     /**
-     * 矿车
+     * Minecart
      */
-    MINECART("矿车", 328, 0, "textures/items/minecart_normal.png"),
+    MINECART("Minecart", 328, 0, "textures/items/minecart_normal.png"),
     /**
-     * 鞍
+     * Saddle
      */
-    SADDLE("鞍", 329, 0, "textures/items/saddle.png"),
+    SADDLE("Saddle", 329, 0, "textures/items/saddle.png"),
     /**
-     * 红石
+     * Redstone
      */
-    REDSTONE("红石", 331, 0, "textures/items/redstone_dust.png"),
+    REDSTONE("Redstone", 331, 0, "textures/items/redstone_dust.png"),
     /**
-     * 雪球
+     * Snowball
      */
-    SNOWBALL("雪球", 332, 0, "textures/items/snowball.png"),
+    SNOWBALL("Snowball", 332, 0, "textures/items/snowball.png"),
     /**
-     * 橡木船
+     * Oak Boat
      */
-    BOAT("橡木船", 333, 0, "textures/items/boat.png"),
+    BOAT("Oak Boat", 333, 0, "textures/items/boat.png"),
     /**
-     * 皮革
+     * Leather
      */
-    LEATHER("皮革", 334, 0, "textures/items/leather.png"),
+    LEATHER("Leather", 334, 0, "textures/items/leather.png"),
     /**
-     * 粘土球
+     * Clay Ball
      */
-    CLAY_BALL("粘土球", 337, 0, "textures/items/clay_ball.png"),
+    CLAY_BALL("Clay Ball", 337, 0, "textures/items/clay_ball.png"),
     /**
-     * 甘蔗
+     * Sugar Canes
      */
-    REEDS("甘蔗", 338, 0, "textures/items/reeds.png"),
+    REEDS("Sugar Canes", 338, 0, "textures/items/reeds.png"),
     /**
-     * 纸
+     * Paper
      */
-    PAPER("纸", 339, 0, "textures/items/paper.png"),
+    PAPER("Paper", 339, 0, "textures/items/paper.png"),
     /**
-     * 书
+     * Book
      */
-    BOOK("书", 340, 0, "textures/items/book_normal.png"),
+    BOOK("Book", 340, 0, "textures/items/book_normal.png"),
     /**
-     * 粘液球
+     * Slimeball
      */
-    SLIME_BALL("粘液球", 341, 0, "textures/items/slimeball.png"),
+    SLIME_BALL("Slimeball", 341, 0, "textures/items/slimeball.png"),
     /**
-     * 箱子矿车
+     * Minecart with Chest
      */
-    CHEST_MINECART("箱子矿车", 342, 0, "textures/items/minecart_chest.png"),
+    CHEST_MINECART("Minecart with Chest", 342, 0, "textures/items/minecart_chest.png"),
     /**
-     * 鸡蛋
+     * Egg
      */
-    EGG("鸡蛋", 344, 0, "textures/items/egg.png"),
+    EGG("Egg", 344, 0, "textures/items/egg.png"),
     /**
-     * 指南针
+     * Compass
      */
-    COMPASS("指南针", 345, 0, "textures/items/compass_item.png"),
+    COMPASS("Compass", 345, 0, "textures/items/compass_item.png"),
     /**
-     * 鱼竿
+     * Fishing Rod
      */
-    FISHING_ROD("鱼竿", 346, 0, "textures/items/fishing_rod_cast.png"),
+    FISHING_ROD("Fishing Rod", 346, 0, "textures/items/fishing_rod_cast.png"),
     /**
-     * 时钟
+     * Clock
      */
-    CLOCK("时钟", 347, 0, "textures/items/clock_item.png"),
+    CLOCK("Clock", 347, 0, "textures/items/clock_item.png"),
     /**
-     * 荧石粉
+     * Glowstone Dust
      */
-    GLOWSTONE_DUST("荧石粉", 348, 0, "textures/items/glowstone_dust.png"),
+    GLOWSTONE_DUST("Glowstone Dust", 348, 0, "textures/items/glowstone_dust.png"),
     /**
-     * 鱼
+     * Raw Fish
      */
-    FISH("鱼", 349, 0, "textures/items/fish_raw.png"),
+    FISH("Raw Fish", 349, 0, "textures/items/fish_raw.png"),
     /**
-     * 熟鱼
+     * Cooked Fish
      */
-    COOKED_FISH("熟鱼", 350, 0, "textures/items/fish_cooked.png"),
+    COOKED_FISH("Cooked Fish", 350, 0, "textures/items/fish_cooked.png"),
     /**
-     * 墨囊
+     * Ink Sac
      */
-    DYE("墨囊", 351, 0, "textures/items/dye_powder_black.png"),
+    DYE("Ink Sac", 351, 0, "textures/items/dye_powder_black.png"),
     /**
-     * 品红色染料
+     * Magenta Dye
      */
-    SOLFERINO_DYE("品红色染料", 351, 1, "textures/items/dye_powder_purple.png"),
+    SOLFERINO_DYE("Magenta Dye", 351, 1, "textures/items/dye_powder_purple.png"),
     /**
-     * 绿色染料
+     * Green Dye
      */
-    GREEN_DYE("绿色染料", 351, 2, "textures/items/dye_powder_green.png"),
+    GREEN_DYE("Green Dye", 351, 2, "textures/items/dye_powder_green.png"),
     /**
-     * 可可豆
+     * Cocoa Beans
      */
-    BROWN_DYE("可可豆", 351, 3, "textures/items/dye_powder_brown.png"),
+    BROWN_DYE("Cocoa Beans", 351, 3, "textures/items/dye_powder_brown.png"),
     /**
-     * 蓝色染料
+     * Blue Dye
      */
-    BLUE_DYE("蓝色染料", 351, 4, "textures/items/dye_powder_blue.png"),
+    BLUE_DYE("Blue Dye", 351, 4, "textures/items/dye_powder_blue.png"),
     /**
-     * 紫色染料
+     * Purple Dye
      */
-    VIOLET_DYE("紫色染料", 351, 5, "textures/items/dye_powder_purple.png"),
+    VIOLET_DYE("Purple Dye", 351, 5, "textures/items/dye_powder_purple.png"),
     /**
-     * 青色染料
+     * Cyan Dye
      */
-    CYAN_DYE("青色染料", 351, 6, "textures/items/dye_powder_cyan.png"),
+    CYAN_DYE("Cyan Dye", 351, 6, "textures/items/dye_powder_cyan.png"),
     /**
-     * 淡灰色染料
+     * Light Gray Dye
      */
-    LIGHT_GRAY_DYE("淡灰色染料", 351, 7, "textures/items/dye_powder_silver.png"),
+    LIGHT_GRAY_DYE("Light Gray Dye", 351, 7, "textures/items/dye_powder_silver.png"),
     /**
-     * 灰色染料
+     * Gray Dye
      */
-    GRAY_DYE("灰色染料", 351, 8, "textures/items/dye_powder_pink.png"),
+    GRAY_DYE("Gray Dye", 351, 8, "textures/items/dye_powder_pink.png"),
     /**
-     * 粉红色染料
+     * Pink Dye
      */
-    PINK_DYE("粉红色染料", 351, 9, "textures/items/dye_powder_pink.png"),
+    PINK_DYE("Pink Dye", 351, 9, "textures/items/dye_powder_pink.png"),
     /**
-     * 黄绿色染料
+     * Lime Dye
      */
-    OLIVINE_DYE("黄绿色染料", 351, 10, "textures/items/dye_powder_lime.png"),
+    OLIVINE_DYE("Lime Dye", 351, 10, "textures/items/dye_powder_lime.png"),
     /**
-     * 黄色染料
+     * Yellow Dye
      */
-    YELLOW_DYE("黄色染料", 351, 11, "textures/items/dye_powder_yellow.png"),
+    YELLOW_DYE("Yellow Dye", 351, 11, "textures/items/dye_powder_yellow.png"),
     /**
-     * 淡蓝色染料
+     * Light Blue Dye
      */
-    LIGHT_BLUE_DYE("淡蓝色染料", 351, 12, "textures/items/dye_powder_light_blue.png"),
+    LIGHT_BLUE_DYE("Light Blue Dye", 351, 12, "textures/items/dye_powder_light_blue.png"),
     /**
-     * 红色染料
+     * Red Dye
      */
-    RED_DYE("红色染料", 351, 13, "textures/items/dye_powder_red.png"),
+    RED_DYE("Red Dye", 351, 13, "textures/items/dye_powder_red.png"),
     /**
-     * 橙色染料
+     * Orange Dye
      */
-    ORANGE_DYE("橙色染料", 351, 14, "textures/items/dye_powder_orange.png"),
+    ORANGE_DYE("Orange Dye", 351, 14, "textures/items/dye_powder_orange.png"),
     /**
-     * 骨粉
+     * Bone Meal
      */
-    WHITE_DYE("骨粉", 351, 15, "textures/items/dye_powder_white.png"),
+    WHITE_DYE("Bone Meal", 351, 15, "textures/items/dye_powder_white.png"),
     /**
-     * 骨头
+     * Bone
      */
-    BONE("骨头", 352, 0, "textures/items/bone.png"),
+    BONE("Bone", 352, 0, "textures/items/bone.png"),
     /**
-     * 糖
+     * Sugar
      */
-    SUGAR("糖", 353, 0, "textures/items/sugar.png"),
+    SUGAR("Sugar", 353, 0, "textures/items/sugar.png"),
     /**
-     * 蛋糕
+     * Cake
      */
-    CAKE("蛋糕", 354, 0, "textures/items/cake.png"),
+    CAKE("Cake", 354, 0, "textures/items/cake.png"),
     /**
-     * 床
+     * Bed
      */
-    BED("床", 355, 0, "textures/items/bed_red.png"),
+    BED("Bed", 355, 0, "textures/items/bed_red.png"),
     /**
-     * 中继器
+     * Repeater
      */
-    REPEATER("中继器", 356, 0, "textures/items/repeater.png"),
+    REPEATER("Repeater", 356, 0, "textures/items/repeater.png"),
     /**
-     * 曲奇
+     * Cookie
      */
-    COOKIE("曲奇", 357, 0, "textures/items/cookie.png"),
+    COOKIE("Cookie", 357, 0, "textures/items/cookie.png"),
     /**
-     * 地图(满)
+     * Filled Map
      */
-    FILLED_MAP("地图(满)", 358, 0, "textures/items/map_nautilus.png"),
+    FILLED_MAP("Filled Map", 358, 0, "textures/items/map_nautilus.png"),
     /**
-     * 剪刀
+     * Shears
      */
-    SHEARS("剪刀", 359, 0, "textures/items/shears.png"),
+    SHEARS("Shears", 359, 0, "textures/items/shears.png"),
     /**
-     * 西瓜
+     * Melon Slice
      */
-    MELON("西瓜", 360, 0, "textures/items/melon.png"),
+    MELON("Melon Slice", 360, 0, "textures/items/melon.png"),
     /**
-     * 南瓜种子
+     * Melon Seeds
      */
-    MELON_SEEDS("南瓜种子", 362, 0, "textures/items/seeds_melon.png"),
+    MELON_SEEDS("Melon Seeds", 362, 0, "textures/items/seeds_melon.png"),
     /**
-     * 生牛肉
+     * Raw Beef
      */
-    BEEF("生牛肉", 363, 0, "textures/items/beef_raw.png"),
+    BEEF("Raw Beef", 363, 0, "textures/items/beef_raw.png"),
     /**
-     * 熟牛肉
+     * Cooked Beef
      */
-    COOKED_BEEF("熟牛肉", 364, 0, "textures/items/beef_cooked.png"),
+    COOKED_BEEF("Cooked Beef", 364, 0, "textures/items/beef_cooked.png"),
     /**
-     * 生鸡肉
+     * Raw Chicken
      */
-    CHICKEN("生鸡肉", 365, 0, "textures/items/chicken_raw.png"),
+    CHICKEN("Raw Chicken", 365, 0, "textures/items/chicken_raw.png"),
     /**
-     * 熟鸡肉
+     * Cooked Chicken
      */
-    COOKED_CHICKEN("熟鸡肉", 366, 0, "textures/items/chicken_cooked.png"),
+    COOKED_CHICKEN("Cooked Chicken", 366, 0, "textures/items/chicken_cooked.png"),
     /**
-     * 腐肉
+     * Rotten Flesh
      */
-    ROTTEN_FLESH("腐肉", 367, 0, "textures/items/rotten_flesh.png"),
+    ROTTEN_FLESH("Rotten Flesh", 367, 0, "textures/items/rotten_flesh.png"),
     /**
-     * 末影珍珠
+     * Ender Pearl
      */
-    ENDER_PEARL("末影珍珠", 368, 0, "textures/items/ender_pearl.png"),
+    ENDER_PEARL("Ender Pearl", 368, 0, "textures/items/ender_pearl.png"),
     /**
-     * 烈焰棒
+     * Blaze Rod
      */
-    BLAZE_ROD("烈焰棒", 369, 0, "textures/items/blaze_rod.png"),
+    BLAZE_ROD("Blaze Rod", 369, 0, "textures/items/blaze_rod.png"),
     /**
-     * 恶魂泪
+     * Ghast Tear
      */
-    GHAST_TEAR("恶魂泪", 370, 0, "textures/items/ghast_tear.png"),
+    GHAST_TEAR("Ghast Tear", 370, 0, "textures/items/ghast_tear.png"),
     /**
-     * 金粒
+     * Gold Nugget
      */
-    GOLD_NUGGET("金粒", 371, 0, "textures/items/gold_nugget.png"),
+    GOLD_NUGGET("Gold Nugget", 371, 0, "textures/items/gold_nugget.png"),
     /**
-     * 地狱疣
+     * Nether Wart
      */
-    NETHER_WART("地狱疣", 372, 0, "textures/items/nether_wart.png"),
+    NETHER_WART("Nether Wart", 372, 0, "textures/items/nether_wart.png"),
     /**
-     * 水瓶
+     * Potion
      */
-    POTION("水瓶", 373, 0, "textures/items/potion_bottle_drinkable.png"),
+    POTION("Potion", 373, 0, "textures/items/potion_bottle_drinkable.png"),
     /**
-     * 玻璃瓶
+     * Glass Bottle
      */
-    GLASS_BOTTLE("玻璃瓶", 374, 0, "textures/items/potion_bottle_empty.png"),
+    GLASS_BOTTLE("Glass Bottle", 374, 0, "textures/items/potion_bottle_empty.png"),
     /**
-     * 蜘蛛眼
+     * Spider Eye
      */
-    SPIDER_EYE("蜘蛛眼", 375, 0, "textures/items/spider_eye.png"),
+    SPIDER_EYE("Spider Eye", 375, 0, "textures/items/spider_eye.png"),
     /**
-     * 发酵蜘蛛眼
+     * Fermented Spider Eye
      */
-    SPIDER_EYE_FERMENTED("发酵蜘蛛眼", 376, 0, "textures/items/spider_eye_fermented.png"),
+    SPIDER_EYE_FERMENTED("Fermented Spider Eye", 376, 0, "textures/items/spider_eye_fermented.png"),
     /**
-     * 烈焰粉
+     * Blaze Powder
      */
-    BLAZE_POWDER("烈焰粉", 377, 0, "textures/items/blaze_powder.png"),
+    BLAZE_POWDER("Blaze Powder", 377, 0, "textures/items/blaze_powder.png"),
     /**
-     * 岩浆膏
+     * Magma Cream
      */
-    MAGMA_CREAM("岩浆膏", 378, 0, "textures/items/magma_cream.png"),
+    MAGMA_CREAM("Magma Cream", 378, 0, "textures/items/magma_cream.png"),
     /**
-     * 末影之眼
+     * Eye of Ender
      */
-    ENDER_EYE("末影之眼", 381, 0, "textures/items/ender_eye.png"),
+    ENDER_EYE("Eye of Ender", 381, 0, "textures/items/ender_eye.png"),
     /**
-     * 金西瓜
+     * Glistering Melon Slice
      */
-    SPECKLED_MELON("金西瓜", 382, 0, "textures/items/melon_speckled.png"),
+    SPECKLED_MELON("Glistering Melon Slice", 382, 0, "textures/items/melon_speckled.png"),
     /**
-     * 经验瓶
+     * Bottle o' Enchanting
      */
-    EXPERIENCE_BOTTLE("经验瓶", 384, 0, "textures/items/experience_bottle.png"),
+    EXPERIENCE_BOTTLE("Bottle o' Enchanting", 384, 0, "textures/items/experience_bottle.png"),
     /**
-     * 火球
+     * Fire Charge
      */
-    FIRE_CHARGE("火球", 385, 0, "textures/items/fireball.png"),
+    FIRE_CHARGE("Fire Charge", 385, 0, "textures/items/fireball.png"),
     /**
-     * 绿宝石
+     * Emerald
      */
-    EMERALD("绿宝石", 388, 0, "textures/items/emerald.png"),
+    EMERALD("Emerald", 388, 0, "textures/items/emerald.png"),
     /**
-     * 展示框
+     * Item Frame
      */
-    ITEM_FRAME("展示框", 389, 0, "textures/items/item_frame.png"),
+    ITEM_FRAME("Item Frame", 389, 0, "textures/items/item_frame.png"),
     /**
-     * 花盆
+     * Flower Pot
      */
-    FLOWER_POT("花盆", 390, 0, "textures/items/flower_pot.png"),
+    FLOWER_POT("Flower Pot", 390, 0, "textures/items/flower_pot.png"),
     /**
-     * 胡萝卜
+     * Carrot
      */
-    CARROT("胡萝卜", 391, 0, "textures/items/carrot.png"),
+    CARROT("Carrot", 391, 0, "textures/items/carrot.png"),
     /**
-     * 马铃薯
+     * Potato
      */
-    POTATO("马铃薯", 392, 0, "textures/items/potato.png"),
+    POTATO("Potato", 392, 0, "textures/items/potato.png"),
     /**
-     * 烤马铃薯
+     * Baked Potato
      */
-    BAKED_POTATO("烤马铃薯", 393, 0, "textures/items/potato_baked.png"),
+    BAKED_POTATO("Baked Potato", 393, 0, "textures/items/potato_baked.png"),
     /**
-     * 毒马铃薯
+     * Poisonous Potato
      */
-    POISONOUS_POTATO("毒马铃薯", 394, 0, "textures/items/potato_poisonous.png"),
+    POISONOUS_POTATO("Poisonous Potato", 394, 0, "textures/items/potato_poisonous.png"),
     /**
-     * 空地图
+     * Empty Map
      */
-    MAP("空地图", 395, 0, "textures/items/map_empty.png"),
+    MAP("Empty Map", 395, 0, "textures/items/map_empty.png"),
     /**
-     * 金胡萝卜
+     * Golden Carrot
      */
-    GOLDEN_CARROT("金胡萝卜", 396, 0, "textures/items/carrot_golden.png"),
+    GOLDEN_CARROT("Golden Carrot", 396, 0, "textures/items/carrot_golden.png"),
     /**
-     * 骷髅头
+     * Skeleton Skull
      */
-    SKELETON_SKULL("骷髅头", 397, 0, "textures/items/bone.png"),
+    SKELETON_SKULL("Skeleton Skull", 397, 0, "textures/items/bone.png"),
     /**
-     * 凋零骷髅头
+     * Wither Skeleton Skull
      */
-    LEIERDA_SKULL("凋零骷髅头", 397, 1, "textures/blocks/observer_front.png"),
+    LEIERDA_SKULL("Wither Skeleton Skull", 397, 1, "textures/blocks/observer_front.png"),
     /**
-     * 僵尸头
+     * Zombie Head
      */
-    ZOMBIE_SKULL("僵尸头", 397, 2, "textures/blocks/observer_front.png"),
+    ZOMBIE_SKULL("Zombie Head", 397, 2, "textures/blocks/observer_front.png"),
     /**
-     * 史蒂夫头
+     * Player Head
      */
-    STEVE_SKULL("史蒂夫头", 397, 3, "textures/blocks/observer_front.png"),
+    STEVE_SKULL("Player Head", 397, 3, "textures/blocks/observer_front.png"),
     /**
-     * 苦力怕头
+     * Creeper Head
      */
-    CREEPER_SKULL("苦力怕头", 397, 4, "textures/blocks/observer_front.png"),
+    CREEPER_SKULL("Creeper Head", 397, 4, "textures/blocks/observer_front.png"),
     /**
-     * 龙头
+     * Dragon Head
      */
-    DRAGON_SKULL("龙头", 397, 5, "textures/blocks/observer_front.png"),
+    DRAGON_SKULL("Dragon Head", 397, 5, "textures/blocks/observer_front.png"),
     /**
-     * 胡萝卜杆
+     * Carrot on a Stick
      */
-    CARROT_ON_A_STICK("胡萝卜杆", 398, 0, "textures/items/carrot_on_a_stick.png"),
+    CARROT_ON_A_STICK("Carrot on a Stick", 398, 0, "textures/items/carrot_on_a_stick.png"),
     /**
-     * 下届之星
+     * Nether Star
      */
-    NETHER_STAR("下届之星", 399, 0, "textures/items/nether_star.png"),
+    NETHER_STAR("Nether Star", 399, 0, "textures/items/nether_star.png"),
     /**
-     * 南瓜派
+     * Pumpkin Pie
      */
-    PUMPKIN_PIE("南瓜派", 400, 0, "textures/items/pumpkin_pie.png"),
+    PUMPKIN_PIE("Pumpkin Pie", 400, 0, "textures/items/pumpkin_pie.png"),
     /**
-     * 附魔书
+     * Enchanted Book
      */
-    ENCHANTED_BOOK("附魔书", 403, 0, "textures/items/book_writable.png"),
+    ENCHANTED_BOOK("Enchanted Book", 403, 0, "textures/items/book_writable.png"),
     /**
-     * 比较器
+     * Comparator
      */
-    COMPARATOR("比较器", 404, 0, "textures/items/comparator.png"),
+    COMPARATOR("Comparator", 404, 0, "textures/items/comparator.png"),
     /**
-     * 地狱石英
+     * Nether Quartz
      */
-    QUARTZ("地狱石英", 406, 0, "textures/items/quartz.png"),
+    QUARTZ("Nether Quartz", 406, 0, "textures/items/quartz.png"),
     /**
-     * tnt矿车
+     * Minecart with TNT
      */
-    TNT_MINECART("tnt矿车", 407, 0, "textures/items/minecart_tnt.png"),
+    TNT_MINECART("Minecart with TNT", 407, 0, "textures/items/minecart_tnt.png"),
     /**
-     * 漏斗矿车
+     * Minecart with Hopper
      */
-    HOPPER_MINECART("漏斗矿车", 408, 0, "textures/items/minecart_hopper.png"),
+    HOPPER_MINECART("Minecart with Hopper", 408, 0, "textures/items/minecart_hopper.png"),
     /**
-     * 海晶碎片
+     * Prismarine Shard
      */
-    PRISMARINE_SHARD("海晶碎片", 409, 0, "textures/items/prismarine_shard.png"),
+    PRISMARINE_SHARD("Prismarine Shard", 409, 0, "textures/items/prismarine_shard.png"),
     /**
-     * 海晶灯粉
+     * Prismarine Crystals
      */
-    PRISMARINE_CRYSTALS("海晶灯粉", 410, 0, "textures/items/prismarine_crystals.png"),
+    PRISMARINE_CRYSTALS("Prismarine Crystals", 410, 0, "textures/items/prismarine_crystals.png"),
     /**
-     * 生兔子肉
+     * Raw Rabbit
      */
-    RABBIT("生兔子肉", 411, 0, "textures/items/rabbit_raw.png"),
+    RABBIT("Raw Rabbit", 411, 0, "textures/items/rabbit_raw.png"),
     /**
-     * 熟兔子肉
+     * Cooked Rabbit
      */
-    COOKED_RABBIT("熟兔子肉", 412, 0, "textures/items/rabbit_cooked.png"),
+    COOKED_RABBIT("Cooked Rabbit", 412, 0, "textures/items/rabbit_cooked.png"),
     /**
-     * 兔子煲
+     * Rabbit Stew
      */
-    RABBIT_STEW("兔子煲", 413, 0, "textures/items/rabbit_stew.png"),
+    RABBIT_STEW("Rabbit Stew", 413, 0, "textures/items/rabbit_stew.png"),
     /**
-     * 兔子脚
+     * Rabbit's Foot
      */
-    RABBIT_FOOT("兔子脚", 414, 0, "textures/items/rabbit_foot.png"),
+    RABBIT_FOOT("Rabbit's Foot", 414, 0, "textures/items/rabbit_foot.png"),
     /**
-     * 兔子皮
+     * Rabbit Hide
      */
-    RABBIT_HIDE("兔子皮", 415, 0, "textures/items/rabbit_hide.png"),
+    RABBIT_HIDE("Rabbit Hide", 415, 0, "textures/items/rabbit_hide.png"),
     /**
-     * 皮革马鞍
+     * Armor Stand
      */
-    ARMOR_STAND("皮革马鞍", 416, 0, "textures/items/saddle.png"),
+    ARMOR_STAND("Armor Stand", 416, 0, "textures/items/saddle.png"),
     /**
-     * 铁马鞍
+     * Iron Horse Armor
      */
-    IRON_HORSE_ARMOR("铁马鞍", 417, 0, "textures/items/iron_horse_armor.png"),
+    IRON_HORSE_ARMOR("Iron Horse Armor", 417, 0, "textures/items/iron_horse_armor.png"),
     /**
-     * 金马鞍
+     * Golden Horse Armor
      */
-    GOLD_HORSE_ARMOR("金马鞍", 418, 0, "textures/items/gold_horse_armor.png"),
+    GOLD_HORSE_ARMOR("Golden Horse Armor", 418, 0, "textures/items/gold_horse_armor.png"),
     /**
-     * 钻石马鞍
+     * Diamond Horse Armor
      */
-    DIAMOND_HORSE_ARMOR("钻石马鞍", 419, 0, "textures/items/diamond_horse_armor.png"),
+    DIAMOND_HORSE_ARMOR("Diamond Horse Armor", 419, 0, "textures/items/diamond_horse_armor.png"),
     /**
-     * 栓绳
+     * Lead
      */
-    LEAD("栓绳", 420, 0, "textures/items/lead.png"),
+    LEAD("Lead", 420, 0, "textures/items/lead.png"),
     /**
-     * 命名牌
+     * Name Tag
      */
-    NAME_TAG("命名牌", 421, 0, "textures/items/name_tag.png"),
+    NAME_TAG("Name Tag", 421, 0, "textures/items/name_tag.png"),
     /**
-     * 命令方块矿车
+     * Minecart with Command Block
      */
-    COMMAND_BLOCK_MINECART("命令方块矿车", 422, 0, "textures/items/minecart_command_block.png"),
+    COMMAND_BLOCK_MINECART("Minecart with Command Block", 422, 0, "textures/items/minecart_command_block.png"),
     /**
-     * 生羊肉
+     * Raw Mutton
      */
-    MUTTON("生羊肉", 423, 0, "textures/items/mutton_raw.png"),
+    MUTTON("Raw Mutton", 423, 0, "textures/items/mutton_raw.png"),
     /**
-     * 熟羊肉
+     * Cooked Mutton
      */
-    COOKED_MUTTON("熟羊肉", 424, 0, "textures/items/mutton_cooked.png"),
+    COOKED_MUTTON("Cooked Mutton", 424, 0, "textures/items/mutton_cooked.png"),
     /**
-     * 云杉木门
+     * Spruce Door
      */
-    SPRUCE_DOOR("云杉木门", 427, 0, "textures/items/door_jungle.png"),
+    SPRUCE_DOOR("Spruce Door", 427, 0, "textures/items/door_jungle.png"),
     /**
-     * 桦树木门
+     * Birch Door
      */
-    BIRCH_WOOD_DOOR("桦树木门", 428, 0, "textures/items/door_birch.png"),
+    BIRCH_WOOD_DOOR("Birch Door", 428, 0, "textures/items/door_birch.png"),
     /**
-     * 丛林木门
+     * Jungle Door
      */
-    JUNGLE_DOOR("丛林木门", 429, 0, "textures/items/door_spruce.png"),
+    JUNGLE_DOOR("Jungle Door", 429, 0, "textures/items/door_spruce.png"),
     /**
-     * 金合欢木门
+     * Acacia Door
      */
-    ACACIA_DOOR("金合欢木门", 430, 0, "textures/items/door_acacia.png"),
+    ACACIA_DOOR("Acacia Door", 430, 0, "textures/items/door_acacia.png"),
     /**
-     * 深色橡木门
+     * Dark Oak Door
      */
-    DARK_OAK_DOOR("深色橡木门", 431, 0, "textures/items/door_dark_oak.png"),
+    DARK_OAK_DOOR("Dark Oak Door", 431, 0, "textures/items/door_dark_oak.png"),
     /**
-     * 共鸣果
+     * Chorus Fruit
      */
-    CHORUS_FRUIT("共鸣果", 432, 0, "textures/items/chorus_fruit.png"),
+    CHORUS_FRUIT("Chorus Fruit", 432, 0, "textures/items/chorus_fruit.png"),
     /**
-     * 爆裂共鸣果
+     * Popped Chorus Fruit
      */
-    POPPED_CHORUS_FRUIT("爆裂共鸣果", 433, 0, "textures/items/chorus_fruit_popped.png"),
+    POPPED_CHORUS_FRUIT("Popped Chorus Fruit", 433, 0, "textures/items/chorus_fruit_popped.png"),
     /**
-     * 龙息
+     * Dragon's Breath
      */
-    DRAGON_BREATH("龙息", 437, 0, "textures/items/dragons_breath.png"),
+    DRAGON_BREATH("Dragon's Breath", 437, 0, "textures/items/dragons_breath.png"),
     /**
-     * 喷溅的水瓶
+     * Splash Potion
      */
-    SPLASH_POTION("喷溅的水瓶", 438, 0, "textures/items/potion_bottle_splash.png"),
+    SPLASH_POTION("Splash Potion", 438, 0, "textures/items/potion_bottle_splash.png"),
     /**
-     * 遗留的水瓶
+     * Lingering Potion
      */
-    LINGERING_POTION("遗留的水瓶", 441, 0, "textures/items/potion_bottle_lingering_waterBreathing.png"),
+    LINGERING_POTION("Lingering Potion", 441, 0, "textures/items/potion_bottle_lingering_waterBreathing.png"),
     /**
-     * 翅鞘
+     * Elytra
      */
-    ELYTRA("翅鞘", 444, 0, "textures/items/elytra.png"),
+    ELYTRA("Elytra", 444, 0, "textures/items/elytra.png"),
     /**
-     * 潜匿之壳
+     * Shulker Shell
      */
-    BIRCH_BOAT("潜匿之壳", 445, 0, "textures/items/shulker_shell.png");
+    BIRCH_BOAT("Shulker Shell", 445, 0, "textures/items/shulker_shell.png");
     private int ID, Damage;
     private String Name, Path;
     private static final HashMap<String, Map<String, Object>> NAME_MAP = new HashMap<>();
@@ -1971,10 +1971,10 @@ public enum ItemIDSunName {
     }
 
     /**
-     * @param Name   物品名称
-     * @param id     物品ID
-     * @param Damage 物品特殊值
-     * @param Path   物品贴图路径
+     * @param Name   Item name
+     * @param id     Item ID
+     * @param Damage Item special value
+     * @param Path   Item texture path
      */
     private ItemIDSunName(String Name, int id, int Damage, String Path) {
         this.ID = id;
@@ -1984,53 +1984,53 @@ public enum ItemIDSunName {
     }
 
     /**
-     * @return 物品贴图路径
+     * @return Item texture path
      */
     public String getPath() {
         return this.Path;
     }
 
     /**
-     * @return 物品名称
+     * @return Item name
      */
     public String getName() {
         return this.Name;
     }
 
     /**
-     * @return 物品特殊值
+     * @return Item special value
      */
     public int getDamage() {
         return this.Damage;
     }
 
     /**
-     * @return 物品ID
+     * @return Item ID
      */
     public int getID() {
         return this.ID;
     }
 
     /**
-     * @param ID 物品ID
-     * @return 根据物品ID获取物品贴图路径
+     * @param ID Item ID
+     * @return Get the item texture path according to the item ID
      */
     public static String getIDByPath(int ID) {
         return getIDByPath(ID + ":0");
     }
 
     /**
-     * @param ID     物品ID
-     * @param Damage 物品特殊值
-     * @return 根据物品ID获取物品贴图路径
+     * @param ID     Item ID
+     * @param Damage Item special value
+     * @return Get the item texture path according to the item ID
      */
     public static String getIDByPath(int ID, int Damage) {
         return getIDByPath(ID + ":" + Damage);
     }
 
     /**
-     * @param ID 物品ID（ID：特殊值）
-     * @return 根据物品ID获取物品贴图路径（ID：特殊值）
+     * @param ID Item ID (ID: special value)
+     * @return Get the item texture path according to the item ID (ID: special value)
      */
     public static String getIDByPath(String ID) {
         Map<String, Object> map = ID_MAP.getOrDefault(ID, null);
@@ -2040,17 +2040,17 @@ public enum ItemIDSunName {
     }
 
     /**
-     * @param ID 物品ID
-     * @return 根据物品ID获取物品名称
+     * @param ID Item ID
+     * @return Get the item name according to the item ID
      */
     public static String getIDByName(int ID) {
         return getIDByName(ID + ":0");
     }
 
     /**
-     * @param ID     物品ID
-     * @param Damage 物品特殊值
-     * @return 根据物品ID获取物品名称
+     * @param ID     Item ID
+     * @param Damage Item special value
+     * @return Get the item name according to the item ID
      */
     public static String getIDByName(int ID, int Damage) {
         return getIDByName(ID + ":" + Damage);
@@ -2073,8 +2073,8 @@ public enum ItemIDSunName {
     }
 
     /**
-     * @param ID 物品ID（ID：特殊值）
-     * @return 根据物品ID获取物品名称
+     * @param ID Item ID (ID: special value)
+     * @return Get the item name according to the item ID
      */
     public static String getIDByName(String ID) {
         Map<String, Object> map = ID_MAP.getOrDefault(ID, null);
@@ -2084,8 +2084,8 @@ public enum ItemIDSunName {
     }
 
     /**
-     * @param Name 物品名称
-     * @return 根据物品名称获取物品ID
+     * @param Name Item name
+     * @return Get the item ID according to the item name
      */
     public static int getNameByID(String Name) {
         Map<String, Object> map = NAME_MAP.getOrDefault(Name, null);
@@ -2095,8 +2095,8 @@ public enum ItemIDSunName {
     }
 
     /**
-     * @param Name 物品名称
-     * @return 根据物品名称获取物品特殊值
+     * @param Name Item name
+     * @return Get the item special value according to the item name
      */
     public static int getNameByDamage(String Name) {
         Map<String, Object> map = NAME_MAP.getOrDefault(Name, null);
@@ -2106,8 +2106,8 @@ public enum ItemIDSunName {
     }
 
     /**
-     * @param Name 物品名称
-     * @return 根据物品名称获取物品贴图路径
+     * @param Name Item name
+     * @return Get the item texture path according to the item name
      */
     public static String getNameByPath(String Name) {
         Map<String, Object> map = NAME_MAP.getOrDefault(Name, null);
@@ -2117,33 +2117,33 @@ public enum ItemIDSunName {
     }
 
     /**
-     * @param ID 物品ID
-     * @return 根据物品ID获取物品枚举对象
+     * @param ID Item ID
+     * @return Get the item enumeration object according to the item ID
      */
     public static ItemIDSunName getItem(int ID) {
         return getItem(ID, 0);
     }
 
     /**
-     * @param ID     物品ID
-     * @param Damage 物品特殊值
-     * @return 根据物品ID获取物品枚举对象
+     * @param ID     Item ID
+     * @param Damage Item special value
+     * @return Get the item enumeration object according to the item ID
      */
     public static ItemIDSunName getItem(int ID, int Damage) {
         return ItemIDSunName_MAP.getOrDefault(ID + ":" + Damage, null);
     }
 
     /**
-     * @param Name 物品名称
-     * @return 根据物品ID获取物品枚举对象
+     * @param Name Item name
+     * @return Get the item enumeration object according to the item ID
      */
     public static ItemIDSunName getItem(String Name) {
         return getItem(getNameByID(Name), getNameByDamage(Name));
     }
 
     /**
-     * @param ID（ID：特殊值）/物品名称
-     * @return 尝试解析冰获取物品ID（ID：特殊值）
+     * @param ID (ID: special value)/item name
+     * @return Try to parse and get the item ID (ID: special value)
      */
     public static String UnknownToID(String ID) {
         if (!ID.contains(":")) {
@@ -2164,8 +2164,8 @@ public enum ItemIDSunName {
     }
 
     /**
-     * @param string 物品ID/物品名称/物品贴图路径
-     * @return 尝试解析并获取物品贴图路径
+     * @param string item ID/item name/item texture path
+     * @return Try to parse and get the item texture path
      */
     public static String UnknownToPath(String string) {
         if (UnknownToID(string) != null)
@@ -2176,7 +2176,7 @@ public enum ItemIDSunName {
 
 
     /**
-     * 获取所有项目
+     * Get all items
      *
      * @return
      */

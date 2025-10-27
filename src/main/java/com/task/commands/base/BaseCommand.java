@@ -11,7 +11,7 @@ import java.util.LinkedList;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * 指令工具类
+ * Command utility class
  * @author SmallasWater
  *
  */
@@ -29,9 +29,9 @@ abstract public class BaseCommand extends Command {
 
 
     /**
-     * 获取权限
-     * @param sender 玩家
-     * @return 是否拥有权限
+     * Get permission
+     * @param sender player
+     * @return Whether you have permission
      */
     abstract public boolean hasPermission(CommandSender sender);
 
@@ -52,7 +52,7 @@ abstract public class BaseCommand extends Command {
                     } else if (sender instanceof Player) {
                         return true;
                     } else {
-                        sender.sendMessage("请不要在控制台执行此指令");
+                        sender.sendMessage("Please do not execute this command in the console");
                     }
                 } else {
                     sendHelp(sender);
@@ -64,8 +64,8 @@ abstract public class BaseCommand extends Command {
     }
 
     /**
-     * 发送帮助
-     * @param sender 玩家
+     * Send help
+     * @param sender player
      * */
     abstract public void sendHelp(CommandSender sender);
 

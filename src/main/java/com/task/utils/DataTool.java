@@ -32,13 +32,13 @@ import java.util.*;
  */
 public class DataTool {
 
-    /** 将 2019/6/9/24/11 格式的string转换为 Date
-     * @param format 时间格式
+    /** Convert a string in the format of 2019/6/9/24/11 to a Date
+     * @param format time format
      *
-     * @return 时间类*/
+     * @return time class*/
     public static Date getDate(String format){
         SimpleDateFormat lsdStrFormat = new SimpleDateFormat("yyyy/MM/dd/HH/ss");
-        // 兼容旧版本...
+        // Compatible with old versions...
         try {
             return lsdStrFormat.parse(format);
         }catch (ParseException e){
@@ -51,9 +51,9 @@ public class DataTool {
         }
     }
 
-    /** 获取所有分组字符串
+    /** Get all group strings
      *
-     * @return 分组字符串*/
+     * @return group string*/
     public static String[] getGropAllName(){
         LinkedList<String> taskNames = new LinkedList<>();
         for(int i = 0; i < RsTask.getTask().getGroupSize(); i++){
@@ -62,9 +62,9 @@ public class DataTool {
         return taskNames.toArray(new String[0]);
     }
 
-    /** 获取所有任务任务名
+    /** Get all task names
      *
-     * @return 任务名数组
+     * @return array of task names
      * */
     public static String[] getTaskAllNames(){
         LinkedList<String> taskNames = new LinkedList<>(RsTask.getTask().getTasks().keySet());
@@ -72,10 +72,10 @@ public class DataTool {
     }
 
 
-    /** 获取相差分钟
-     * @param oldData 时间1
+    /** Get the difference in minutes
+     * @param oldData time 1
      *
-     * @return 分钟数*/
+     * @return number of minutes*/
 
     public static int getTime(Date oldData) {
         long temp = System.currentTimeMillis() - oldData.getTime();
@@ -101,14 +101,14 @@ public class DataTool {
 
 
 
-    /** 将Date 转换 String*/
+    /** Convert Date to String*/
     public static String toDateString(Date date){
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd/HH/ss");
         return sdf.format(date);
     }
 
 
-    /** Data 转为 Object*/
+    /** Convert Data to Object*/
     public static Object[] toArrayByData(String data){
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();
@@ -116,7 +116,7 @@ public class DataTool {
         }).getType());
     }
 
-    /** 放烟花*/
+    /** Set off fireworks*/
     public static void spawnFirework(Player player) {
 
         Level level = player.getLevel();
@@ -190,8 +190,8 @@ public class DataTool {
     }
 
     /**
-     * String 为 UUID
-     * 排行榜
+     * String is UUID
+     * Leaderboard
      * */
     public static HashMap<String,Integer> getPlayerRankingList(Map<String,Integer> map){
         HashMap<String,Integer> map1 = new LinkedHashMap<>();
@@ -207,11 +207,11 @@ public class DataTool {
         return map1;
     }
 
-    /** 获取物品数量
-     * @param player 玩家
-     * @param item 物品
+    /** Get item quantity
+     * @param player player
+     * @param item item
      *
-     * @return 物品数量*/
+     * @return item quantity*/
     public static int getCount(Player player, ItemClass item){
         if(item instanceof ItemLib){
             return ((ItemLib) item).getPlayerAllItemCount(player);
@@ -227,19 +227,19 @@ public class DataTool {
         }
         return i;
     }
-    /**获取难度需要积分 */
+    /**Get the points required for the difficulty */
     public static int starNeed(int star){
-        Map map = (Map) RsTask.getTask().getConfig().get("自定义图片路径");
+        Map map = (Map) RsTask.getTask().getConfig().get("Custom image path");
         if(map.containsKey(star+"")){
             Map map1 = (Map) map.get(star+"");
-            return Integer.parseInt(map1.get("解锁积分").toString());
+            return Integer.parseInt(map1.get("Unlock points").toString());
         }else{
             return 0;
         }
     }
 
     public static void sendMessage(Player player,String message){
-        switch (RsTask.getTask().getConfig().getString("底部显示类型")){
+        switch (RsTask.getTask().getConfig().getString("Bottom display type")){
             case "tip":
                 player.sendTip(message);
                 break;
@@ -253,7 +253,7 @@ public class DataTool {
     }
 
 
-    /** 将难度转换为星星*/
+    /** Convert difficulty to stars*/
     public static String getStar(int star){
         StringBuilder builder = new StringBuilder("");
         for(int i = 0;i < star;i++){
@@ -262,22 +262,22 @@ public class DataTool {
         return builder.toString();
     }
 
-    /** 获取分组名称*/
+    /** Get group name*/
     public static String getGroupName(int group){
-        Map map = (Map) RsTask.getTask().getConfig().get("自定义图片路径");
+        Map map = (Map) RsTask.getTask().getConfig().get("Custom image path");
         if(map.containsKey(group+"")){
-            return RsTask.getTask().getConfig().get("自定义图片路径."+group+"."+"名称").toString();
+            return RsTask.getTask().getConfig().get("Custom image path."+group+"."+"name").toString();
         }
         return RsTask.getTask().getLag("title");
     }
 
-    /** 获取计分板标题*/
+    /** Get the scoreboard title*/
     public static String getScoreTitle(){
-        Map map = (Map) RsTask.getTask().getConfig().get("计分板");
-        return (String) map.get("标题");
+        Map map = (Map) RsTask.getTask().getConfig().get("scoreboard");
+        return (String) map.get("title");
     }
 
-    /** 创建任务 */
+    /** Create task */
     public static void createTask(TaskFile file){
         if(!TaskFile.isFileTask(file.getTaskName())){
             file.toSaveConfig();
@@ -287,7 +287,7 @@ public class DataTool {
     }
 
     public static boolean existsGroup(int group){
-        Map map = (Map) RsTask.getTask().getConfig().get("自定义图片路径");
+        Map map = (Map) RsTask.getTask().getConfig().get("Custom image path");
         return map.containsKey(group + "");
     }
 
@@ -314,7 +314,7 @@ public class DataTool {
 
     public static void sortTaskFiles(LinkedList<TaskFile> files){
         files.sort((p1, p2) -> {
-            //按照Person的年龄进行升序排列
+            //Sort in ascending order by Person's age
             if (p1.getName().compareTo(p2.getName()) == 0) {
                 return 1;
             }
